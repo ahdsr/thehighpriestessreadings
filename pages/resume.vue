@@ -66,7 +66,7 @@
             <div class="hidden text-gray-800 sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
               <nuxt-link
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
                 to="/splash"
                 >Home</nuxt-link
               >
@@ -76,7 +76,7 @@
                 >Use Cases</nuxt-link
               >
               <nuxt-link
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
                 to="/resume"
                 >Resume</nuxt-link
               >
@@ -146,17 +146,17 @@
                 v-show="showProfile"
               >
                 <nuxt-link
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
                   to="/splash"
                   >Home</nuxt-link
                 >
                 <nuxt-link
                   class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
-                  to="/usecases"
-                  >Use Cases</nuxt-link
+                  to="/resume"
+                  >Resume</nuxt-link
                 >
                 <nuxt-link
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
                   to="/resume"
                   >Resume</nuxt-link
                 >
@@ -171,17 +171,17 @@
         <div class="pt-2 pb-4 space-y-1 sm:hidden v-show=">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
           <nuxt-link
-            class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
+            class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
             to="/splash"
             >Home</nuxt-link
           >
           <nuxt-link
             class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
-            to="/resume"
-            >Resume</nuxt-link
+            to="/usecases"
+            >Use Cases</nuxt-link
           >
           <nuxt-link
-            class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+            class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-800 border-b-2 border-gray-800"
             to="/resume"
             >Resume</nuxt-link
           >
@@ -190,14 +190,12 @@
     </nav>
 
     <div class="p-16 mx-auto mb-0 bg-gray-200">
-      <img class="p-16 -mb-16 w-96" src="~/assets/images/atomic.svg" />
-      <h1 class="p-16 mb-0 font-serif text-8xl">
-        Lucas is a UI & UX designer located in Toronto.
-      </h1>
+      <h1 class="p-16 mb-0 font-serif text-8xl">Resume</h1>
       <div class="flex">
-        <div class="p-16 text-4xl leading-relaxed">
+        <div class="w-1/2 p-16 text-4xl leading-relaxed">
           <p>
-            Lucas Czuchraj is a designer from Toronto. He has 15+ years of
+            Lucas Czuchraj is a designer from
+            <span class="font-bold">Toronto.</span> He has 15+ years of
             experience in the field, graduated from the York Sheridan Bachelor
             of Design (Honors) program. He’s interested in all aspects of
             design, from sketching, to wireframing and final look and feel.
@@ -205,120 +203,180 @@
             below.
           </p>
         </div>
-        <div class="p-16 text-xl">
-          <div
-            class="justify-center w-auto h-32 mb-10 text-center bg-white rounded-lg"
-          >
-            <img
-              class="justify-center inline-block p-16"
-              src="~/assets/images/atomic.svg"
-            />
+        <div class="w-1/4 p-16 text-xl">
+          <div>
+            <h1>Update - March 16, 2021</h1>
+            <p>
+              Lucas Czuchraj is a designer from
+              <span class="font-bold">Toronto.</span> He has 15+ years of
+              experience in the field, graduated from the York Sheridan Bachelor
+              of Design (Honors) program. He’s interested in all aspects of
+              design, from sketching, to wireframing and final look and feel.
+              Music and photography are his other passions. Check out the resume
+              below.
+            </p>
           </div>
-          <p>
-            Lucas Czuchraj is a designer from Toronto. He has 15+ years of
-            experience in the field, graduated from the York Sheridan Bachelor
-            of Design (Honors) program. He’s interested in all aspects of
-            design, from sketching, to wireframing and final look and feel.
-            Music and photography are his other passions. Check out the resume
-            below.
-          </p>
+          <p>Some text here</p>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-5 gap-0 mx-auto cursor-pointer">
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-90"
-          src="https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615836364937-786654db8232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615886490002-ae8172eea2de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615884363252-983eed162938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615829913763-bc72584f166f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615847697785-effb9d96a274?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1339&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1611095789391-947c8f94179c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615872862502-f1b3aede3a73?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
-        />
-      </div>
-      <div>
-        <img
-          class="object-cover w-full overflow-hidden transition duration-300 ease-out transform shadow-2xl h-72 hover:scale-95"
-          src="https://images.unsplash.com/photo-1615827806874-212122b513f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        />
+    <div class="grid grid-cols-5 gap-0 mx-auto">
+      <div></div>
+    </div>
+    <!-- Profile Section -->
+    <div class="h-full p-16 bg-gray-200 border-t border-black">
+      <div class="flex">
+        <div class="p-16 text-4xl leading-relaxed">
+          <h2 class="font-serif text-2xl">Profile</h2>
+        </div>
+        <div class="p-16 text-xl">
+          <ul class="list-disc">
+            <li>
+              Bachelor of Design Honours (B.Des.) York University / Sheridan
+              Institute
+            </li>
+
+            <li>
+              Highly knowledgeable in all facets of design, including user
+              experience, layout, typography, colour, user interfaces and
+              information architecture
+            </li>
+
+            <li>
+              Expert in Sketch, Invision & Protopie as well as other prototyping
+              & design software
+            </li>
+
+            <li>Proficient in JIRA and Confluence project platforms</li>
+
+            <li>
+              Proficient in Adobe Cloud products, seasoned in audio and video
+              production tools
+            </li>
+
+            <li>
+              Always strives to achieve simplicity for the end user, despite the
+              complexity of the process or back-end systems
+            </li>
+
+            <li>
+              Skilled in delivering adaptive responsive layouts and elevated in
+              understanding the technology that drives them
+            </li>
+
+            <li>
+              Adept at aligning business needs with creativity while respecting
+              brand standards
+            </li>
+
+            <li>
+              High aptitude for quality assurance and improvement with a keen
+              eye for detail
+            </li>
+
+            <li>
+              Excellent verbal & written communication, and strong people skills
+              with clients and colleagues
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
+    <!-- Experience Section -->
     <div class="h-full p-16 bg-gray-400">
       <div class="flex">
         <div class="p-16 text-4xl leading-relaxed">
-          <p>
-            Lucas Czuchraj is a designer from Toronto. He has 15+ years of
-            experience in the field, graduated from the York Sheridan Bachelor
-            of Design (Honors) program. He’s interested in all aspects of
-            design, from sketching, to wireframing and final look and feel.
-            Music and photography are his other passions. Check out the resume
-            below.
-          </p>
+          <h2 class="mb-0 font-serif text-2xl">Experience</h2>
         </div>
         <div class="p-16 text-xl">
-          <p>
-            Lucas Czuchraj is a designer from Toronto. He has 15+ years of
-            experience in the field, graduated from the York Sheridan Bachelor
-            of Design (Honors) program. He’s interested in all aspects of
-            design, from sketching, to wireframing and final look and feel.
-            Music and photography are his other passions. Check out the resume
-            below.
-          </p>
+          <h2 class="mb-0 font-serif text-2xl">
+            Sr UX/UI Designer | TD Canada | Jan 2018 – Present
+          </h2>
+          <ul class="mt-6 list-disc">
+            <li>
+              Designed and launched the TD Mobile App dashboard, a pre sign and
+              post sign on experience
+            </li>
+
+            <li>
+              Redesigning TD for Me experience from ground up using push and
+              location service technology allowing customers to always be
+              informed on what TD has to offer based on their location
+            </li>
+
+            <li>
+              Wireframed, designed and prototyped a new TD Easyweb redesign
+              experience with internal stakeholders and an outside vendor
+            </li>
+
+            <li>
+              Support developers using JIRA and Confluence to deliver ongoing
+              projects as well as providing guidance and specifications
+              throughout the project sprints
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="h-full p-16 bg-gray-200">
+      <div class="flex">
+        <div class="p-16 text-4xl leading-relaxed">
+          <h2 class="mb-0 font-serif text-2xl">Experience</h2>
         </div>
         <div class="p-16 text-xl">
-          <p>
-            Lucas Czuchraj is a designer from Toronto. He has 15+ years of
-            experience in the field, graduated from the York Sheridan Bachelor
-            of Design (Honors) program. He’s interested in all aspects of
-            design, from sketching, to wireframing and final look and feel.
-            Music and photography are his other passions. Check out the resume
-            below.
-          </p>
-          <button
-            type="button"
-            class="inline-flex items-center px-6 py-3 mt-6 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            Say hello!
-          </button>
+          <ul class="list-disc">
+            <li>
+              Bachelor of Design Honours (B.Des.) York University / Sheridan
+              Institute
+            </li>
+
+            <li>
+              Highly knowledgeable in all facets of design, including user
+              experience, layout, typography, colour, user interfaces and
+              information architecture
+            </li>
+
+            <li>
+              Expert in Sketch, Invision & Protopie as well as other prototyping
+              & design software
+            </li>
+
+            <li>Proficient in JIRA and Confluence project platforms</li>
+
+            <li>
+              Proficient in Adobe Cloud products, seasoned in audio and video
+              production tools
+            </li>
+
+            <li>
+              Always strives to achieve simplicity for the end user, despite the
+              complexity of the process or back-end systems
+            </li>
+
+            <li>
+              Skilled in delivering adaptive responsive layouts and elevated in
+              understanding the technology that drives them
+            </li>
+
+            <li>
+              Adept at aligning business needs with creativity while respecting
+              brand standards
+            </li>
+
+            <li>
+              High aptitude for quality assurance and improvement with a keen
+              eye for detail
+            </li>
+
+            <li>
+              Excellent verbal & written communication, and strong people skills
+              with clients and colleagues
+            </li>
+          </ul>
         </div>
       </div>
     </div>
