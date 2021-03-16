@@ -34,9 +34,11 @@
     <!-- Users -->
     <div class="flex p-4 mx-auto mt-10">
       <div>
-        <span class="relative inline-block pr-5 text-xs text-white">
+        <span
+          class="relative inline-block pr-3 text-xs text-center text-white truncate"
+        >
           <img
-            class="w-16 h-16 rounded-full"
+            class="w-16 h-16 border-2 border-white border-solid rounded-full"
             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
@@ -47,26 +49,41 @@
         </span>
       </div>
       <div>
-        <span class="relative inline-block pr-5 text-xs text-white">
+        <span
+          class="relative inline-block pr-3 text-xs text-center text-white truncate"
+        >
           <img
-            class="rounded-full h-14 w-14"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            class="object-cover w-16 h-16 border-2 border-blue-500 border-solid rounded-full"
+            src="https://images.unsplash.com/photo-1595085610896-fb31cfd5d4b7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1347&q=80"
             alt=""
           />
-          <span>Your Story</span>
+          <span>terrynurse24</span>
           <span
             class="absolute bottom-4 left-11 block h-3.5 w-3.5 rounded-full ring-2 ring-white bg-red-400"
           ></span>
         </span>
       </div>
       <div>
-        <span class="relative inline-block pr-5 text-xs text-white">
+        <span class="relative inline-block pr-3 text-xs text-center text-white">
           <img
-            class="rounded-full h-14 w-14"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            class="object-cover w-16 h-16 border-2 border-green-600 border-solid rounded-full"
+            src="https://images.unsplash.com/photo-1555168945-6c11dbe1bb67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=623&q=80"
             alt=""
           />
-          <span>Your Story</span>
+          <span>misiastar</span>
+          <span
+            class="absolute bottom-4 left-11 block h-3.5 w-3.5 rounded-full ring-2 ring-white bg-red-400"
+          ></span>
+        </span>
+      </div>
+      <div>
+        <span class="relative inline-block pr-3 text-xs text-center text-white">
+          <img
+            class="object-cover w-16 h-16 border-2 border-green-600 border-solid rounded-full"
+            src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80"
+            alt=""
+          />
+          <span>aliciade</span>
           <span
             class="absolute bottom-4 left-11 block h-3.5 w-3.5 rounded-full ring-2 ring-white bg-red-400"
           ></span>
@@ -164,7 +181,7 @@
         </div>
       </div>
     </div>
-    <!-- Post 1 -->
+    <!-- Post 2 -->
     <div>
       <div class="text-white">
         <div class="p-2 mx-auto">
@@ -185,7 +202,7 @@
         </div>
         <img
           class="object-cover w-full mt-2 h-60"
-          src="https://images.unsplash.com/photo-1615836364937-786654db8232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80"
           alt=""
         />
         <div class="flex-col p-2 mx-auto">
@@ -255,7 +272,7 @@
         </div>
       </div>
     </div>
-    <!-- Post 1 -->
+    <!-- Post 3 -->
     <div>
       <div class="text-white">
         <div class="p-2 mx-auto">
@@ -276,7 +293,7 @@
         </div>
         <img
           class="object-cover w-full mt-2 h-60"
-          src="https://images.unsplash.com/photo-1615836364937-786654db8232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src="https://images.unsplash.com/photo-1615866369373-8d232ea5a028?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
           alt=""
         />
         <div class="flex-col p-2 mx-auto">
@@ -346,7 +363,7 @@
         </div>
       </div>
     </div>
-    <!-- Post 1 -->
+    <!-- Post 4 -->
     <div>
       <div class="text-white">
         <div class="p-2 mx-auto">
@@ -367,7 +384,7 @@
         </div>
         <img
           class="object-cover w-full mt-2 h-60"
-          src="https://images.unsplash.com/photo-1615836364937-786654db8232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src="https://images.unsplash.com/photo-1615884363252-983eed162938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
           alt=""
         />
         <div class="flex-col p-2 mx-auto">
@@ -437,7 +454,7 @@
         </div>
       </div>
     </div>
-    <!-- Post 1 -->
+    <!-- Post 5 -->
     <div>
       <div class="text-white">
         <div class="p-2 mx-auto">
@@ -458,7 +475,7 @@
         </div>
         <img
           class="object-cover w-full mt-2 h-60"
-          src="https://images.unsplash.com/photo-1615836364937-786654db8232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          src="https://images.unsplash.com/photo-1615743307188-b290e55cd271?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
           alt=""
         />
         <div class="flex-col p-2 mx-auto">
