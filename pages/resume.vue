@@ -9,7 +9,7 @@
             <!-- Mobile menu button -->
             <button
               type="button"
-              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-sm hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -139,7 +139,7 @@
               To: "transform opacity-0 scale-95"
           -->
               <div
-                class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"

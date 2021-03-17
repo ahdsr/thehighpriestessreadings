@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black">
+  <div class="antialiased bg-black">
     <!-- Bottom Navigation>-->
     <div>
       <!-- <section id="bottom-navigation" class="fixed inset-x-0 bottom-0 z-10 block bg-white shadow md:hidden"> // if shown only tablet/mobile-->
@@ -271,13 +271,13 @@
       </div>
     </div>
     <!-- Users -->
-    <div class="flex p-4 mx-auto mt-10">
-      <div>
+    <div class="flex p-4 mx-auto mt-10 overflow-scroll">
+      <div class="">
         <span
           class="relative inline-block pr-3 text-xs text-center text-white truncate"
         >
           <img
-            class="w-16 h-16 border-2 border-white border-solid rounded-full"
+            class="block w-16 h-16 border-2 border-white border-solid rounded-full"
             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
@@ -288,9 +288,7 @@
         </span>
       </div>
       <div>
-        <span
-          class="relative inline-block pr-3 text-xs text-center text-white truncate"
-        >
+        <span class="relative inline-block pr-3 text-xs text-center text-white">
           <img
             class="object-cover w-16 h-16 border-2 border-blue-500 border-solid rounded-full"
             src="https://images.unsplash.com/photo-1595085610896-fb31cfd5d4b7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1347&q=80"
@@ -303,7 +301,9 @@
         </span>
       </div>
       <div>
-        <span class="relative inline-block pr-3 text-xs text-center text-white">
+        <span
+          class="relative inline-block pr-3 text-xs text-center text-white truncate"
+        >
           <img
             class="object-cover w-16 h-16 border-2 border-green-600 border-solid rounded-full"
             src="https://images.unsplash.com/photo-1555168945-6c11dbe1bb67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=623&q=80"
@@ -694,6 +694,436 @@
       </div>
     </div>
     <!-- Post 5 -->
+    <form class="p-2 mx-auto space-y-8 divide-y divide-gray-200 bg-gray-50">
+      <div class="space-y-8 divide-y divide-gray-200">
+        <div>
+          <div>
+            <h3 class="text-lg font-medium leading-6 text-gray-900">Profile</h3>
+            <p class="mt-1 text-sm text-gray-500">
+              This information will be displayed publicly so be careful what you
+              share.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
+            <div class="sm:col-span-4">
+              <label
+                for="username"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Username
+              </label>
+              <div class="flex mt-1 rounded-sm shadow-sm">
+                <span
+                  class="inline-flex items-center px-3 text-gray-500 border border-r-0 border-gray-300 rounded-l-md bg-gray-50 sm:text-sm"
+                >
+                  workcation.com/
+                </span>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  autocomplete="username"
+                  class="flex-1 block w-full min-w-0 border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-r-md sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label
+                for="about"
+                class="block text-sm font-medium text-gray-700"
+              >
+                About
+              </label>
+              <div class="mt-1">
+                <textarea
+                  id="about"
+                  name="about"
+                  rows="3"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-96"
+                ></textarea>
+              </div>
+              <p class="mt-2 text-sm text-gray-500">
+                Write a few sentences about yourself.
+              </p>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label
+                for="photo"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Photo
+              </label>
+              <div class="flex items-center mt-1">
+                <span
+                  class="w-12 h-12 overflow-hidden bg-gray-100 rounded-full"
+                >
+                  <svg
+                    class="w-full h-full text-gray-300"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                </span>
+                <button
+                  type="button"
+                  class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-sm shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Change
+                </button>
+              </div>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label
+                for="cover_photo"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Cover photo
+              </label>
+              <div
+                class="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-gray-300 border-dashed rounded-sm"
+              >
+                <div class="space-y-1 text-center">
+                  <svg
+                    class="w-12 h-12 mx-auto text-gray-400"
+                    stroke="currentColor"
+                    fill="none"
+                    viewBox="0 0 48 48"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="flex text-sm text-gray-600">
+                    <label
+                      for="file-upload"
+                      class="relative font-medium text-indigo-600 bg-white rounded-sm cursor-pointer hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                    >
+                      <span>Upload a file</span>
+                      <input
+                        id="file-upload"
+                        name="file-upload"
+                        type="file"
+                        class="sr-only"
+                      />
+                    </label>
+                    <p class="pl-1">or drag and drop</p>
+                  </div>
+                  <p class="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8">
+          <div>
+            <h3 class="text-lg font-medium leading-6 text-gray-900">
+              Personal Information
+            </h3>
+            <p class="mt-1 text-sm text-gray-500">
+              Use a permanent address where you can receive mail.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+              <label
+                for="first_name"
+                class="block text-sm font-medium text-gray-700"
+              >
+                First name
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  autocomplete="given-name"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-3">
+              <label
+                for="last_name"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Last name
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  autocomplete="family-name"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-4">
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Email address
+              </label>
+              <div class="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-3">
+              <label
+                for="country"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Country / Region
+              </label>
+              <div class="mt-1">
+                <select
+                  id="country"
+                  name="country"
+                  autocomplete="country"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label
+                for="street_address"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Street address
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="street_address"
+                  id="street_address"
+                  autocomplete="street-address"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="city" class="block text-sm font-medium text-gray-700">
+                City
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label
+                for="state"
+                class="block text-sm font-medium text-gray-700"
+              >
+                State / Province
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="zip" class="block text-sm font-medium text-gray-700">
+                ZIP / Postal
+              </label>
+              <div class="mt-1">
+                <input
+                  type="text"
+                  name="zip"
+                  id="zip"
+                  autocomplete="postal-code"
+                  class="block w-full border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8">
+          <div>
+            <h3 class="text-lg font-medium leading-6 text-gray-900">
+              Notifications
+            </h3>
+            <p class="mt-1 text-sm text-gray-500">
+              We'll always let you know about important changes, but you pick
+              what else you want to hear about.
+            </p>
+          </div>
+          <div class="mt-6">
+            <fieldset>
+              <legend class="text-base font-medium text-gray-900">
+                By Email
+              </legend>
+              <div class="mt-4 space-y-4">
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="comments"
+                      name="comments"
+                      type="checkbox"
+                      class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="comments" class="font-medium text-gray-700"
+                      >Comments</label
+                    >
+                    <p class="text-gray-500">
+                      Get notified when someones posts a comment on a posting.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="candidates"
+                      name="candidates"
+                      type="checkbox"
+                      class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="candidates" class="font-medium text-gray-700"
+                      >Candidates</label
+                    >
+                    <p class="text-gray-500">
+                      Get notified when a candidate applies for a job.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="offers"
+                      name="offers"
+                      type="checkbox"
+                      class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="offers" class="font-medium text-gray-700"
+                      >Offers</label
+                    >
+                    <p class="text-gray-500">
+                      Get notified when a candidate accepts or rejects an offer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="mt-6">
+              <div>
+                <legend class="text-base font-medium text-gray-900">
+                  Push Notifications
+                </legend>
+                <p class="text-sm text-gray-500">
+                  These are delivered via SMS to your mobile phone.
+                </p>
+              </div>
+              <div class="mt-4 space-y-4">
+                <div class="flex items-center">
+                  <input
+                    id="push_everything"
+                    name="push_notifications"
+                    type="radio"
+                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <label
+                    for="push_everything"
+                    class="block ml-3 text-sm font-medium text-gray-700"
+                  >
+                    Everything
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    id="push_email"
+                    name="push_notifications"
+                    type="radio"
+                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <label
+                    for="push_email"
+                    class="block ml-3 text-sm font-medium text-gray-700"
+                  >
+                    Same as email
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    id="push_nothing"
+                    name="push_notifications"
+                    type="radio"
+                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <label
+                    for="push_nothing"
+                    class="block ml-3 text-sm font-medium text-gray-700"
+                  >
+                    No push notifications
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-5">
+        <div class="flex justify-end">
+          <button
+            type="button"
+            class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-sm shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Cancel
+          </button>
+          <button
+            type="submit"
+            class="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-sm shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </template>
 

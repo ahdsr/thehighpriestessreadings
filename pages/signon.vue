@@ -73,7 +73,7 @@
                       type="email"
                       autocomplete="email"
                       required
-                      class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-sm shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                   </div>
                 </div>
@@ -92,7 +92,7 @@
                       type="password"
                       autocomplete="current-password"
                       required
-                      class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-sm shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                   </div>
                 </div>
@@ -127,7 +127,7 @@
                   <nuxt-link to="/comptest"
                     ><button
                       type="submit"
-                      class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-sm shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                       Sign in
                     </button></nuxt-link
