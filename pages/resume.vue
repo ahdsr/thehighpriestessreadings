@@ -189,10 +189,12 @@
       </div>
     </nav>
 
-    <div class="p-16 mx-auto mb-0 bg-gray-200">
-      <h1 class="p-16 mb-0 font-serif text-8xl">Resume</h1>
-      <div class="flex">
-        <div class="w-1/2 p-16 text-4xl leading-relaxed">
+    <div class="mb-0 bg-gray-100">
+      <h1 class="p-8 pt-20 mx-auto mb-8 font-serif font-bold text-9xl">
+        Re-</br>sume
+      </h1>
+      <div>
+        <div class="p-8 mx-auto -mt-8 font-serif text-2xl">
           <p>
             Lucas Czuchraj is a designer from
             <span class="font-bold">Toronto.</span> He has 15+ years of
@@ -203,9 +205,10 @@
             below.
           </p>
         </div>
-        <div class="w-1/4 p-16 text-xl">
-          <div>
-            <h1>Update - March 16, 2021</h1>
+        <div><img class="w-full" src="~/assets/images/me.png" /></div>
+        <div>
+          <div class="p-8 mx-auto mt-8">
+            <h1 class="font-bold">Update - March 16, 2021</h1>
             <p>
               Lucas Czuchraj is a designer from
               <span class="font-bold">Toronto.</span> He has 15+ years of
@@ -216,169 +219,87 @@
               below.
             </p>
           </div>
-          <p>Some text here</p>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-5 gap-0 mx-auto">
-      <div></div>
-    </div>
-    <!-- Profile Section -->
-    <div class="h-full p-16 bg-gray-200 border-t border-black">
-      <div class="flex">
-        <div class="p-16 text-4xl leading-relaxed">
-          <h2 class="font-serif text-2xl">Profile</h2>
+    <div class="mb-0 bg-gray-100">
+      <h1 class="p-8 pt-20 mx-auto mb-8 font-serif font-bold text-9xl">
+        Pro</br>file
+      </h1>
+      <div>
+        <div class="p-8 mx-auto -mt-8 font-serif text-2xl">
+          <p>
+            Lucas Czuchraj is a designer from
+            <span class="font-bold">Toronto.</span> He has 15+ years of
+            experience in the field, graduated from the York Sheridan Bachelor
+            of Design (Honors) program. He’s interested in all aspects of
+            design, from sketching, to wireframing and final look and feel.
+            Music and photography are his other passions. Check out the resume
+            below.
+          </p>
         </div>
-        <div class="p-16 text-xl">
-          <ul class="list-disc">
-            <li>
-              Bachelor of Design Honours (B.Des.) York University / Sheridan
-              Institute
-            </li>
+        <div><img class="w-full" src="~/assets/images/me.png" /></div>
+        <div>
+          <div class="p-8 mx-auto mt-8">
+            <h1 class="font-bold">Update - March 16, 2021</h1>
+            <ul class="list-disc">
+          <li>
+            Bachelor of Design Honours (B.Des.) York University / Sheridan
+            Institute
+          </li>
 
-            <li>
-              Highly knowledgeable in all facets of design, including user
-              experience, layout, typography, colour, user interfaces and
-              information architecture
-            </li>
+          <li>
+            Highly knowledgeable in all facets of design, including user
+            experience, layout, typography, colour, user interfaces and
+            information architecture
+          </li>
 
-            <li>
-              Expert in Sketch, Invision & Protopie as well as other prototyping
-              & design software
-            </li>
+          <li>
+            Expert in Sketch, Invision & Protopie as well as other prototyping &
+            design software
+          </li>
 
-            <li>Proficient in JIRA and Confluence project platforms</li>
+          <li>Proficient in JIRA and Confluence project platforms</li>
 
-            <li>
-              Proficient in Adobe Cloud products, seasoned in audio and video
-              production tools
-            </li>
+          <li>
+            Proficient in Adobe Cloud products, seasoned in audio and video
+            production tools
+          </li>
 
-            <li>
-              Always strives to achieve simplicity for the end user, despite the
-              complexity of the process or back-end systems
-            </li>
+          <li>
+            Always strives to achieve simplicity for the end user, despite the
+            complexity of the process or back-end systems
+          </li>
 
-            <li>
-              Skilled in delivering adaptive responsive layouts and elevated in
-              understanding the technology that drives them
-            </li>
+          <li>
+            Skilled in delivering adaptive responsive layouts and elevated in
+            understanding the technology that drives them
+          </li>
 
-            <li>
-              Adept at aligning business needs with creativity while respecting
-              brand standards
-            </li>
+          <li>
+            Adept at aligning business needs with creativity while respecting
+            brand standards
+          </li>
 
-            <li>
-              High aptitude for quality assurance and improvement with a keen
-              eye for detail
-            </li>
+          <li>
+            High aptitude for quality assurance and improvement with a keen eye
+            for detail
+          </li>
 
-            <li>
-              Excellent verbal & written communication, and strong people skills
-              with clients and colleagues
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experience Section -->
-    <div class="h-full p-16 bg-gray-400">
-      <div class="flex">
-        <div class="p-16 text-4xl leading-relaxed">
-          <h2 class="mb-0 font-serif text-2xl">Experience</h2>
-        </div>
-        <div class="p-16 text-xl">
-          <h2 class="mb-0 font-serif text-2xl">
-            Sr UX/UI Designer | TD Canada | Jan 2018 – Present
-          </h2>
-          <ul class="mt-6 list-disc">
-            <li>
-              Designed and launched the TD Mobile App dashboard, a pre sign and
-              post sign on experience
-            </li>
-
-            <li>
-              Redesigning TD for Me experience from ground up using push and
-              location service technology allowing customers to always be
-              informed on what TD has to offer based on their location
-            </li>
-
-            <li>
-              Wireframed, designed and prototyped a new TD Easyweb redesign
-              experience with internal stakeholders and an outside vendor
-            </li>
-
-            <li>
-              Support developers using JIRA and Confluence to deliver ongoing
-              projects as well as providing guidance and specifications
-              throughout the project sprints
-            </li>
-          </ul>
+          <li>
+            Excellent verbal & written communication, and strong people skills
+            with clients and colleagues
+          </li>
+        </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Experience Section -->
-    <div class="h-full p-16 bg-gray-200">
-      <div class="flex">
-        <div class="p-16 text-4xl leading-relaxed">
-          <h2 class="mb-0 font-serif text-2xl">Experience</h2>
-        </div>
-        <div class="p-16 text-xl">
-          <ul class="list-disc">
-            <li>
-              Bachelor of Design Honours (B.Des.) York University / Sheridan
-              Institute
-            </li>
 
-            <li>
-              Highly knowledgeable in all facets of design, including user
-              experience, layout, typography, colour, user interfaces and
-              information architecture
-            </li>
 
-            <li>
-              Expert in Sketch, Invision & Protopie as well as other prototyping
-              & design software
-            </li>
 
-            <li>Proficient in JIRA and Confluence project platforms</li>
-
-            <li>
-              Proficient in Adobe Cloud products, seasoned in audio and video
-              production tools
-            </li>
-
-            <li>
-              Always strives to achieve simplicity for the end user, despite the
-              complexity of the process or back-end systems
-            </li>
-
-            <li>
-              Skilled in delivering adaptive responsive layouts and elevated in
-              understanding the technology that drives them
-            </li>
-
-            <li>
-              Adept at aligning business needs with creativity while respecting
-              brand standards
-            </li>
-
-            <li>
-              High aptitude for quality assurance and improvement with a keen
-              eye for detail
-            </li>
-
-            <li>
-              Excellent verbal & written communication, and strong people skills
-              with clients and colleagues
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </template>
