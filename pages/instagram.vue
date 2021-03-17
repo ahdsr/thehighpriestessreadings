@@ -240,7 +240,7 @@
       </section>
     </div>
     <div
-      class="fixed top-0 left-0 z-50 flex w-full p-2 mx-auto text-white bg-black"
+      class="fixed top-0 left-0 z-50 flex justify-between w-full p-2 mx-auto text-white bg-black"
     >
       <img
         class="w-24 text-white fill-current"
@@ -271,7 +271,7 @@
       </div>
     </div>
     <!-- Users -->
-    <div class="flex p-4 mx-auto mt-10 overflow-scroll">
+    <div class="flex p-4 mx-auto mt-10">
       <div class="">
         <span
           class="relative inline-block pr-3 text-xs text-center text-white truncate"
