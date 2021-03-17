@@ -5,24 +5,24 @@
       <div
         class="fixed inset-x-0 bottom-0 z-10 block h-16 pt-3 pr-2 align-middle bg-gray-200 shadow-2xl"
       >
-        <div class="flex justify-end">
+        <div class="flex justify-between">
           <button
             type="button"
-            class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="px-10 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Cancel
+            Back
           </button>
           <button
             type="submit"
-            class="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="inline-flex justify-center px-10 py-2 ml-3 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Save
+            Next
           </button>
         </div>
       </div>
       <!-- Top Navigation>-->
       <div
-        class="fixed top-0 left-0 z-50 flex justify-between w-full h-12 p-2 mx-auto text-white bg-white border-b-4 shadow-2xl border-element-dark-blue"
+        class="fixed top-0 left-0 z-50 flex justify-between w-full p-2 mx-auto text-white bg-white border-b-4 shadow-2xl h-14 border-element-dark-blue"
       >
         <img
           class="w-6 fill-current"
@@ -35,30 +35,16 @@
           src="~/assets/images/Icon-Logo-Xcelerate.svg"
         />
         <div>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            type="submit"
+            class="inline-flex justify-center px-2 py-1 mt-2 text-xs text-white border-transparent rounded-md shadow-sm bg-element-bright-blue font-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            <path
-              d="M10 6C8.89543 6 8 5.10457 8 4C8 2.89543 8.89543 2 10 2C11.1046 2 12 2.89543 12 4C12 5.10457 11.1046 6 10 6Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M10 12C8.89543 12 8 11.1046 8 10C8 8.89543 8.89543 8 10 8C11.1046 8 12 8.89543 12 10C12 11.1046 11.1046 12 10 12Z"
-              fill="#4A5568"
-            />
-            <path
-              d="M10 18C8.89543 18 8 17.1046 8 16C8 14.8954 8.89543 14 10 14C11.1046 14 12 14.8954 12 16C12 17.1046 11.1046 18 10 18Z"
-              fill="#4A5568"
-            />
-          </svg>
+            Exit
+          </button>
         </div>
       </div>
 
-      <form class="mb-10 space-y-8 divide-y divide-gray-200">
+      <form class="pt-4 mb-10 space-y-8 divide-y divide-gray-200">
         <div>
           <div>
             <h3 class="p-3 mx-auto text-lg font-bold leading-6 text-gray-900">
@@ -231,7 +217,9 @@
         </div>
 
         <div>
-          <h3 class="p-2 text-sm font-bold leading-6 text-white bg-blue-900">
+          <h3
+            class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+          >
             Documents to View
           </h3>
 
@@ -251,7 +239,9 @@
             <p class="text-sm">Link Description</p>
           </div>
 
-          <h3 class="p-2 text-sm font-bold leading-6 text-white bg-blue-900">
+          <h3
+            class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+          >
             Powetrain
           </h3>
 
@@ -344,7 +334,9 @@
             </tbody>
           </table>
 
-          <h3 class="p-2 text-sm font-bold leading-6 text-white bg-blue-900">
+          <h3
+            class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+          >
             Powetrain
           </h3>
 
@@ -453,7 +445,9 @@
             </tbody>
           </table>
 
-          <h3 class="p-2 text-sm font-bold leading-6 text-white bg-blue-900">
+          <h3
+            class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+          >
             Wheels & Rims
           </h3>
           <div class="flex bg-gray-200">
