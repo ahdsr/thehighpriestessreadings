@@ -10,7 +10,8 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'nuxt m', content: 'width=device-width, initial-scale=1' },
+      { name: 'theme-color', content: '##3262C3' },
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
