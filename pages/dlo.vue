@@ -60,9 +60,9 @@
 
     <form class="pt-4 mb-10 space-y-8 divide-y divide-gray-200">
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="mt-8 ml-12">
+      <div class="mt-8">
         <nav aria-label="Progress">
-          <ol class="flex items-center">
+          <ol class="flex justify-center">
             <li class="relative pr-8 sm:pr-20">
               <!-- Completed Step -->
               <div
