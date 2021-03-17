@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="antialiased">
     <!-- Start >-->
 
     <div class="mt-10">
@@ -50,8 +50,8 @@
         </div>
         <div class="ml-4">
           <img
-            class="inline-block w-8 h-8 rounded-full"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            class="inline-block object-cover w-8 h-8 rounded-full"
+            src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
             alt=""
           />
         </div>
