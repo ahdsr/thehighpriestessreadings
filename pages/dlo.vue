@@ -3,7 +3,7 @@
     <!-- Start >-->
     <div class="mt-10">
       <div
-        class="fixed inset-x-0 bottom-0 z-10 block h-16 pt-3 pr-2 align-middle bg-black shadow-2xl"
+        class="fixed inset-x-0 bottom-0 z-10 block h-16 pt-3 pr-2 align-middle bg-gray-200 shadow-2xl"
       >
         <div class="flex justify-end">
           <button
@@ -22,14 +22,19 @@
       </div>
       <!-- Top Navigation>-->
       <div
-        class="fixed top-0 left-0 z-50 flex justify-between w-full p-2 mx-auto text-white bg-black shadow-2xl"
+        class="fixed top-0 left-0 z-50 flex justify-between w-full h-12 p-2 mx-auto text-white bg-white border-b-4 shadow-2xl border-element-dark-blue"
       >
         <img
-          class="w-24 text-white fill-current"
+          class="w-6 fill-current"
           viewBox="0 0 20 20"
-          src="~/assets/images/insta.svg"
+          src="~/assets/images/menu.svg"
         />
-        <div class="float-right">
+        <img
+          class="w-24 fill-current"
+          viewBox="0 0 20 20"
+          src="~/assets/images/Icon-Logo-Xcelerate.svg"
+        />
+        <div>
           <svg
             width="20"
             height="20"
@@ -75,11 +80,11 @@
                     class="absolute inset-0 flex items-center"
                     aria-hidden="true"
                   >
-                    <div class="h-0.5 w-full bg-indigo-600"></div>
+                    <div class="h-0.5 w-full bg-element-bright-blue"></div>
                   </div>
                   <a
                     href="#"
-                    class="relative flex items-center justify-center w-8 h-8 bg-indigo-600 rounded-full hover:bg-indigo-900"
+                    class="relative flex items-center justify-center w-8 h-8 rounded-full bg-element-green hover:bg-indigo-900"
                   >
                     <!-- Heroicon name: solid/check -->
                     <svg
@@ -109,7 +114,7 @@
                   </div>
                   <a
                     href="#"
-                    class="relative flex items-center justify-center w-8 h-8 bg-indigo-600 rounded-full hover:bg-indigo-900"
+                    class="relative flex items-center justify-center w-8 h-8 rounded-full bg-element-green hover:bg-indigo-900"
                   >
                     <!-- Heroicon name: solid/check -->
                     <svg
@@ -139,7 +144,7 @@
                   </div>
                   <a
                     href="#"
-                    class="relative flex items-center justify-center w-8 h-8 bg-white border-2 border-indigo-600 rounded-full"
+                    class="relative flex items-center justify-center w-8 h-8 bg-white border-2 rounded-full border-element-green"
                     aria-current="step"
                   >
                     <span

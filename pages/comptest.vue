@@ -218,10 +218,10 @@
 
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <!--
-  This example requires Tailwind CSS v2.0+ 
-  
+  This example requires Tailwind CSS v2.0+
+
   This example requires some changes to your config:
-  
+
   ```
   // tailwind.config.js
   module.exports = {
