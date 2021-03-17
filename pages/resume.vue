@@ -191,7 +191,7 @@
 
     <div class="mb-0 bg-gray-100">
       <h1 class="p-8 pt-20 mx-auto mb-8 font-serif font-bold text-9xl">
-        Re-</br>sume
+        Re=sume
       </h1>
       <div>
         <div class="p-8 mx-auto -mt-8 font-serif text-2xl">
@@ -225,7 +225,7 @@
 
     <div class="mb-0 bg-gray-100">
       <h1 class="p-8 pt-20 mx-auto mb-8 font-serif font-bold text-9xl">
-        Pro</br>file
+        Pro=file
       </h1>
       <div>
         <div class="p-8 mx-auto -mt-8 font-serif text-2xl">
@@ -244,62 +244,57 @@
           <div class="p-8 mx-auto mt-8">
             <h1 class="font-bold">Update - March 16, 2021</h1>
             <ul class="list-disc">
-          <li>
-            Bachelor of Design Honours (B.Des.) York University / Sheridan
-            Institute
-          </li>
+              <li>
+                Bachelor of Design Honours (B.Des.) York University / Sheridan
+                Institute
+              </li>
 
-          <li>
-            Highly knowledgeable in all facets of design, including user
-            experience, layout, typography, colour, user interfaces and
-            information architecture
-          </li>
+              <li>
+                Highly knowledgeable in all facets of design, including user
+                experience, layout, typography, colour, user interfaces and
+                information architecture
+              </li>
 
-          <li>
-            Expert in Sketch, Invision & Protopie as well as other prototyping &
-            design software
-          </li>
+              <li>
+                Expert in Sketch, Invision & Protopie as well as other
+                prototyping & design software
+              </li>
 
-          <li>Proficient in JIRA and Confluence project platforms</li>
+              <li>Proficient in JIRA and Confluence project platforms</li>
 
-          <li>
-            Proficient in Adobe Cloud products, seasoned in audio and video
-            production tools
-          </li>
+              <li>
+                Proficient in Adobe Cloud products, seasoned in audio and video
+                production tools
+              </li>
 
-          <li>
-            Always strives to achieve simplicity for the end user, despite the
-            complexity of the process or back-end systems
-          </li>
+              <li>
+                Always strives to achieve simplicity for the end user, despite
+                the complexity of the process or back-end systems
+              </li>
 
-          <li>
-            Skilled in delivering adaptive responsive layouts and elevated in
-            understanding the technology that drives them
-          </li>
+              <li>
+                Skilled in delivering adaptive responsive layouts and elevated
+                in understanding the technology that drives them
+              </li>
 
-          <li>
-            Adept at aligning business needs with creativity while respecting
-            brand standards
-          </li>
+              <li>
+                Adept at aligning business needs with creativity while
+                respecting brand standards
+              </li>
 
-          <li>
-            High aptitude for quality assurance and improvement with a keen eye
-            for detail
-          </li>
+              <li>
+                High aptitude for quality assurance and improvement with a keen
+                eye for detail
+              </li>
 
-          <li>
-            Excellent verbal & written communication, and strong people skills
-            with clients and colleagues
-          </li>
-        </ul>
+              <li>
+                Excellent verbal & written communication, and strong people
+                skills with clients and colleagues
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-
-
-
-
     </div>
   </div>
 </template>
