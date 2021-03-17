@@ -23,7 +23,7 @@
 		</div>
 		<!-- Top Navigation>-->
 		<div
-			class="fixed top-0 left-0 z-20 flex items-center w-full h-16 p-2 mx-auto text-white bg-white shadow-2xl "
+			class="fixed top-0 left-0 z-20 flex items-center w-full h-16 p-4 mx-auto text-white bg-white shadow-2xl "
 		>
 			<div>
 			<img
@@ -196,74 +196,99 @@
 			<div>
 			<div>
 				<h3
-				class="p-3 mx-auto -mb-5 text-lg font-bold text-element-dark-blue"
+				class="p-4 mx-auto -mb-5 text-lg font-bold text-element-dark-blue"
 				>
 				Verify Driver Information
 				</h3>
-				<p class="p-3 mx-auto text-sm text-gray-500">
+				<p class="p-4 mx-auto text-sm text-gray-500">
 				Element fleet preferences indicate driver information is managed through your company's policy
 				</p>
 			</div>
 
-
-			<div class="p-3 mx-auto">
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
+<div class="grid grid-cols-2 gap-4 p-4 mx-auto">
+  <div><p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
 				<p class="mt-0 text-sm text-gray-500">Christoper</p>
 				</div>
-
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-				<p class="mt-0 text-sm text-gray-500">Christoper</p>
+  <!-- ... -->
+  <div><p class="mt-1 text-sm font-semibold text-gray-900">Middle Name</p>
+				<p class="mt-0 text-sm text-gray-500">Alfonso</p>
 				</div>
 
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-				<p class="mt-0 text-sm text-gray-500">Christoper</p>
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Last Name</p>
+				<p class="mt-0 text-sm text-gray-500">Johnsonr</p>
 				</div>
 
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-				<p class="mt-0 text-sm text-gray-500">Christoper</p>
+				<div><p class="mt-1 text-sm font-semibold text-gray-900"> </p>
+				<p class="mt-0 text-sm text-gray-500"> </p>
 				</div>
 
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-				<p class="mt-0 text-sm text-gray-500">Christoper</p>
+				<div ><p class="mt-1 text-sm font-semibold text-gray-900">Employee ID</p>
+				<p class="mt-0 text-sm text-gray-500">19283746r</p>
 				</div>
 
-				<div class="mt-4">
-				<p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-				<p class="mt-0 text-sm text-gray-500">Christoper</p>
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Email</p>
+				<p class="mt-0 text-sm text-gray-500">johnson@home.com</p>
 				</div>
-			</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Primary Phone</p>
+				<p class="mt-0 text-sm text-gray-500">598-878-7445</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900"></p>
+				<p class="mt-0 text-sm text-gray-500"></p>
+				</div>
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Address Line 1</p>
+				<p class="mt-0 text-sm text-gray-500">6500 N Westwood Acres Ln</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Address Line 2</p>
+				<p class="mt-0 text-sm text-gray-500">Unit #1423</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">City</p>
+				<p class="mt-0 text-sm text-gray-500">Smithville</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">County</p>
+				<p class="mt-0 text-sm text-gray-500">Harrisburg</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">State</p>
+				<p class="mt-0 text-sm text-gray-500">NY</p>
+				</div>
+
+				<div><p class="mt-1 text-sm font-semibold text-gray-900">Zip Code</p>
+				<p class="mt-0 text-sm text-gray-500">90365</p>
+				</div>
+</div>
+
 			</div>
 
 			<div>
 			<h3
-				class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+				class="p-4 text-sm font-bold leading-6 text-white bg-element-dark-blue"
 			>
 				Documents to View
 			</h3>
 
-			<div class="p-2 border-b border-solid mx:aut">
+			<div class="p-4 border-b border-solid mx:aut">
 				<a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
 				<p class="text-sm">Link Description</p>
 			</div>
 
-			<div class="p-2 border-b border-solid mx:aut">
+			<div class="p-4 border-b border-solid mx:aut">
 				<a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
 				<p class="text-sm">Link Description</p>
 			</div>
 
-			<div class="p-2 border-b border-solid mx:aut">
+			<div class="p-4 border-b border-solid mx:aut">
 				<input type="checkbox" class="form-checkbox" checked />
 				<a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
 				<p class="text-sm">Link Description</p>
 			</div>
 
 			<h3
-				class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+				class="p-4 text-sm font-bold leading-6 text-white bg-element-dark-blue"
 			>
 				Powetrain
 			</h3>
@@ -358,7 +383,7 @@
 			</table>
 
 			<h3
-				class="p-2 text-sm font-bold leading-6 text-white bg-element-dark-blue"
+				class="p-4 text-sm font-bold leading-6 text-white bg-element-dark-blue"
 			>
 				Powetrain
 			</h3>
@@ -482,11 +507,11 @@
 			<div class="grid grid-flow-col grid-rows-1">
 				<div class="row-span-3">
 				<img
-					class="p-2"
+					class="p-4"
 					src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
 				/>
 				</div>
-				<div class="col-span-2 p-2 text-sm font-bold leading-snug">
+				<div class="col-span-2 p-4 text-sm font-bold leading-snug">
 				2020 Chrystler 300
 				<p class="text-sm font-normal leading-snug">
 					Limited 4DR All-Wheel Drive Sedan as aasd asd asd asd gfadg
@@ -497,11 +522,11 @@
 			<div class="grid grid-flow-col grid-rows-1">
 				<div class="row-span-3">
 				<img
-					class="p-2"
+					class="p-4"
 					src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
 				/>
 				</div>
-				<div class="col-span-2 p-2 text-sm font-bold leading-snug">
+				<div class="col-span-2 p-4 text-sm font-bold leading-snug">
 				2020 Chrystler 300
 				<p class="text-sm font-normal leading-snug">
 					Limited 4DR All-Wheel Drive Sedanasd asd asd asdasd
@@ -512,11 +537,11 @@
 			<div class="grid grid-flow-col grid-rows-1">
 				<div class="row-span-3">
 				<img
-					class="p-2"
+					class="p-4"
 					src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
 				/>
 				</div>
-				<div class="col-span-2 p-2 text-sm font-bold leading-snug">
+				<div class="col-span-2 p-4 text-sm font-bold leading-snug">
 				2020 Chrystler 300
 				<p class="text-sm font-normal leading-snug">
 					Limited 4DR All-Wheel Drive Sedanasd asd asd asdasd
