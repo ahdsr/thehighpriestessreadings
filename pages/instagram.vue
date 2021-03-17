@@ -240,7 +240,7 @@
       </section>
     </div>
     <div
-      class="fixed top-0 left-0 z-50 flex justify-between w-full p-2 mx-auto text-white bg-black"
+      class="fixed top-0 left-0 z-50 flex justify-between w-full p-2 mx-auto text-white bg-black bg-"
     >
       <img
         class="w-24 text-white fill-current"
