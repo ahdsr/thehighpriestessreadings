@@ -3,12 +3,12 @@
     <!-- Start >-->
     <div class="mt-10">
       <div
-        class="fixed inset-x-0 bottom-0 z-10 block h-16 pt-3 pr-2 align-middle bg-gray-200 shadow-2xl"
+        class="fixed inset-x-0 bottom-0 z-10 block h-16 pt-3 pr-2 align-middle bg-gray-300 shadow-xl"
       >
         <div class="flex justify-between">
           <button
             type="button"
-            class="px-10 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="px-10 py-2 ml-2 text-sm font-medium text-gray-700 bg-white border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Back
           </button>
@@ -126,7 +126,7 @@
                     class="absolute inset-0 flex items-center"
                     aria-hidden="true"
                   >
-                    <div class="h-0.5 w-full bg-gray-200"></div>
+                    <div class="h-0.5 w-full"></div>
                   </div>
                   <a
                     href="#"
