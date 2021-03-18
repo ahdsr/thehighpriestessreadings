@@ -217,11 +217,7 @@
           <p class="mt-0 text-sm text-gray-500">Christoper</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-          <p class="mt-0 text-sm text-gray-500">Christoper</p>
-        </div>
-        <!-- ... -->
+
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Middle Name</p>
           <p class="mt-0 text-sm text-gray-500">Alfonso</p>
@@ -232,10 +228,7 @@
           <p class="mt-0 text-sm text-gray-500">Johnsonr</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Employee ID</p>
@@ -252,10 +245,7 @@
           <p class="mt-0 text-sm text-gray-500">598-878-7445</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Address Line 1</p>
@@ -325,64 +315,6 @@
           <p class="mt-0 text-sm text-gray-500">Oaklahoma</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Country</p>
-          <p class="mt-0 text-sm text-gray-500">US</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Employee ID</p>
-          <p class="mt-0 text-sm text-gray-500">19283746r</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Email</p>
-          <p class="mt-0 text-sm text-gray-500">johnson@home.com</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Primary Phone</p>
-          <p class="mt-0 text-sm text-gray-500">598-878-7445</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Address Line 1</p>
-          <p class="mt-0 text-sm text-gray-500">6500 N Westwood Acres Ln</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Address Line 2</p>
-          <p class="mt-0 text-sm text-gray-500">Unit #1423</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">City</p>
-          <p class="mt-0 text-sm text-gray-500">Smithville</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">County</p>
-          <p class="mt-0 text-sm text-gray-500">Harrisburg</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">State</p>
-          <p class="mt-0 text-sm text-gray-500">NY</p>
-        </div>
-        <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Zip Code</p>
-          <p class="mt-0 text-sm text-gray-500">90365</p>
-        </div>
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
       </div>
     </div>
 

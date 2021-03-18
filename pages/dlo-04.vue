@@ -4,7 +4,7 @@
     <!-- Top Nav Start -->
     <div class="mt-10">
       <div
-        class="fixed inset-x-0 bottom-0 block h-16 pt-3 pr-2 align-middle bg-gray-300 shadow-md z-5"
+        class="fixed inset-x-0 bottom-0 block h-16 pt-3 pr-2 align-middle bg-gray-300 shadow-md opacity-90 z-5"
       >
         <div class="flex justify-between">
           <nuxt-link to="/dlo-03">
@@ -413,20 +413,20 @@
               ></th>
               <th
                 scope="col"
-                class="px-2 py-2 text-xs font-medium tracking-normal text-left text-gray-500 uppercase"
+                class="px-2 py-2 text-xs font-medium tracking-normal text-left text-gray-500 uppercase align-text-top"
               >
                 Code
               </th>
 
               <th
                 scope="col"
-                class="px-2 py-2 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
+                class="px-2 py-2 text-xs font-medium tracking-wider text-left text-gray-500 uppercase align-text-top"
               >
                 Description
               </th>
               <th
                 scope="col"
-                class="px-2 py-2 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
+                class="px-2 py-2 text-xs font-medium tracking-wider text-left text-gray-500 uppercase align-text-top"
               >
                 Price
               </th>
@@ -487,7 +487,7 @@
           Powetrain
         </h3>
 
-        <table class="min-w-full divide-y divide-gray-200">
+        <table class="min-w-full align-top divide-y divide-gray-200">
           <thead class="bg-gray-50">
             <tr>
               <th
@@ -650,28 +650,6 @@
     </div>
 
     <div>
-      <h3
-        class="p-4 text-sm font-bold leading-6 text-white bg-element-dark-blue"
-      >
-        Documents to View
-      </h3>
-
-      <div class="p-4 border-b border-solid mx:aut">
-        <a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
-        <p class="text-sm">Link Description</p>
-      </div>
-
-      <div class="p-4 border-b border-solid mx:aut">
-        <a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
-        <p class="text-sm">Link Description</p>
-      </div>
-
-      <div class="p-4 border-b border-solid mx:aut">
-        <input type="checkbox" class="w-4 h-4 form-checkbox" />
-        <a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
-        <p class="text-sm">Link Description</p>
-      </div>
-
       <h3
         class="p-4 text-sm font-bold leading-6 text-white bg-element-dark-blue"
       >

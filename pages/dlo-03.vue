@@ -306,11 +306,11 @@
                 />
               </div>
               <div class="text-sm">
-                <p class="font-medium text-gray-900">
+                <p class="font-bold text-gray-900">
                   2021 Ford Transit-350 Cargo
                 </p>
                 <div class="text-gray-500">
-                  <p class="sm:inline">
+                  <p class="leading-tight sm:inline">
                     Base w/11,000lb. GVWR All-Wheel Drive High Roof HD Ext. Van
                     148 in. WB DRW
                   </p>
@@ -349,11 +349,11 @@
                 />
               </div>
               <div class="text-sm">
-                <p class="font-medium text-gray-900">
+                <p class="font-bold text-gray-900">
                   2021 Ford Transit-350 Cargo
                 </p>
                 <div class="text-gray-500">
-                  <p class="sm:inline">
+                  <p class="leading-tight sm:inline">
                     Base w/11,000lb. GVWR All-Wheel Drive High Roof HD Ext. Van
                     148 in. WB DRW
                   </p>
@@ -392,11 +392,11 @@
                 />
               </div>
               <div class="text-sm">
-                <p class="font-medium text-gray-900">
+                <p class="font-bold text-gray-900">
                   2021 Ford Transit-350 Cargo
                 </p>
                 <div class="text-gray-500">
-                  <p class="sm:inline">
+                  <p class="leading-tight sm:inline">
                     Base w/11,000lb. GVWR All-Wheel Drive High Roof HD Ext. Van
                     148 in. WB DRW
                   </p>
@@ -435,11 +435,11 @@
                 />
               </div>
               <div class="text-sm">
-                <p class="font-medium text-gray-900">
+                <p class="font-bold text-gray-900">
                   2021 Ford Transit-350 Cargo
                 </p>
                 <div class="text-gray-500">
-                  <p class="sm:inline">
+                  <p class="leading-tight sm:inline">
                     Base w/11,000lb. GVWR All-Wheel Drive High Roof HD Ext. Van
                     148 in. WB DRW
                   </p>

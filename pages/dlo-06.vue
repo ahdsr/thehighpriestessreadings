@@ -20,7 +20,7 @@
               type="submit"
               class="inline-flex px-10 py-2 ml-3 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Next
+              Submit Order
             </button></nuxt-link
           >
         </div>
@@ -340,10 +340,7 @@
           <p class="mt-0 text-sm text-gray-500">Johnsonr</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Employee ID</p>
@@ -360,10 +357,7 @@
           <p class="mt-0 text-sm text-gray-500">598-878-7445</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Address Line 1</p>
@@ -393,10 +387,6 @@
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Zip Code</p>
           <p class="mt-0 text-sm text-gray-500">90365</p>
-        </div>
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
         </div>
       </div>
     </div>
@@ -428,10 +418,7 @@
           <p class="mt-0 text-sm text-gray-500">Johnsonr</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Employee ID</p>
@@ -448,10 +435,7 @@
           <p class="mt-0 text-sm text-gray-500">598-878-7445</p>
         </div>
         <!-- ... -->
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
-        </div>
+
         <!-- ... -->
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Address Line 1</p>
@@ -481,10 +465,6 @@
         <div>
           <p class="mt-1 text-sm font-semibold text-gray-900">Zip Code</p>
           <p class="mt-0 text-sm text-gray-500">90365</p>
-        </div>
-        <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900"></p>
-          <p class="mt-0 text-sm text-gray-500"></p>
         </div>
       </div>
     </div>
