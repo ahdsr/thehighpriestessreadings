@@ -59,26 +59,23 @@
         class="flex items-center w-full p-2 bg-white border shadow rounded-xl"
         to="/dlo-01"
       >
-        <div class="flex items-center space-x-4">
+        <div class="relative flex items-center space-x-4">
           <img
             src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-corvette-stingray-c8-2019-fd-hr-hero-front_0.jpg?itok=SEYe_vLy"
             alt="My profile"
             class="object-center w-16 h-16 rounded-full"
           />
+          <span
+            class="absolute bottom-0 right-0 w-4 h-4 bg-green-400 border-2 border-white rounded-full"
+          ></span>
         </div>
 
         <div class="flex-1 p-3">
-          <div class="font-semibold text-gray-700">April, 02, 2021</div>
+          <div class="font-semibold text-gray-700">Order your new vehicle</div>
           <div class="text-sm text-gray-500">
             Your replacement vehicle is ready to order.
           </div>
-        </div>
-        <div class="p-2">
-          <img
-            src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144"
-            alt="My profile"
-            class="order-1 w-4 h-4 rounded-full"
-          />
+          <div class="mt-2 text-xs text-gray-500 uppercase">April 1, 2012</div>
         </div>
       </nuxt-link>
 
@@ -91,18 +88,11 @@
             alt="My profile"
             class="w-16 h-16 rounded-full"
           />
-          <span
-            class="absolute bottom-0 right-0 w-4 h-4 bg-green-400 border-2 border-white rounded-full"
-          ></span>
         </div>
         <div class="flex-grow p-3">
-          <div class="font-semibold text-gray-700">April, 11, 2021</div>
+          <div class="font-semibold text-gray-700">Some other notification</div>
           <div class="text-sm text-gray-500">Some other notification</div>
-        </div>
-        <div class="p-2">
-          <span
-            class="bottom-0 right-0 block w-4 h-4 bg-blue-400 rounded-full"
-          ></span>
+          <div class="mt-2 text-xs text-gray-500 uppercase">April 1, 2012</div>
         </div>
       </div>
 
@@ -115,113 +105,124 @@
             alt="My profile"
             class="w-16 h-16 rounded-full"
           />
-          <span
-            class="absolute bottom-0 right-0 w-4 h-4 bg-green-400 border-2 border-white rounded-full"
-          ></span>
         </div>
         <div class="flex-grow p-3">
-          <div class="font-semibold text-gray-700">April, 11, 2021</div>
+          <div class="font-semibold text-gray-700">You da best driver</div>
           <div class="text-sm text-gray-500">Some other notification</div>
-        </div>
-        <div class="p-2">
-          <span
-            class="bottom-0 right-0 block w-4 h-4 bg-blue-400 rounded-full"
-          ></span>
+          <div class="mt-2 text-xs text-gray-500 uppercase">April 1, 2012</div>
         </div>
       </div>
     </div>
 
     <!-- fixed nav -->
     <nav
-      class="fixed inset-x-0 bottom-0 flex justify-between font-mono text-sm text-blue-900 uppercase bg-blue-100"
+      class="fixed inset-x-0 bottom-0 flex justify-between p-4 font-mono text-sm text-blue-900 uppercase bg-blue-100"
     >
       <a
         href="#"
-        class="block w-full px-3 py-5 text-center transition duration-300 hover:bg-blue-200 hover:text-blue-800"
+        class="block w-full text-center transition duration-300 hover:bg-blue-200 hover:text-blue-800"
       >
         <svg
-          class="w-6 h-6 mx-auto mb-2"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          class="w-6 h-6 mx-auto mb-2"
         >
-          <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            fill="#fff"
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
           />
         </svg>
-        Home
       </a>
 
       <a
         href="#"
-        class="block w-full px-3 py-5 text-center hover:bg-blue-200 hover:text-blue-800"
+        class="block w-full text-center hover:bg-blue-200 hover:text-blue-800"
       >
         <svg
-          class="w-6 h-6 mx-auto mb-2"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          class="w-6 h-6 mx-auto mb-2"
         >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
           />
         </svg>
-        Features
       </a>
 
       <a
         href="#"
-        class="block w-full px-3 py-5 text-center hover:bg-blue-200 hover:text-blue-800"
+        class="block w-full text-center hover:bg-blue-200 hover:text-blue-800"
       >
         <svg
-          class="w-6 h-6 mx-auto mb-2"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          class="w-6 h-6 mx-auto mb-2"
         >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
           />
         </svg>
-        Profile
       </a>
 
       <a
         href="#"
-        class="block w-full px-3 py-5 text-center hover:bg-blue-200 hover:text-blue-800"
+        class="block w-full text-center hover:bg-blue-200 hover:text-blue-800"
       >
         <svg
-          class="w-6 h-6 mx-auto mb-2"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          class="w-6 h-6 mx-auto mb-2"
         >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+            class="w-6 h-6 mx-auto mb-2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
           />
         </svg>
-        Settings
+      </a>
+
+      <a
+        href="#"
+        class="block w-full text-center hover:bg-blue-200 hover:text-blue-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6 mx-auto mb-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
+        </svg>
       </a>
     </nav>
     <!-- End -->
