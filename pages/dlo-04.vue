@@ -218,7 +218,7 @@
     </div>
     -->
     <!-- Progress Nav END -->
-    <div class="mt-4">
+    <div class="mt-4 bg-white">
       <div>
         <h3 class="p-4 mx-auto -mb-5 text-lg font-bold text-element-dark-blue">
           2020 Chrystler 300
@@ -228,11 +228,145 @@
           through your company's policy
         </p>
       </div>
-      <img
-        class="p-4"
-        src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
-      />
+      <div class="relative p-4 mx-auto carousel">
+        <div
+          class="relative w-full p-4 overflow-hidden rounded-xl carousel-inner"
+        >
+          <!--Slide 1-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="absolute opacity-0 carousel-item" style="height: 20vh">
+            <div class="block text-5xl text-center text-white bg-indigo-500">
+              <img
+                class="block object-center w-full transform scale-150"
+                src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Ford-Truck-Wallpapers-HD-For-Desktop.jpg"
+              />
+            </div>
+          </div>
+          <label
+            for="carousel-3"
+            class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-1 md:ml-10 hover:text-white hover:bg-blue-700"
+            >‹</label
+          >
+          <label
+            for="carousel-2"
+            class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-1 md:mr-10 hover:text-white hover:bg-blue-700"
+            >›</label
+          >
 
+          <!--Slide 2-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="absolute opacity-0 carousel-item" style="height: 20vh">
+            <div
+              class="block w-full h-full text-5xl text-center text-white bg-orange-500"
+            >
+              <img
+                class="block object-center w-full transform scale-150"
+                src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2017/12/velocirpator-driving.jpg"
+              />
+            </div>
+          </div>
+          <label
+            for="carousel-1"
+            class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-2 md:ml-10 hover:text-white hover:bg-blue-700"
+            >‹</label
+          >
+          <label
+            for="carousel-3"
+            class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-2 md:mr-10 hover:text-white hover:bg-blue-700"
+            >›</label
+          >
+
+          <!--Slide 3-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="absolute opacity-0 carousel-item" style="height: 20vh">
+            <div
+              class="block w-full h-full text-5xl text-center text-white bg-green-500"
+            >
+              <img
+                class="object-center w-full transform scale-150 oblock"
+                src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Ford-Truck-Wallpapers-HD.jpg"
+              />
+            </div>
+          </div>
+          <label
+            for="carousel-2"
+            class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-3 md:ml-10 hover:text-white hover:bg-blue-700"
+            >‹</label
+          >
+          <label
+            for="carousel-1"
+            class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-3 md:mr-10 hover:text-white hover:bg-blue-700"
+            >›</label
+          >
+
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-1"
+                class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-2"
+                class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-3"
+                class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700"
+                >•</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="p-4 mx-auto -mb-4 text-xs font-bold">
+        Choose exterior color
+      </div>
+      <div class="flex p-4 mx-auto justify-left">
+        <div class="inline-block w-8 h-8 mr-2 bg-red-500 rounded-full"></div>
+        <div class="inline-block w-8 h-8 mr-2 bg-black rounded-full"></div>
+        <div class="inline-block w-8 h-8 mr-2 bg-blue-700 rounded-full"></div>
+        <div
+          class="inline-block w-8 h-8 mr-2 bg-white rounded-full shadow-md"
+        ></div>
+        <div class="inline-block w-8 h-8 mr-2 bg-gray-200 rounded-full"></div>
+        <div class="inline-block w-8 h-8 mr-2 bg-gray-400 rounded-full"></div>
+        <div class="inline-block w-8 h-8 bg-red-500 rounded-full"></div>
+      </div>
+      <div class="p-4 mx-auto -mb-4 text-xs font-bold">
+        Choose interior color
+      </div>
+      <div class="flex p-4 mx-auto justify-left">
+        <div class="inline-block w-8 h-8 mr-2 bg-black rounded-full"></div>
+      </div>
       <div class="bg-white">
         <nav class="flex flex-row text-sm font-bold sm:flex-col">
           <button
@@ -709,4 +843,46 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+}
+</style>
