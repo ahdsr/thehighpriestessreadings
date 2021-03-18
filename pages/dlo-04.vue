@@ -233,11 +233,14 @@
     <div class="mt-4 bg-white">
       <div>
         <h3 class="p-4 mx-auto -mb-5 text-lg font-bold text-element-dark-blue">
-          2020 Chrystler 300
+          Ford F-150 Raptor
         </h3>
+        <p class="p-4 mx-auto -mt-8">
+          Base w/11,000lb. GVWR All-Wheel Drive High Roof HD Ext. Van 148 in. WB
+          DRW
+        </p>
         <p class="p-4 mx-auto text-sm text-gray-500">
-          Element fleet preferences indicate driver information is managed
-          through your company's policy
+          Please select the colors and options for your vehicle below.
         </p>
       </div>
       <div class="relative p-4 mx-auto carousel">
@@ -379,6 +382,7 @@
       <div class="flex p-4 mx-auto justify-left">
         <div class="inline-block w-8 h-8 mr-2 bg-black rounded-full"></div>
       </div>
+
       <div class="bg-white">
         <nav class="flex flex-row text-sm font-bold sm:flex-col">
           <button
@@ -433,7 +437,7 @@
 
             <tr class="bg-gray-50">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
 
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
@@ -447,7 +451,7 @@
             <!-- Odd row -->
             <tr class="bg-white">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
                 Jane Cooper
@@ -516,7 +520,7 @@
 
             <tr class="bg-gray-50">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
 
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
@@ -530,7 +534,7 @@
             <!-- Odd row -->
             <tr class="bg-white">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
                 Jane Cooper
@@ -599,7 +603,7 @@
 
             <tr class="bg-gray-50">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
 
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
@@ -613,7 +617,7 @@
             <!-- Odd row -->
             <tr class="bg-white">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-                <input type="checkbox" class="form-checkbox" checked />
+                <input type="checkbox" class="w-4 h-4 form-checkbox" />
               </td>
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
                 Jane Cooper
@@ -663,7 +667,7 @@
       </div>
 
       <div class="p-4 border-b border-solid mx:aut">
-        <input type="checkbox" class="form-checkbox" checked />
+        <input type="checkbox" class="w-4 h-4 form-checkbox" />
         <a class="text-sm font-semibold text-blue-800" href="#">Linkname</a>
         <p class="text-sm">Link Description</p>
       </div>
@@ -707,7 +711,7 @@
 
           <tr class="bg-gray-50">
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-              <input type="checkbox" class="form-checkbox" checked />
+              <input type="checkbox" class="w-4 h-4 form-checkbox" />
             </td>
 
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
@@ -721,7 +725,7 @@
           <!-- Odd row -->
           <tr class="bg-white">
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-              <input type="checkbox" class="form-checkbox" checked />
+              <input type="checkbox" class="w-4 h-4 form-checkbox" />
             </td>
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
               Jane Cooper
@@ -790,7 +794,7 @@
 
           <tr class="bg-white">
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-              <input type="checkbox" class="form-checkbox" checked />
+              <input type="checkbox" class="w-4 h-4 form-checkbox" />
             </td>
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
               37ALF
@@ -805,7 +809,7 @@
           <!-- Even row -->
           <tr class="bg-gray-50">
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-              <input type="checkbox" class="form-checkbox" checked />
+              <input type="checkbox" class="w-4 h-4 form-checkbox" />
             </td>
 
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
@@ -818,7 +822,7 @@
           <!-- Odd row -->
           <tr class="bg-white">
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
-              <input type="checkbox" class="form-checkbox" checked />
+              <input type="checkbox" class="w-4 h-4 form-checkbox" />
             </td>
             <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
               Jane Cooper

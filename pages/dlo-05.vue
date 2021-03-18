@@ -283,12 +283,7 @@
             <tr class="bg-gray-50">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
                 <div class="flex items-center">
-                  <input
-                    id="push_everything"
-                    name="push_notifications"
-                    type="radio"
-                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
+                  <input type="radio" class="form-radio" />
                   <label
                     for="push_everything"
                     class="block ml-3 text-sm font-medium text-gray-700"
@@ -308,12 +303,7 @@
             <tr class="bg-white">
               <td class="px-2 py-2 text-sm font-medium text-gray-900 align-top">
                 <div class="flex items-center">
-                  <input
-                    id="push_everything"
-                    name="push_notifications"
-                    type="radio"
-                    class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
+                  <input type="radio" class="form-radio" />
                   <label
                     for="push_everything"
                     class="block ml-3 text-sm font-medium text-gray-700"

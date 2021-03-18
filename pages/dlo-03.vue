@@ -213,8 +213,7 @@
           Choose You Vehicle
         </h3>
         <p class="p-4 mx-auto text-sm text-gray-500">
-          Please review the following documents. You must readn and accept the
-          required document in order to proceed with you order.
+          The following vehicles are available for you to orders based on...
         </p>
       </div>
     </div>
