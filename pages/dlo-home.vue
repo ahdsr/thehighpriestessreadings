@@ -73,31 +73,33 @@
     <div
       class="container flex flex-col items-center justify-center p-4 mx-auto space-y-4"
     >
-      <div
-        class="flex items-center w-full p-2 bg-white border shadow rounded-xl"
-      >
-        <div class="flex items-center space-x-4">
-          <img
-            src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-corvette-stingray-c8-2019-fd-hr-hero-front_0.jpg?itok=SEYe_vLy"
-            alt="My profile"
-            class="object-center w-16 h-16 rounded-full"
-          />
-        </div>
-        <div class="flex-1 p-3">
-          <div class="font-semibold text-gray-700">April, 02, 2021</div>
-          <div class="text-sm text-gray-500">
-            Your replacement vehicle is ready to order.
+      <nuxt-link to="/dlo-01">
+        <div
+          class="flex items-center w-full p-2 bg-white border shadow rounded-xl"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-corvette-stingray-c8-2019-fd-hr-hero-front_0.jpg?itok=SEYe_vLy"
+              alt="My profile"
+              class="object-center w-16 h-16 rounded-full"
+            />
+          </div>
+
+          <div class="flex-1 p-3">
+            <div class="font-semibold text-gray-700">April, 02, 2021</div>
+            <div class="text-sm text-gray-500">
+              Your replacement vehicle is ready to order.
+            </div>
+          </div>
+          <div class="p-2">
+            <img
+              src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144"
+              alt="My profile"
+              class="order-1 w-4 h-4 rounded-full"
+            />
           </div>
         </div>
-        <div class="p-2">
-          <img
-            src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144"
-            alt="My profile"
-            class="order-1 w-4 h-4 rounded-full"
-          />
-        </div>
-      </div>
-
+      </nuxt-link>
       <div
         class="flex items-center w-full p-2 bg-white border shadow rounded-xl"
       >
