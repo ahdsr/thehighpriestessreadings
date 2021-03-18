@@ -236,7 +236,7 @@
       <div class="bg-white">
         <nav class="flex flex-row text-sm font-bold sm:flex-col">
           <button
-            class="block px-6 py-4 font-medium text-gray-600 text-blue-500 border-b-2 border-blue-500 hover:text-blue-500 focus:outline-none"
+            class="block px-6 py-4 border-b-2 border-blue-500 font-mediumtext-blue-500 hover:text-blue-500 focus:outline-none"
           >
             Optional Equipment</button
           ><button
