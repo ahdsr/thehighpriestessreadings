@@ -166,6 +166,12 @@
         </div>
       </div>
 
+      <div class="flex mt-20 bg-blue-400 flex-nowrap">
+        <div class="bg-red-600">s</div>
+        <div class="bg-blue-700">s</div>
+        <div class="bg-yellow-200">s</div>
+      </div>
+
       <!-- Mobile menu, show/hide based on menu state. -->
       <div v-show="showProfile" class="sm:invisible" id="mobile-menu">
         <div class="pt-2 pb-4 space-y-1 sm:hidden v-show=">
