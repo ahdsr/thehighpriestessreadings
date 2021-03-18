@@ -335,12 +335,9 @@
         </table>
       </div>
     </div>
-
-
-    </div>
-
-    <!-- End -->
   </div>
+
+  <!-- End -->
 </template>
 
 <script>

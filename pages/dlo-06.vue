@@ -205,11 +205,12 @@
               <span class="sr-only">Step 1</span>
             </a>
           </li>
-           <li class="relative">
+          <li class="relative">
             <!-- Current Step -->
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-
-            </div>
+            <div
+              class="absolute inset-0 flex items-center"
+              aria-hidden="true"
+            ></div>
             <a
               href="#"
               class="relative flex items-center justify-center w-8 h-8 bg-white border-2 rounded-full border-element-green"
@@ -246,7 +247,8 @@
           Review before sumbitting
         </h3>
         <p class="p-4 mx-auto text-sm text-gray-500">
-          Review you order before submitting it. You can go back to each page to make any modifications if needed.
+          Review you order before submitting it. You can go back to each page to
+          make any modifications if needed.
         </p>
       </div>
       <div
@@ -281,26 +283,33 @@
         </div>
         <!-- ... -->
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Factory Order Number</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900">
+            Factory Order Number
+          </p>
           <p class="mt-0 text-sm text-gray-500">19283746r</p>
         </div>
         <!-- ... -->
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Factory Order Date</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900">
+            Factory Order Date
+          </p>
           <p class="mt-0 text-sm text-gray-500">03/11/2021</p>
         </div>
         <!-- ... -->
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Order By and Date</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900">
+            Order By and Date
+          </p>
           <p class="mt-0 text-sm text-gray-500"></p>
         </div>
         <!-- ... -->
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Requested Delivery Date</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900">
+            Requested Delivery Date
+          </p>
           <p class="mt-0 text-sm text-gray-500">03/22/2021</p>
         </div>
         <!-- ... -->
-
       </div>
     </div>
 
@@ -478,9 +487,6 @@
           <p class="mt-0 text-sm text-gray-500"></p>
         </div>
       </div>
-    </div>
-
-
     </div>
 
     <!-- End -->
