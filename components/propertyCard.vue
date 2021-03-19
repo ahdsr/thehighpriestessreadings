@@ -39,6 +39,8 @@
 </template>
 
 <script>
+
+// This is an example of a data property declaring a Vue prop //
 export default {
   props: {
     property: {
