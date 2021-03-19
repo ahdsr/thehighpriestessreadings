@@ -19,48 +19,50 @@ export default {
   components: {
     propertyCard,
   },
-  data: () => ({
-    property: {
-      imageURL:
-        'https://images.unsplash.com/photo-1615479865224-b07bb46a5f56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
-      imageAlt: 'Image Description',
-      regularPrice: '$29.99',
-      salePrice: '$19.99',
-      heading: 'The trip to the Ocean',
-      reviewCount: 34,
-      rating: 4,
-    },
-    property2: {
-      imageURL:
-        'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      imageAlt: 'Image Description',
-      regularPrice: '$329.99',
-      salePrice: '$219.99',
-      heading: 'Suck it bitch',
-      reviewCount: 44,
-      rating: 4,
-    },
-    property3: {
-      imageURL:
-        'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      imageAlt: 'Image Description',
-      regularPrice: '$129.99',
-      salePrice: '$219.00',
-      heading: 'Yes, this is something I built',
-      reviewCount: 14,
-      rating: 3,
-    },
-    property4: {
-      imageURL:
-        'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-      imageAlt: 'Image Description',
-      regularPrice: '$9.99',
-      salePrice: '$9.00',
-      heading: 'I love VUE and TAILWIND',
-      reviewCount: 54,
-      rating: 1,
-    },
-  }),
+  data() {
+    return {
+      property: {
+        imageURL:
+          'https://images.unsplash.com/photo-1615479865224-b07bb46a5f56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        imageAlt: 'Image Description',
+        regularPrice: '$29.99',
+        salePrice: '$19.99',
+        heading: 'The trip to the Ocean',
+        reviewCount: 34,
+        rating: 4,
+      },
+      property2: {
+        imageURL:
+          'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        imageAlt: 'Image Description',
+        regularPrice: '$329.99',
+        salePrice: '$219.99',
+        heading: 'Suck it bitch',
+        reviewCount: 44,
+        rating: 4,
+      },
+      property3: {
+        imageURL:
+          'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        imageAlt: 'Image Description',
+        regularPrice: '$129.99',
+        salePrice: '$219.00',
+        heading: 'Yes, this is something I built',
+        reviewCount: 14,
+        rating: 3,
+      },
+      property4: {
+        imageURL:
+          'https://images.unsplash.com/photo-1615555896813-401d84a0d737?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        imageAlt: 'Image Description',
+        regularPrice: '$9.99',
+        salePrice: '$9.00',
+        heading: 'I love VUE and TAILWIND',
+        reviewCount: 54,
+        rating: 1,
+      },
+    }
+  },
 }
 </script>
 
