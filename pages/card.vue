@@ -19,6 +19,12 @@ export default {
   components: {
     propertyCard,
   },
+  head() {
+    return {
+      script: [{ src: 'path/to/your/js/file.js' }],
+      link: [{ rel: 'stylesheet', href: 'path/to/your/css/file.css' }],
+    }
+  },
   data() {
     return {
       property: {
