@@ -34,6 +34,7 @@
             class="w-6 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/menu.svg"
+            alt="Xcelerate Logo"
           />
         </div>
         <div class="ml-4">
@@ -41,6 +42,7 @@
             class="w-24 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/Icon-Logo-Xcelerate.svg"
+            alt="Xcelerate Logo"
           />
         </div>
 
@@ -56,7 +58,8 @@
           <img
             class="inline-block object-cover w-8 h-8 rounded-full"
             src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
-            alt=""
+            alt="Xcelerate Logo"
+
           />
         </div>
       </div>
