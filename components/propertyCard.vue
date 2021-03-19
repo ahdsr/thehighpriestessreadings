@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-6 overflow-hidden bg-white shadow-2xl rounded-xl md:mx-auto lg:mx-40"
+    class="p-2 mt-6 overflow-hidden bg-white shadow-2xl rounded-xl mx:auto md:mx-auto lg:mx-40"
   >
     <div class="md:flex">
       <img
