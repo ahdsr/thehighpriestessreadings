@@ -39,7 +39,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    property: {
+      type: Object,
+      required: true,
+      default: {},
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
