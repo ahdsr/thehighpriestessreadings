@@ -2,7 +2,7 @@
     <div>
 
 <!-- START - HERO -->
-<div class="relative overflow-hidden bg-gray-50 bg-hero-pattern">
+<div class="relative overflow-hidden bg-gray-50 bg-hero-pattern xl:pb-96">
 
 
   <div class="relative pt-6 pb-72 sm:pb-24">
@@ -12,7 +12,7 @@
           <div class="flex items-center justify-between w-full md:w-auto">
             <a href="#">
               <span class="sr-only">Workflow</span>
-              <img class="w-auto h-8 sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+              <img class="w-auto h-8 sm:h-10" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
             </a>
             <div class="flex items-center -mr-2 md:hidden">
               <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
@@ -56,7 +56,7 @@
       <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5" v-show="showProfile">
         <div class="flex items-center justify-between px-5 pt-4">
           <div>
-            <img class="w-auto h-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+            <img class="w-auto h-8" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
           </div>
           <div class="-mr-2" >
             <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -82,9 +82,12 @@
 
     <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
       <div class="text-center">
-        <h1 class="text-4xl font-thin tracking-tight text-gray-900 font-display sm:text-5xl md:text-6xl">
+        <h1 class="text-4xl font-thin tracking-tight text-gray-900 font-display sm:text-5xl md:text-6xl xl:pt-48">
           <span class="block xl:inline">The High Priestess</span>
           <span class="block text-indigo-600 xl:inline">Readings</span>
+          <div>
+          <img src="~assets/images/star.png" alt="Start" class="w-24 mx-auto mt-10">
+          </div>
         </h1>
         <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
          Some sort of tagline goes here
@@ -234,7 +237,7 @@
 
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-gray-900 font-display">
+<div class="bg-gray-900 font-display bg-hero-pattern">
   <div class="pt-12 sm:pt-16 lg:pt-24">
     <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -256,12 +259,13 @@
       <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
           <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+            <div class="px-6 py-8 bg-gray-900 sm:p-10 sm:pb-6">
               <div>
-                <h3 class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-indigo-600 uppercase bg-indigo-100 rounded-full" id="tier-standard">
+                <h3 class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-indigo-600 uppercase rounded-full bg-" id="tier-standard">
                   Standard
                 </h3>
               </div>
+              <img src="~assets/images/unicorn.png" class="w-24">
               <div class="flex items-baseline mt-4 text-6xl font-extrabold">
                 $49
                 <span class="ml-1 text-2xl font-medium text-gray-500">
@@ -468,41 +472,40 @@
         <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
           <figure>
             <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-              <img class="object-cover object-center rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+              <img class="object-cover object-center rounded-lg shadow-lg" src="~assets/images/monica-profile.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
             </div>
             <figcaption class="flex mt-3 text-sm text-gray-500">
               <!-- Heroicon name: solid/camera -->
               <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
               </svg>
-              <span class="ml-2">Photograph by Marcus O’Leary</span>
+              <span class="ml-2">Photograph by Magda Olszewski</span>
             </figcaption>
           </figure>
         </div>
       </div>
       <div class="mt-8 lg:mt-0">
         <div class="mx-auto text-base max-w-prose lg:max-w-none">
-          <p class="text-lg text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
+          <p class="text-lg text-gray-500">In eu mi bibendum neque egestas congue quisque. Ultrices mi tempus imperdiet nulla malesuada. Velit sed ullamcorper morbi tincidunt</p>
         </div>
         <div class="mx-auto mt-5 prose text-gray-500 prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1">
-          <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-          <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
-          <p>Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.</p>
+          <img src="~assets/images/unicorn.png" alt="Unicorn" class="w-48">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor orci eu lobortis. Feugiat in fermentum posuere urna nec. Ac turpis egestas sed tempus urna et pharetra pharetra massa. In eu mi bibendum neque egestas congue quisque. Ultrices mi tempus imperdiet nulla malesuada. Velit sed ullamcorper morbi tincidunt. Id leo in vitae turpis massa sed elementum tempus egestas. Felis eget nunc lobortis mattis aliquam faucibus purus. Eu mi bibendum neque egestas congue quisque egestas. Volutpat sed cras ornare arcu dui. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Lacus vel facilisis volutpat est.</p>
           <ul>
             <li>Quis elit egestas venenatis mattis dignissim.</li>
             <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
             <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
           </ul>
-          <p>Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
-          <h3>How we helped</h3>
-          <p>Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.</p>
-          <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
+          <p>In eu mi bibendum neque egestas congue quisque. Ultrices mi tempus imperdiet nulla malesuada. Velit sed ullamcorper morbi tincidunt</p>
+          <h3>Something about me</h3>
+
+          <p>In eu mi bibendum neque egestas congue quisque. Ultrices mi tempus imperdiet nulla malesuada. Velit sed ullamcorper morbi tincidunt.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+<a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
 
     </div>
 </template>
