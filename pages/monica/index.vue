@@ -2,7 +2,7 @@
     <div>
 
 <!-- START - HERO -->
-<div class="relative overflow-hidden bg-gray-50 bg-hero-pattern xl:pb-96">
+<div class="relative overflow-hidde bg-hero-monica-02 bg-opacity-10 xl:pb-40">
 
 
   <div class="relative pt-6 pb-72 sm:pb-24">
@@ -15,7 +15,7 @@
               <img class="w-auto h-8 sm:h-10" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
             </a>
             <div class="flex items-center -mr-2 md:hidden">
-              <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+              <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <!-- Heroicon name: outline/menu -->
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -52,14 +52,14 @@
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-    <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform font-display md:hidden">
+    <div v-show="showProfile" class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform font-display md:hidden show">
       <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
-        <div class="flex items-center justify-between px-5 pt-4">
+        <div class="flex items-center justify-between px-5 pt-4 ">
           <div>
             <img class="w-auto h-8" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
           </div>
           <div class="-mr-2">
-            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span class="sr-only">Close menu</span>
               <!-- Heroicon name: outline/x -->
               <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -80,17 +80,17 @@
       </div>
     </div>
 
-    <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
+    <main class="px-4 mx-auto mt-16 sm:mt-24">
       <div class="text-center">
-        <h1 class="text-4xl font-thin tracking-tight text-gray-900 font-display sm:text-5xl md:text-6xl xl:pt-48">
-          <span class="block xl:inline">The High Priestess</span>
-          <span class="block text-indigo-600 xl:inline">Readings</span>
+        <h1 class="text-4xl font-semibold tracking-tight text-gray-100 font-display sm:text-5xl md:text-6xl xl:pt-48 xl:text-8xl">
+          <span class="block xl:inline ">The High Priestess</span>
+          <span class="block text-monica-mauvelous xl:inline">Readings</span>
           <div>
           <img src="~assets/images/star.png" alt="Start" class="w-24 mx-auto mt-10">
           </div>
         </h1>
-        <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-         Some sort of tagline goes here
+        <p class="max-w-xl mx-auto mt-3 text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl xl:font-light xl:text-4xl xl:leading-relaxed">
+         Tarot card reading is the practice of using tarot cards to gain insight into the past, present or future by formulating a question, then drawing and interpreting cards. Reading tarot cards is a type of cartomancy.
         </p>
         <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
           <div class="rounded-md shadow">
@@ -106,11 +106,22 @@
         </div>
       </div>
     </main>
+
   </div>
 
 
 
 
+
+
+</div>
+
+
+<div class="flex flex-row">
+<div class=""><img src="~assets/images/monica-stuff.jpg"></div>
+<div class=""><img src="~assets/images/monica-crystals.jpg"></div>
+<div class=""><img src="~assets/images/monica-smudge.jpg"></div>
+<div class=""><img src="~assets/images/monica-profile.jpg"></div>
 
 </div>
 <!-- END - HERO -->
@@ -118,11 +129,13 @@
 
 
 
+
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white font-display">
+<div class="font-display bg-monica-xoletic">
   <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
+
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900">About your reading</h2>
+      <h2 class="text-3xl font-extrabold text-monica-mauvelous">About your reading</h2>
       <p class="mt-4 text-lg text-gray-500">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
     </div>
     <dl class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
@@ -220,7 +233,7 @@
       <div class="relative">
         <dt>
           <!-- Heroicon name: outline/check -->
-          <svg class="absolute w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <svg class="absolute w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
           </svg>
           <p class="text-lg font-medium leading-6 text-gray-900 ml-9">Mobile app</p>
@@ -511,16 +524,20 @@
 </template>
 
 <script>
-    export default {
-head() {
+export default {
+  data() {
     return {
- //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
- //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
-//
-      link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">' }],
+      showProfile: false,
     }
   },
+    head() {
+      return {
+      //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
+      //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
+        link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">' }],
     }
+  },
+}
 </script>
 
 <style>
