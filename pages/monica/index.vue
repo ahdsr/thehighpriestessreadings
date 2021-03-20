@@ -15,7 +15,7 @@
               <img class="w-auto h-8 sm:h-10" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
             </a>
             <div class="flex items-center -mr-2 md:hidden">
-              <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+              <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <!-- Heroicon name: outline/menu -->
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -52,14 +52,14 @@
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-    <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform font-display md:hidden ">
-      <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5" v-show="showProfile">
+    <div class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform font-display md:hidden">
+      <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
         <div class="flex items-center justify-between px-5 pt-4">
           <div>
             <img class="w-auto h-8" src="https://supertarot.co.uk/wp-content/uploads/moon-symbol-980x980.png" alt="">
           </div>
-          <div class="-mr-2" >
-            <button @click="showProfile = !showProfile" type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+          <div class="-mr-2">
+            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span class="sr-only">Close menu</span>
               <!-- Heroicon name: outline/x -->
               <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -512,21 +512,15 @@
 
 <script>
     export default {
-      head() {
-        return {
-        //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
-        //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
-
+head() {
+    return {
+ //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
+ //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
+//
       link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">' }],
     }
-    },
-    data() {
-    return {
-      showProfile: false,
+  },
     }
-  }
-
-}
 </script>
 
 <style>

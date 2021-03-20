@@ -164,25 +164,7 @@
       </div>
     </div>
 
-    <div class="p-4 mx-auto">
-      <div class="relative flex items-center px-4 py-4 space-x-3 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-        <div class="flex-shrink-0">
-          <img class="w-10 h-10 rounded-md" src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1378&q=80" alt="">
-        </div>
-        <div class="flex-1 min-w-0">
-          <a href="#" class="focus:outline-none">
-             <span class="absolute inset-0" aria-hidden="true"></span>
-              <p class="text-sm font-medium text-gray-900">
-               Element Driver Handbook 2021
-              </p>
-              <p class="text-sm text-gray-500 truncate">
-               Driver handbook
-              </p>
-          </a>
-        </div>
-     </div>
-
-
+    <div>
       <div class="p-4 border-b border-solid mx:aut">
         <a class="text-sm font-semibold text-blue-800" href="#"
           >Element Driver Handbook 2021</a
