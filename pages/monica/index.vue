@@ -2,7 +2,7 @@
     <div>
 
 <!-- START - HERO -->
-<div class="relative overflow-hidde bg-hero-monica-02 bg-opacity-10 xl:pb-40">
+<div class="relative overflow-hidde bg-hero-monica-01 bg-opacity-10 xl:pb-40">
 
 
   <div class="relative pt-6 pb-72 sm:pb-24">
@@ -250,7 +250,7 @@
 
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-gray-900 font-display bg-hero-pattern">
+<div class="bg-monica-xoletic font-display bg-hero-pattern">
   <div class="pt-12 sm:pt-16 lg:pt-24">
     <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -263,26 +263,28 @@
         <p class="text-xl text-gray-300">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
         </p>
+        <img class="pt-6 mx-auto w-44" src="~assets/images/orn.png">
       </div>
+
     </div>
   </div>
   <div class="pb-12 mt-8 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
     <div class="relative">
-      <div class="absolute inset-0 bg-gray-900 h-3/4"></div>
+      <div class="absolute inset-0 bg-monica-xoletic h-3/4"></div>
       <div class="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
           <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-            <div class="px-6 py-8 bg-gray-900 sm:p-10 sm:pb-6">
+            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
               <div>
-                <h3 class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-indigo-600 uppercase rounded-full bg-" id="tier-standard">
-                  Standard
+                <h3 class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-indigo-600 uppercase rounded-full bg-monica-mauvelous" id="tier-standard">
+                  First Reading
                 </h3>
               </div>
-              <img src="~assets/images/unicorn.png" class="w-24">
-              <div class="flex items-baseline mt-4 text-6xl font-extrabold">
+
+              <div class="flex items-baseline mt-4 text-3xl font-extrabold">
                 $49
                 <span class="ml-1 text-2xl font-medium text-gray-500">
-                  /mo
+
                 </span>
               </div>
               <p class="mt-5 text-lg text-gray-500">
@@ -426,21 +428,10 @@
     </div>
     <div class="relative px-4 mx-auto mt-4 max-w-7xl sm:px-6 lg:px-8 lg:mt-5">
       <div class="max-w-md mx-auto lg:max-w-5xl">
-        <div class="px-6 py-8 bg-gray-100 rounded-lg sm:p-10 lg:flex lg:items-center">
-          <div class="flex-1">
-            <div>
-              <h3 class="inline-flex px-4 py-1 text-sm font-semibold tracking-wide text-gray-800 uppercase bg-white rounded-full">
-                Discounted
-              </h3>
-            </div>
-            <div class="mt-4 text-lg text-gray-600">Get full access to all of standard license features for solo projects that make less than $20k gross revenue for <span class="font-semibold text-gray-900">$29</span>.</div>
-          </div>
-          <div class="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-            <a href="#" class="flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-50">
-              Buy Discounted License
-            </a>
-          </div>
-        </div>
+
+
+
+
       </div>
     </div>
   </div>
