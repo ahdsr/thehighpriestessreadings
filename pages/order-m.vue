@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto bg-gray-100">
+  <div class="mx-auto text-xs bg-gray-100 sm:text-xs lg:text-sm">
     <nav class="fixed top-0 left-0 z-20 w-full bg-gray-800">
       <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -70,26 +70,26 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a
                   href="#"
-                  class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md"
+                  class="px-3 py-2 font-medium text-white bg-gray-900 rounded-md"
                   aria-current="page"
                   >General Order</a
                 >
 
                 <a
                   href="#"
-                  class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
                   >Approval</a
                 >
 
                 <a
                   href="#"
-                  class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
                   >Driver</a
                 >
 
                 <a
                   href="#"
-                  class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
                   >Vehicle</a
                 >
               </div>
@@ -125,7 +125,7 @@
               <div>
                 <button
                   type="button"
-                  class="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  class="flex bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   id="user-menu"
                   aria-expanded="false"
                   aria-haspopup="true"
@@ -157,19 +157,19 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   role="menuitem"
                   >Your Profile</a
                 >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   role="menuitem"
                   >Settings</a
                 >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   role="menuitem"
                   >Sign out</a
                 >
@@ -180,7 +180,7 @@
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden" id="mobile-menu">
+      <div class="hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <a
@@ -211,80 +211,15 @@
       </div>
     </nav>
 
-    <nav class="flex pb-4" aria-label="Breadcrumb">
-      <ol class="flex px-6 space-x-4 bg-white rounded-md shadow">
-        <li class="flex">
-          <div class="flex items-center">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <!-- Heroicon name: solid/home -->
-              <svg
-                class="flex-shrink-0 w-5 h-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                />
-              </svg>
-              <span class="sr-only">Home</span>
-            </a>
-          </div>
-        </li>
-
-        <li class="flex">
-          <div class="flex items-center">
-            <svg
-              class="flex-shrink-0 w-6 h-full text-gray-200"
-              viewBox="0 0 24 44"
-              preserveAspectRatio="none"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-            </svg>
-            <a
-              href="#"
-              class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-              >Projects</a
-            >
-          </div>
-        </li>
-
-        <li class="flex">
-          <div class="flex items-center">
-            <svg
-              class="flex-shrink-0 w-6 h-full text-gray-200"
-              viewBox="0 0 24 44"
-              preserveAspectRatio="none"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-            </svg>
-            <a
-              href="#"
-              class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-              aria-current="page"
-              >Project Nero</a
-            >
-          </div>
-        </li>
-      </ol>
-    </nav>
-
-    <aside class="fixed left-0 top-70">
-      <div class="flex-col p-3">
-        <div class="pb-4">
+    <aside class="fixed invisible w-16 left-6 top-24 lg:visible">
+      <div class="flex-col text-center">
+        <div class="pb-4 al">
           <img
             class="inline-block w-10 h-10 rounded-full pb"
             src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
             alt=""
           />
-          <p>Home</p>
+          <p class="text-xs">Home</p>
         </div>
         <div class="pb-4">
           <img
@@ -292,7 +227,7 @@
             src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
             alt=""
           />
-          <p>Queues</p>
+          <p class="text-xs">Queues</p>
         </div>
         <div class="pb-4">
           <img
@@ -300,6 +235,7 @@
             src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
             alt=""
           />
+          <p class="text-xs">Edit Order</p>
         </div>
         <div class="pb-4">
           <img
@@ -307,6 +243,55 @@
             src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
             alt=""
           />
+          <p class="text-xs">Order Pref</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">Codes Tables</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">Batch Process</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">BMTs</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">Change History</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">Vehicle Confg</p>
+        </div>
+        <div class="pb-4">
+          <img
+            class="inline-block w-10 h-10 rounded-full pb"
+            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
+            alt=""
+          />
+          <p class="text-xs">Ref Library</p>
         </div>
       </div>
     </aside>
@@ -314,7 +299,7 @@
     <!--Content Start-->
 
     <!--General Order-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4 lg:mt-14">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -325,11 +310,11 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-element-bright-blue"
                     >
                       General Order
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -339,21 +324,19 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-7 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Log Number
-                      </p>
-                      <p class="text-sm text-gray-500">50119171</p>
+                      <p class="font-medium text-gray-800">Log Number</p>
+                      <p class="text-gray-500">50119171</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Client</p>
-                      <p class="text-sm text-gray-500">9990</p>
+                      <p class="font-medium text-gray-800">Client</p>
+                      <p class="text-gray-500">9990</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <label
                         for="last_name"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Unit</label
                       >
                       <input
@@ -361,42 +344,36 @@
                         name="last_name"
                         id="last_name"
                         autocomplete="cc-family-name"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
+                      <p class="font-medium text-gray-800">
                         Purchase Order Date
                       </p>
-                      <p class="text-sm text-gray-500">03/11/2021</p>
+                      <p class="text-gray-500">03/11/2021</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Purchase Number
-                      </p>
-                      <p class="text-sm text-gray-500">50119171-001</p>
+                      <p class="font-medium text-gray-800">Purchase Number</p>
+                      <p class="text-gray-500">50119171-001</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Order ID</p>
-                      <p class="text-sm text-gray-500">3003428</p>
+                      <p class="font-medium text-gray-800">Order ID</p>
+                      <p class="text-gray-500">3003428</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Ordered By & Date
-                      </p>
-                      <p class="text-sm text-gray-500">
-                        Mr. Smith - 03/11/2021
-                      </p>
+                      <p class="font-medium text-gray-800">Ordered By & Date</p>
+                      <p class="text-gray-500">Mr. Smith - 03/11/2021</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="email_address"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Vehicle Breakdown</label
                       >
                       <input
@@ -404,14 +381,14 @@
                         name="email_address"
                         id="email_address"
                         autocomplete="email"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="email_address"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Client Asset ID</label
                       >
                       <input
@@ -419,13 +396,13 @@
                         name="email_address"
                         id="email_address"
                         autocomplete="email"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="email_address"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Client Purchase Order Number</label
                       >
                       <input
@@ -433,7 +410,7 @@
                         name="email_address"
                         id="email_address"
                         autocomplete="email"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                   </div>
@@ -450,23 +427,21 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-7 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Order Type
-                      </p>
-                      <p class="text-sm text-gray-500">Stock</p>
+                      <p class="font-medium text-gray-800">Order Type</p>
+                      <p class="text-gray-500">Stock</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="country"
-                        class="block text-sm font-medium text-gray-700 truncate"
+                        class="block font-medium text-gray-700 truncate"
                         >Vehicle Located</label
                       >
                       <select
                         id="country"
                         name="country"
                         autocomplete="country"
-                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       >
                         <option>Client</option>
                       </select>
@@ -475,7 +450,7 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Expration date</label
                       >
                       <input
@@ -483,7 +458,7 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                         placeholder="MM / YY"
                       />
                     </div>
@@ -491,7 +466,7 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="security_code"
-                        class="flex items-center text-sm font-medium text-gray-700 truncate"
+                        class="flex items-center font-medium text-gray-700 truncate"
                       >
                         <span>Security code</span>
                         <!-- Heroicon name: solid/question-mark-circle -->
@@ -514,21 +489,21 @@
                         name="security_code"
                         id="security_code"
                         autocomplete="cc-csc"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="country"
-                        class="block text-sm font-medium text-gray-700 truncate"
+                        class="block font-medium text-gray-700 truncate"
                         >Country / Region</label
                       >
                       <select
                         id="country"
                         name="country"
                         autocomplete="country"
-                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       >
                         <option>United States</option>
                         <option>Canada</option>
@@ -539,7 +514,7 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="postal_code"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >ZIP / Postal</label
                       >
                       <input
@@ -547,7 +522,7 @@
                         name="postal_code"
                         id="postal_code"
                         autocomplete="postal-code"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                   </div>
@@ -567,7 +542,7 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Dealership Name</label
                       >
                       <input
@@ -575,14 +550,14 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >First Name</label
                       >
                       <input
@@ -590,14 +565,14 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Last Name</label
                       >
                       <input
@@ -605,14 +580,14 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Phone Number</label
                       >
                       <input
@@ -620,14 +595,14 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Ext</label
                       >
                       <input
@@ -635,14 +610,14 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Email</label
                       >
                       <input
@@ -650,7 +625,7 @@
                         name="expiration_date"
                         id="expiration_date"
                         autocomplete="cc-exp"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                   </div>
@@ -659,7 +634,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -672,22 +647,22 @@
     </main>
 
     <!--Approval-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
           <section aria-labelledby="payment_details_heading">
             <form action="#" method="POST">
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-                <div class="px-4 py-6 bg-white sm:p-6">
+                <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-lg font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Approval
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -699,7 +674,7 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="first_name"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Year</label
                       >
                       <p>asdasd</p>
@@ -707,7 +682,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -761,7 +736,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -815,7 +790,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -869,7 +844,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -923,7 +898,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -977,7 +952,7 @@
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <div>
-                        <p class="block text-sm font-medium text-gray-700">
+                        <p class="block font-medium text-gray-700">
                           Dealer Installed Options
                         </p>
                         <button
@@ -1034,7 +1009,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-element-dark-blue hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-dark-blue hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1047,22 +1022,22 @@
     </main>
 
     <!--Driver-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
           <section aria-labelledby="payment_details_heading">
             <form action="#" method="POST">
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-                <div class="px-4 py-6 bg-white sm:p-6">
+                <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div class="pb-4 border-b">
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Driver
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -1072,28 +1047,24 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        First Name
-                      </p>
-                      <p class="text-sm text-gray-500">Tom</p>
+                      <p class="font-medium text-gray-800">First Name</p>
+                      <p class="text-gray-500">Tom</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Middle Name
-                      </p>
-                      <p class="text-sm text-gray-500">Rick</p>
+                      <p class="font-medium text-gray-800">Middle Name</p>
+                      <p class="text-gray-500">Rick</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Last Name</p>
-                      <p class="text-sm text-gray-500">Rick</p>
+                      <p class="font-medium text-gray-800">Last Name</p>
+                      <p class="text-gray-500">Rick</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="last_name"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Employee ID</label
                       >
                       <input
@@ -1101,15 +1072,13 @@
                         name="last_name"
                         id="last_name"
                         autocomplete="cc-family-name"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Driver Breakdown
-                      </p>
-                      <p class="text-sm text-gray-500">9999-DCTEST</p>
+                      <p class="font-medium text-gray-800">Driver Breakdown</p>
+                      <p class="text-gray-500">9999-DCTEST</p>
                     </div>
                   </div>
 
@@ -1117,68 +1086,62 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 1
-                      </p>
-                      <p class="text-sm text-gray-500">
-                        847 W Monroe St APT 24
-                      </p>
+                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 2
-                      </p>
-                      <p class="text-sm text-gray-500"></p>
+                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">City</p>
-                      <p class="text-sm text-gray-500">Chicago</p>
+                      <p class="font-medium text-gray-800">City</p>
+                      <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">State</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">State</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">Cook</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Zip Code</p>
-                      <p class="text-sm text-gray-500">60607-2635</p>
+                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="text-gray-500">60607-2635</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Email</p>
-                      <p class="text-sm text-gray-500"></p>
+                      <p class="font-medium text-gray-800">Email</p>
+                      <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Phone</p>
-                      <p class="text-sm text-gray-500"></p>
+                      <p class="font-medium text-gray-800">Phone</p>
+                      <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
+                      <p class="font-medium text-gray-800">
                         Vehicle Eligibility
                       </p>
-                      <p class="text-sm text-gray-500">
+                      <p class="text-gray-500">
                         Authorized to drive company vehicle
                       </p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Role</p>
-                      <p class="text-sm text-gray-500">Driver</p>
+                      <p class="font-medium text-gray-800">Role</p>
+                      <p class="text-gray-500">Driver</p>
                     </div>
                   </div>
 
@@ -1195,44 +1158,38 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 1
-                      </p>
-                      <p class="text-sm text-gray-500">
-                        847 W Monroe St APT 24
-                      </p>
+                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 2
-                      </p>
-                      <p class="text-sm text-gray-500"></p>
+                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">City</p>
-                      <p class="text-sm text-gray-500">Chicago</p>
+                      <p class="font-medium text-gray-800">City</p>
+                      <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">State</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">State</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">Cook</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Zip Code</p>
-                      <p class="text-sm text-gray-500">60607-2635</p>
+                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="text-gray-500">60607-2635</p>
                     </div>
                   </div>
 
@@ -1249,44 +1206,38 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 1
-                      </p>
-                      <p class="text-sm text-gray-500">
-                        847 W Monroe St APT 24
-                      </p>
+                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Address Line 2
-                      </p>
-                      <p class="text-sm text-gray-500"></p>
+                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">City</p>
-                      <p class="text-sm text-gray-500">Chicago</p>
+                      <p class="font-medium text-gray-800">City</p>
+                      <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">State</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">State</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">IL</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">County</p>
-                      <p class="text-sm text-gray-500">Cook</p>
+                      <p class="font-medium text-gray-800">County</p>
+                      <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Zip Code</p>
-                      <p class="text-sm text-gray-500">60607-2635</p>
+                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="text-gray-500">60607-2635</p>
                     </div>
                   </div>
                 </div>
@@ -1294,7 +1245,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1307,22 +1258,22 @@
     </main>
 
     <!--Vehicle-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
           <section aria-labelledby="payment_details_heading">
             <form action="#" method="POST">
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-                <div class="px-4 py-6 bg-white sm:p-6">
+                <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div class="pb-4 border-b">
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Vehicle
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -1332,48 +1283,44 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Product Class
-                      </p>
-                      <p class="text-sm text-gray-500">Car</p>
+                      <p class="font-medium text-gray-800">Product Class</p>
+                      <p class="text-gray-500">Car</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">
-                        Log Numeber
-                      </p>
-                      <p class="text-sm text-gray-500">5011911</p>
+                      <p class="font-medium text-gray-800">Log Numeber</p>
+                      <p class="text-gray-500">5011911</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Client</p>
-                      <p class="text-sm text-gray-500">9990</p>
+                      <p class="font-medium text-gray-800">Client</p>
+                      <p class="text-gray-500">9990</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
-                      <p class="text-sm font-medium text-gray-800">Unit</p>
-                      <p class="text-sm text-gray-500">General Motors</p>
+                      <p class="font-medium text-gray-800">Unit</p>
+                      <p class="text-gray-500">General Motors</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Make</p>
-                      <p class="text-sm text-gray-500">Chevrolet</p>
+                      <p class="font-medium text-gray-800">Make</p>
+                      <p class="text-gray-500">Chevrolet</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Model</p>
-                      <p class="text-sm text-gray-500">Camaro</p>
+                      <p class="font-medium text-gray-800">Model</p>
+                      <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">ACode</p>
-                      <p class="text-sm text-gray-500">Camaro</p>
+                      <p class="font-medium text-gray-800">ACode</p>
+                      <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="last_name"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Model Code</label
                       >
                       <input
@@ -1381,21 +1328,21 @@
                         name="last_name"
                         id="last_name"
                         autocomplete="cc-family-name"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="country"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Trim</label
                       >
                       <select
                         id="country"
                         name="country"
                         autocomplete="country"
-                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:"
                       >
                         <option>United States</option>
                         <option>Canada</option>
@@ -1408,41 +1355,39 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">MFR DAN</p>
-                      <p class="text-sm text-gray-500">Car</p>
+                      <p class="font-medium text-gray-800">MFR DAN</p>
+                      <p class="text-gray-500">Car</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Year</p>
-                      <p class="text-sm text-gray-500">2020</p>
+                      <p class="font-medium text-gray-800">Year</p>
+                      <p class="text-gray-500">2020</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
-                      <p class="text-sm font-medium text-gray-800">
-                        Manufacturer
-                      </p>
-                      <p class="text-sm text-gray-500">General Motors</p>
+                      <p class="font-medium text-gray-800">Manufacturer</p>
+                      <p class="text-gray-500">General Motors</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Make</p>
-                      <p class="text-sm text-gray-500">Chevrolet</p>
+                      <p class="font-medium text-gray-800">Make</p>
+                      <p class="text-gray-500">Chevrolet</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">Model</p>
-                      <p class="text-sm text-gray-500">Camaro</p>
+                      <p class="font-medium text-gray-800">Model</p>
+                      <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="text-sm font-medium text-gray-800">ACode</p>
-                      <p class="text-sm text-gray-500">Camaro</p>
+                      <p class="font-medium text-gray-800">ACode</p>
+                      <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="last_name"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Model Code</label
                       >
                       <input
@@ -1450,21 +1395,21 @@
                         name="last_name"
                         id="last_name"
                         autocomplete="cc-family-name"
-                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="country"
-                        class="block text-sm font-medium text-gray-700"
+                        class="block font-medium text-gray-700"
                         >Trim</label
                       >
                       <select
                         id="country"
                         name="country"
                         autocomplete="country"
-                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:"
                       >
                         <option>United States</option>
                         <option>Canada</option>
@@ -1572,68 +1517,68 @@
                               class="bg-white hover:bg-green-100 focus:bg-blue-100"
                             >
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 ---
                               </td>
 
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 0002
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 Preferred Equipment Group 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 1
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 OTC
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 S
                               </td>
@@ -1642,68 +1587,68 @@
                             <!-- Even row -->
                             <tr class="bg-gray-50 hover:bg-green-100">
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 ---
                               </td>
 
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 0002
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 Preferred Equipment Group 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 1
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 OTC
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 S
                               </td>
@@ -1711,68 +1656,68 @@
 
                             <tr class="bg-white hover:bg-green-100">
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 ---
                               </td>
 
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 0002
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 Preferred Equipment Group 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 1
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 OTC
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 S
                               </td>
@@ -1781,68 +1726,68 @@
                             <!-- Even row -->
                             <tr class="bg-gray-50 hover:bg-green-100">
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 ---
                               </td>
 
                               <td
-                                class="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
                                 0002
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 Preferred Equipment Group 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 1
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 OTC
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 No
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 $0.00
                               </td>
                               <td
-                                class="px-4 py-4 text-sm text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
                               >
                                 S
                               </td>
@@ -1857,7 +1802,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1870,7 +1815,7 @@
     </main>
 
     <!--General Order-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1881,11 +1826,11 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Dealer Installed Options
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -1895,7 +1840,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1908,7 +1853,7 @@
     </main>
 
     <!--Upfit-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1919,11 +1864,11 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Upfit
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -1933,7 +1878,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1946,7 +1891,7 @@
     </main>
 
     <!--Fees & Charges-->
-    <main class="pb-10 mx-auto lg:py-12 lg:pl-24 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1957,11 +1902,11 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-xl font-bold leading-6 text-gray-900"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
                       Fees & Charges
                     </h2>
-                    <p class="mt-1 text-sm text-gray-500">
+                    <p class="mt-1 text-gray-500">
                       Update your billing information. Please note that updating
                       your location could affect your tax rates.
                     </p>
@@ -1971,7 +1916,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
