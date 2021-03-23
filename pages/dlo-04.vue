@@ -34,6 +34,7 @@
             class="w-6 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/menu.svg"
+            alt="Xcelerate Logo"
           />
         </div>
         <div class="ml-4">
@@ -41,6 +42,7 @@
             class="w-24 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/Icon-Logo-Xcelerate.svg"
+            alt="Xcelerate Logo"
           />
         </div>
 
@@ -56,7 +58,7 @@
           <img
             class="inline-block object-cover w-8 h-8 rounded-full"
             src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
-            alt=""
+            alt="Xcelerate Logo"
           />
         </div>
       </div>
@@ -262,6 +264,7 @@
               <img
                 class="block object-center w-full transform scale-150"
                 src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Ford-Truck-Wallpapers-HD-For-Desktop.jpg"
+                alt="Xcelerate Logo"
               />
             </div>
           </div>
@@ -292,6 +295,7 @@
               <img
                 class="block object-center w-full transform scale-150"
                 src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2017/12/velocirpator-driving.jpg"
+                alt="Xcelerate Logo"
               />
             </div>
           </div>
@@ -322,6 +326,7 @@
               <img
                 class="object-center w-full transform scale-150 oblock"
                 src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Ford-Truck-Wallpapers-HD.jpg"
+                alt="Xcelerate Logo"
               />
             </div>
           </div>

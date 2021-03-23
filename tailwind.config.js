@@ -10,26 +10,35 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Literata'],
+    },
     extend: {
-      fontFamily: {
-        sans: ['Inter var', defaultTheme.fontFamily.sans],
-      },
-      backgroundImage: (theme) => ({
-        'hero-pattern':
-          "url('https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80')",
+       backgroundImage: (theme) => ({
+        'hero-monica-01':
+          "url('https://images.unsplash.com/photo-1485256807238-97782da2fa07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80')",
 
-        'footer-texture':
-          "url('https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80')",
+        'hero-monica-02':
+          "url('https://images.unsplash.com/photo-1583530015497-6cf9ef9c6f0f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80')",
+
+
       }),
       colors: {
         'element-dark-blue': '#333D47',
         'element-green': '#82C341',
         'element-bright-blue': '#3262C3',
+        'monica-mauvelous': '#E4959E',
+        'monica-xoletic': '#1F0812',
+        'monica-roseybrown': '#B98B82',
+        'monica-melon': '#F3B3A6',
       },
     },
     variants: {
       extend: {},
     },
-    plugins: [require('@tailwindcss/custom-forms')],
+    plugins: [
+      require('@tailwindcss/forms'),
+      // ...
+    ],
   },
 }

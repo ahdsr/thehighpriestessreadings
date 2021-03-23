@@ -34,6 +34,7 @@
             class="w-6 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/menu.svg"
+            alt="Xcelerate Logo"
           />
         </div>
         <div class="ml-4">
@@ -41,6 +42,7 @@
             class="w-24 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/Icon-Logo-Xcelerate.svg"
+            alt="Xcelerate Logo"
           />
         </div>
 
@@ -56,7 +58,8 @@
           <img
             class="inline-block object-cover w-8 h-8 rounded-full"
             src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
-            alt=""
+            alt="Xcelerate Logo"
+
           />
         </div>
       </div>
@@ -303,6 +306,7 @@
                 <img
                   class="p-4"
                   src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
+                  alt="Xcelerate Logo"
                 />
               </div>
               <div class="text-sm">
@@ -346,6 +350,7 @@
                 <img
                   class="p-4"
                   src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
+                  alt="Xcelerate Logo"
                 />
               </div>
               <div class="text-sm">
@@ -389,6 +394,7 @@
                 <img
                   class="p-4"
                   src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
+                  alt="Xcelerate Logo"
                 />
               </div>
               <div class="text-sm">
@@ -432,6 +438,7 @@
                 <img
                   class="p-4"
                   src="https://tdrvehicles.azureedge.net/photos/import/202002/1101/2153/7839a731-49e9-40e9-9811-f9090409f27c.jpg-1024x786"
+                  alt="Xcelerate Logo"
                 />
               </div>
               <div class="text-sm">

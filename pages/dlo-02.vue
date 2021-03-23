@@ -34,6 +34,7 @@
             class="w-6 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/menu.svg"
+            alt="Xcelerate Logo"
           />
         </div>
         <div class="ml-4">
@@ -41,6 +42,7 @@
             class="w-24 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/Icon-Logo-Xcelerate.svg"
+            alt="Xcelerate Logo"
           />
         </div>
 
@@ -56,7 +58,7 @@
           <img
             class="inline-block object-cover w-8 h-8 rounded-full"
             src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
-            alt=""
+            alt="Xcelerate Logo"
           />
         </div>
       </div>
@@ -212,15 +214,17 @@
         <h3 class="text-base font-bold text-gray-600">Driver</h3>
       </div>
       <div class="grid grid-cols-2 gap-4 p-4 mx-auto">
+
+
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">First Name</p>
-          <p class="mt-0 text-sm text-gray-500">Christoper</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900"><label for="fname">First name:</label><br></p>
+          <input type="text" id="fname" name="fname" value="John" class="max-w-full p-2 text-sm bg-white border border-gray-500 rounded-md shadow-sm h-7">
         </div>
         <!-- ... -->
 
         <div>
-          <p class="mt-1 text-sm font-semibold text-gray-900">Middle Name</p>
-          <p class="mt-0 text-sm text-gray-500">Alfonso</p>
+          <p class="mt-1 text-sm font-semibold text-gray-900"><label for="fname">First name:</label><br></p>
+          <input type="text" id="fname" name="fname" value="John" class="max-w-full p-2 text-sm bg-white border border-gray-500 rounded-md shadow-sm h-7">
         </div>
         <!-- ... -->
         <div>
@@ -323,7 +327,9 @@
 </template>
 
 <script>
-export default {}
+import index from './index.vue'
+export default {
+  components: { index },}
 </script>
 
 <style lang="scss" scoped></style>

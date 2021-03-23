@@ -15,6 +15,7 @@
             class="w-6 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/menu.svg"
+            alt="Xcelerate Logo"
           />
         </div>
         <div class="ml-4">
@@ -22,6 +23,7 @@
             class="w-24 fill-current"
             viewBox="0 0 20 20"
             src="~/assets/images/Icon-Logo-Xcelerate.svg"
+            alt="Xcelerate Logo"
           />
         </div>
 
@@ -30,7 +32,7 @@
           <img
             class="inline-block object-cover w-8 h-8 rounded-full"
             src="https://vignette.wikia.nocookie.net/97918c83-d3c3-4a97-a206-6d770810e8e3/scale-to-width-down/800"
-            alt=""
+            alt="Xcelerate Logo"
           />
         </div>
       </div>
@@ -64,6 +66,7 @@
             src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-corvette-stingray-c8-2019-fd-hr-hero-front_0.jpg?itok=SEYe_vLy"
             alt="My profile"
             class="object-center w-16 h-16 rounded-full"
+
           />
           <span
             class="absolute bottom-0 right-0 w-4 h-4 bg-green-400 border-2 border-white rounded-full"
