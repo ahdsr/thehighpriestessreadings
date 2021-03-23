@@ -2,7 +2,7 @@
     <div>
 
 <!-- START - HERO -->
-<div class="relative overflow-hidde bg-hero-monica-01 bg-opacity-10 xl:pb-40">
+<div class="relative object-fill overflow-hidden bg-cover bg-hero-monica-01 bg-opacity-40 xl:pb-40">
 
 
   <div class="relative pt-6 pb-72 sm:pb-24">
@@ -80,12 +80,12 @@
       </div>
     </div>
 
-    <main class="px-4 mx-auto mt-16 sm:mt-24">
+    <main class="px-4 mx-auto mt-16 sm:mt-24 ">
       <div class="text-center">
         <h1 class="text-4xl font-semibold tracking-tight text-gray-100 font-display sm:text-5xl md:text-6xl xl:pt-48 xl:text-8xl">
           <span class="block xl:inline ">The High Priestess</span>
           <span class="block text-monica-mauvelous xl:inline">Readings</span>
-          <div>
+          <div class="animate-role">
           <img src="~assets/images/star.png" alt="Start" class="w-24 mx-auto mt-10">
           </div>
         </h1>
@@ -250,7 +250,7 @@
 
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-monica-xoletic font-display bg-hero-pattern">
+<div id="gradient" class="bg-monica-xoletic font-display bg-hero-pattern">
   <div class="pt-12 sm:pt-16 lg:pt-24">
     <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -525,15 +525,26 @@ export default {
       return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
       //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
-        link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">' }],
+        link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap">' }],
+        script: [
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"
+        }
+      ],
     }
   },
+
+
 }
 </script>
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+
+
+
+
 
 </style>
 

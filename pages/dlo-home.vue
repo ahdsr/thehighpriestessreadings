@@ -236,4 +236,13 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+</style>
+
