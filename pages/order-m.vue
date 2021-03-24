@@ -45,9 +45,10 @@
         From: "opacity-100 translate-y-0 sm:scale-100"
         To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     -->
-    <transition name="bounce">asasdsadsads</transition>
+        <transition name="bounce">asasdsadsads</transition>
         <div
-          class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"   v-if="openThing"
+          class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
+          v-if="openThing"
         >
           <div>
             <div
@@ -72,20 +73,20 @@
             </div>
 
             <transition name="bounce">
-            <div class="mt-3 text-center sm:mt-5">
-              <h3
-                class="text-lg font-medium leading-6 text-gray-900"
-                id="dialog-1-title"
-              >
-                Payment successful
-              </h3>
-              <div class="mt-2">
-                <p class="text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequatur amet labore.
-                </p>
+              <div class="mt-3 text-center sm:mt-5">
+                <h3
+                  class="text-lg font-medium leading-6 text-gray-900"
+                  id="dialog-1-title"
+                >
+                  Payment successful
+                </h3>
+                <div class="mt-2">
+                  <p class="text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet labore.
+                  </p>
+                </div>
               </div>
-            </div>
             </transition>
           </div>
           <div class="mt-5 sm:mt-6">
@@ -99,9 +100,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
 
     <nav class="sticky top-0 z-20 mx-auto bg-white pl-28">
       <div class="h-20 p-2 pl-4 pr-4 shadow-md">
@@ -198,37 +197,7 @@
                 </div>
               </div>
             </div>
-            <div class="hidden sm:block sm:ml-6">
-              <!--
-              <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-white bg-gray-900 rounded-md"
-                  aria-current="page"
-                  >General Order</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Approval</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Driver</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Vehicle</a
-                >
-              </div>
-              -->
-            </div>
+            <div class="hidden sm:block sm:ml-6"></div>
           </div>
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
@@ -341,8 +310,9 @@
       </div>
     </nav>
 
-    <div v-if="openThing"
-      class="fixed min-w-full p-4 bg-white shadow-md bg-opacity-60 pl-14 top-22 left-28 blur "
+    <div
+      v-if="openThing"
+      class="fixed min-w-full p-4 bg-white shadow-md bg-opacity-60 pl-14 top-22 left-28 blur"
     >
       <div class="sm:hidden">
         <label for="tabs" class="sr-only">Select a tab</label>
@@ -686,7 +656,7 @@
 
     <!--Floating Info Div-->
 
-       <!--General Order-->
+    <!--General Order-->
     <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -2242,48 +2212,44 @@
 
     <!--Upfit-->
 
-      <main
-        class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
-
-      >
-        <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
-          <!-- Payment details -->
-          <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
-            <section aria-labelledby="payment_details_heading">
-              <form action="#" method="POST">
-                <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-                  <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
-                    <div>
-                      <h2
-                        id="payment_details_heading"
-                        class="text-2xl font-bold leading-6 text-gray-700"
-                      >
-                        Upfit
-                      </h2>
-                      <p class="mt-1 text-gray-500">
-                        Update your billing information. Please note that
-                        updating your location could affect your tax rates.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
-                    <button
-                      type="submit"
-                      class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                      @click="openThing = !openThing"
-                      href="javascript:void();"
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
+        <!-- Payment details -->
+        <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
+          <section aria-labelledby="payment_details_heading">
+            <form action="#" method="POST">
+              <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
+                <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
+                  <div>
+                    <h2
+                      id="payment_details_heading"
+                      class="text-2xl font-bold leading-6 text-gray-700"
                     >
-                      Save
-                    </button>
+                      Upfit
+                    </h2>
+                    <p class="mt-1 text-gray-500">
+                      Update your billing information. Please note that updating
+                      your location could affect your tax rates.
+                    </p>
                   </div>
                 </div>
-              </form>
-            </section>
-          </div>
+
+                <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
+                  <button
+                    type="submit"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    @click="openThing = !openThing"
+                    href="javascript:void();"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
         </div>
-      </main>
-    </transition>
+      </div>
+    </main>
 
     <!--Fees & Charges-->
     <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
