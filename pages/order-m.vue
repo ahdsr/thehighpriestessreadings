@@ -1,7 +1,110 @@
 <template>
-  <div class="mx-auto text-xs bg-gray-100 sm:text-xs lg:text-sm">
-    <nav class="fixed top-0 left-0 z-20 w-full bg-gray-800">
-      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+  <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div
+      class="fixed inset-0 z-50 overflow-y-auto"
+      aria-labelledby="dialog-1-title"
+      role="dialog"
+      aria-modal="true"
+      v-show="openThing"
+    >
+      <div
+        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <!--
+      Background overlay, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+
+        <div
+          class="fixed inset-0 bg-gray-400 bg-opacity-75 blur bounce-enter-active"
+          aria-hidden="true"
+          v-if="openThing"
+        ></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span
+          class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          aria-hidden="true"
+          >&#8203;</span
+        >
+
+        <!--
+      Modal panel, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+    <transition name="bounce">asasdsadsads</transition>
+        <div
+          class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"   v-if="openThing"
+        >
+          <div>
+            <div
+              class="flex items-center justify-center w-12 h-12 mx-auto bg-green-100 rounded-full"
+            >
+              <!-- Heroicon name: outline/check -->
+              <svg
+                class="w-6 h-6 text-green-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+
+            <transition name="bounce">
+            <div class="mt-3 text-center sm:mt-5">
+              <h3
+                class="text-lg font-medium leading-6 text-gray-900"
+                id="dialog-1-title"
+              >
+                Payment successful
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur amet labore.
+                </p>
+              </div>
+            </div>
+            </transition>
+          </div>
+          <div class="mt-5 sm:mt-6">
+            <button
+              type="button"
+              class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              @click="openThing = !openThing"
+            >
+              Go back to dashboard
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <nav class="sticky top-0 z-20 mx-auto bg-white pl-28">
+      <div class="h-20 p-2 pl-4 pr-4 shadow-md">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
@@ -59,15 +162,46 @@
             </button>
           </div>
           <div
-            class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
+            class="flex items-center justify-center flex-1 ml-3 sm:items-stretch sm:justify-start"
           >
-            <div class="flex items-center flex-shrink-0">
-              <!-- <img class="block w-auto h-8 lg:hidden" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">-->
-              <!-- <img class="hidden w-auto h-8 lg:block" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow"> -->
+            <div
+              class="flex justify-center flex-1 px-2 lg:ml-6 lg:justify-start"
+            >
+              <div class="w-full max-w-lg lg:max-w-xs">
+                <label for="search" class="sr-only">Search</label>
+                <div class="relative">
+                  <div
+                    class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                  >
+                    <!-- Heroicon name: solid/search -->
+                    <svg
+                      class="w-5 h-5 text-gray-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="search"
+                    name="search"
+                    class="block w-full py-2 pl-10 pr-3 leading-5 text-gray-300 placeholder-gray-400 bg-gray-100 border border-transparent rounded-md focus:outline-none focus:bg-white focus:border-gray-200 focus:ring-white focus:text-gray-900 sm:text-sm"
+                    placeholder="Search"
+                    type="search"
+                  />
+                </div>
+              </div>
             </div>
             <div class="hidden sm:block sm:ml-6">
+              <!--
               <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
                 <a
                   href="#"
                   class="px-3 py-2 font-medium text-white bg-gray-900 rounded-md"
@@ -93,6 +227,7 @@
                   >Vehicle</a
                 >
               </div>
+              -->
             </div>
           </div>
           <div
@@ -121,22 +256,17 @@
             </button>
 
             <!-- Profile dropdown -->
-            <div class="relative ml-3">
+            <div class="relative ml-2">
               <div>
-                <button
-                  type="button"
-                  class="flex bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                  id="user-menu"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                >
-                  <span class="sr-only">Open user menu</span>
-                  <img
-                    class="w-8 h-8 rounded-full"
-                    src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-                    alt=""
-                  />
-                </button>
+                <div class="mr-10">
+                  <button
+                    type="button"
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-800 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    @click="openThing = !openThing"
+                  >
+                    Sign Out
+                  </button>
+                </div>
               </div>
 
               <!--
@@ -211,101 +341,359 @@
       </div>
     </nav>
 
-    <aside class="fixed invisible w-16 left-6 top-24 lg:visible">
-      <div class="flex-col text-center">
-        <div class="pb-4 al">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Home</p>
+    <div v-if="openThing"
+      class="fixed min-w-full p-4 bg-white shadow-md bg-opacity-60 pl-14 top-22 left-28 blur "
+    >
+      <div class="sm:hidden">
+        <label for="tabs" class="sr-only">Select a tab</label>
+        <select
+          id="tabs"
+          name="tabs"
+          class="block w-full border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+        >
+          <option>General Order</option>
+
+          <option>Company</option>
+
+          <option selected>Team Members</option>
+
+          <option>Billing</option>
+        </select>
+      </div>
+      <div class="hidden sm:block">
+        <nav class="flex space-x-4 justify-self-center" aria-label="Tabs">
+          <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700"-->
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            General Order
+          </a>
+
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Driver
+          </a>
+
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 rounded-md"
+            aria-current="page"
+          >
+            Vehicle
+          </a>
+
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            DIO
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Upfit
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Fees &amp; Charges
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Billing
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Title &amp; Registration
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Insurance
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Dealer
+          </a>
+          <a
+            href="#"
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+          >
+            Custom Fields
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <aside
+      class="fixed top-0 left-0 z-30 invisible min-h-full shadow-inner z-2 w-28 lg:visible bg-element-bright-blue"
+    >
+      <div class="flex-col text-center text-white">
+        <div class="h-20 p-6 bg-element-green hover:bg-blue-500">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 80 80"
+            class="inline-block w-10"
+          >
+            <style>
+              .st0 {
+                fill: none;
+              }
+              .st1 {
+                fill: #3ebeb0;
+              }
+              .st2 {
+                fill: #35beef;
+              }
+              .st3 {
+                fill: #0086aa;
+              }
+              .st4 {
+                fill: #f3bd19;
+              }
+              .st5 {
+                fill: #353535;
+              }
+              .st6 {
+                fill: #37a595;
+              }
+            </style>
+            <path class="st0" d="M0 0h80v80H0z" />
+            <path
+              class="st1"
+              d="M54.1 40L40 54.1l11.4 11.4c3.3 3.3 8.8 3.3 12.2 0l1.9-1.9c3.3-3.3 3.3-8.8 0-12.2L54.1 40z"
+            />
+            <path
+              class="st2"
+              d="M28.6 14.5c-3.3-3.3-8.8-3.3-12.2 0l-1.9 1.9c-3.3 3.3-3.3 8.8 0 12.2L40 54.1 54.1 40 28.6 14.5z"
+            />
+            <path
+              class="st3"
+              d="M14.5 51.4c-3.3 3.3-3.3 8.8 0 12.2l1.9 1.9c3.3 3.3 8.8 3.3 12.2 0L40 54.1 25.9 40 14.5 51.4z"
+            />
+            <path
+              class="st4"
+              d="M65.5 28.6c3.3-3.3 3.3-8.8 0-12.2l-1.9-1.9c-3.3-3.3-8.8-3.3-12.2 0L40 25.9 54.1 40l11.4-11.4z"
+            />
+            <path
+              class="st5"
+              d="M40 32.1c-7 0-14.1 7.9-14.1 7.9L40 54.1 54.1 40S47 32.1 40 32.1z"
+            />
+            <path
+              transform="rotate(-45.098 48.776 48.842)"
+              class="st6"
+              d="M38.8 46.4h19.9v4.9H38.8z"
+            />
+          </svg>
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Queues</p>
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">Home</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Edit Order</p>
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">Queues</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Order Pref</p>
+        <div class="p-6 hover:bg-blue-500">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="inline-block w-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+              />
+            </svg>
+
+            <!-- <p class="text-xs text-gray-800">Edit Order</p> -->
+          </a>
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Codes Tables</p>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">Order Preferences</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Batch Process</p>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">Vehicle Config</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">BMTs</p>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+            />
+          </svg>
+
+          <!-- <p class="text-xs text-gray-800">Codes Tables</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Change History</p>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">Batch Processing</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Vehicle Confg</p>
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+            />
+          </svg>
+          <!-- <p class="text-xs text-gray-800">BMTs</p> -->
         </div>
-        <div class="pb-4">
-          <img
-            class="inline-block w-10 h-10 rounded-full pb"
-            src="https://bbts1.azureedge.net/images/p/full/2020/09/b27b816d-776f-4440-944e-e4a1411010c2.jpg"
-            alt=""
-          />
-          <p class="text-xs">Ref Library</p>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+            />
+          </svg>
+
+          <!-- <p class="text-xs text-gray-800">Change History</p> -->
+        </div>
+
+        <div class="p-6 hover:bg-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="inline-block w-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+            />
+          </svg>
+
+          <!-- <p class="text-xs text-gray-800">Reference Library</p> -->
         </div>
       </div>
     </aside>
 
-    <!--Content Start-->
+    <!--Floating Info Div-->
 
-    <!--General Order-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-48">
+       <!--General Order-->
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
           <section aria-labelledby="payment_details_heading">
             <form action="#" method="POST">
-              <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
+              <div class="sm:overflow-hidden">
                 <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div>
                     <h2
@@ -647,7 +1035,7 @@
     </main>
 
     <!--Approval-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1022,7 +1410,7 @@
     </main>
 
     <!--Driver-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1258,7 +1646,7 @@
     </main>
 
     <!--Vehicle-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1815,7 +2203,7 @@
     </main>
 
     <!--General Order-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1853,45 +2241,52 @@
     </main>
 
     <!--Upfit-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
-      <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
-        <!-- Payment details -->
-        <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
-          <section aria-labelledby="payment_details_heading">
-            <form action="#" method="POST">
-              <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-                <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
-                  <div>
-                    <h2
-                      id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+
+      <main
+        class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+
+      >
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
+          <!-- Payment details -->
+          <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
+            <section aria-labelledby="payment_details_heading">
+              <form action="#" method="POST">
+                <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
+                  <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
+                    <div>
+                      <h2
+                        id="payment_details_heading"
+                        class="text-2xl font-bold leading-6 text-gray-700"
+                      >
+                        Upfit
+                      </h2>
+                      <p class="mt-1 text-gray-500">
+                        Update your billing information. Please note that
+                        updating your location could affect your tax rates.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
+                    <button
+                      type="submit"
+                      class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                      @click="openThing = !openThing"
+                      href="javascript:void();"
                     >
-                      Upfit
-                    </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                      Save
+                    </button>
                   </div>
                 </div>
-
-                <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
-                  <button
-                    type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  >
-                    Save
-                  </button>
-                </div>
-              </div>
-            </form>
-          </section>
+              </form>
+            </section>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </transition>
 
     <!--Fees & Charges-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1934,9 +2329,12 @@
 export default {
   data() {
     return {
-      showProfile: false,
+      scrollToTop: false,
+      showMenu: false,
+      openThing: false,
     }
   },
+
   head() {
     return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],

@@ -2,3 +2,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .blur {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+  .bounce-enter-active {
+    animation: bounce-in 2.5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in 2.5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transition: opacity(0);
+    }
+    50% {
+      transition: opacity(100);
+    }
+    100% {
+      transition: opacity(90);
+    }
+  }
+}
