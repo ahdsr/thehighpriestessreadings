@@ -8,6 +8,7 @@
           id="options-menu"
           aria-expanded="true"
           aria-haspopup="true"
+          @click="showProfile = !showProfile"
         >
           <span class="sr-only">Open options</span>
           <!-- Heroicon name: solid/dots-vertical -->
@@ -36,10 +37,11 @@
       To: "transform opacity-0 scale-95"
   -->
       <div
-        class="absolute left-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+        class="absolute left-0 z-50 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="options-menu"
+        v-show="showProfile"
       >
         <div class="py-1" role="none">
           <a
@@ -76,7 +78,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      showProfile: false,
+    }
+  },
+}
 </script>
 
 <style></style>
