@@ -1907,11 +1907,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      showProfile: false,
-    }
-  },
   head() {
     return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
