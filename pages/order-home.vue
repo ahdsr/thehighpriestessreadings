@@ -490,179 +490,212 @@
     <!--Floating Info Div-->
 
     <!--General Order-->
+    <div class="overflow-hidden bg-gray-50">
+      <div class="relative pt-20 mx-auto p-44">
+        <svg
+          class="absolute top-0 transform -translate-x-1/2 left-full -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+          width="404"
+          height="784"
+          fill="none"
+          viewBox="0 0 404 784"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="8b1b5f72-e944-4457-af67-0c6d15a99f38"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="4"
+                height="4"
+                class="text-gray-200"
+                fill="currentColor"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="404"
+            height="784"
+            fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)"
+          />
+        </svg>
+
+        <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div class="lg:col-span-1">
+            <h2
+              class="text-3xl font-light tracking-tight text-gray-700 sm:text-4xl"
+            >
+              Welcome back to Ordering
+              <span class="text-yellow-500">Sandy Wilson</span>
+            </h2>
+            <h3 class="mt-4 text-xl tracking-tight text-gray-800">
+              Truck & Engineering Team
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Approval-->
     <main
       id="approvalPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
     >
-      <!-- This example requires Tailwind CSS v2.0+ -->
-
       <div>
-        <h2 class="text-xs font-medium tracking-wide text-gray-500 uppercase">
-          Queues
-        </h2>
-        <ul
-          class="grid grid-cols-1 gap-5 mt-3 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          <nuxt-link to="/order-m">
-            <li class="flex col-span-1 rounded-md shadow-sm">
-              <div
-                class="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white bg-pink-600 rounded-l-md"
+        <h3 class="text-lg font-medium leading-6 text-gray-900">Your Queues</h3>
+
+        <dl class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="relative px-4 pt-5 pb-4 bg-white rounded-lg shadow">
+            <dt>
+              <div class="absolute p-3 bg-indigo-500 rounded-md">
+                <!-- Heroicon name: outline/users -->
+                <svg
+                  class="w-6 h-6 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </div>
+              <p class="ml-16 text-sm font-medium text-gray-500 truncate">
+                On-Order Queue
+              </p>
+            </dt>
+            <dd class="flex items-baseline pb-0 ml-16 sm:pb-0">
+              <p class="text-2xl font-semibold text-gray-900">234</p>
+              <p
+                class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
               >
-                ORD
+                <svg
+                  class="self-center flex-shrink-0 w-5 h-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only"> Increased by </span>
+                122
+              </p>
+            </dd>
+          </div>
+
+          <div
+            class="relative px-4 pt-5 pb-12 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
+          >
+            <dt>
+              <div class="absolute p-3 bg-indigo-500 rounded-md">
+                <!-- Heroicon name: outline/mail-open -->
+                <svg
+                  class="w-6 h-6 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+                  />
+                </svg>
               </div>
-              <div
-                class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md"
+              <p class="ml-16 text-sm font-medium text-gray-500 truncate">
+                Upfit / Project Queue
+              </p>
+            </dt>
+            <dd class="flex items-baseline ml-16 sm:pb-7">
+              <p class="text-2xl font-semibold text-gray-900">21</p>
+              <p
+                class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
               >
-                <div class="flex-1 px-4 py-2 text-sm truncate">
-                  <a
-                    href="#"
-                    class="font-medium text-gray-900 hover:text-gray-600"
-                    >On Order Queue</a
-                  >
-                  <p class="text-gray-500">23,432 Orders</p>
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                  <button
-                    class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                  >
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                    <svg
-                      class="w-5 h-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </li>
-          </nuxt-link>
+                <svg
+                  class="self-center flex-shrink-0 w-5 h-5 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
 
-          <li class="flex col-span-1 rounded-md shadow-sm">
-            <div
-              class="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white bg-purple-600 rounded-l-md"
-            >
-              CD
-            </div>
-            <div
-              class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md"
-            >
-              <div class="flex-1 px-4 py-2 text-sm truncate">
-                <a
-                  href="#"
-                  class="font-medium text-gray-900 hover:text-gray-600"
-                  >Component Design</a
-                >
-                <p class="text-gray-500">12 Members</p>
-              </div>
-              <div class="flex-shrink-0 pr-2">
-                <button
-                  class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  <span class="sr-only">Open options</span>
-                  <!-- Heroicon name: solid/dots-vertical -->
-                  <svg
-                    class="w-5 h-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </li>
+                5.4%
+              </p>
+            </dd>
+          </div>
 
-          <li class="flex col-span-1 rounded-md shadow-sm">
-            <div
-              class="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white bg-yellow-500 rounded-l-md"
-            >
-              T
-            </div>
-            <div
-              class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md"
-            >
-              <div class="flex-1 px-4 py-2 text-sm truncate">
-                <a
-                  href="#"
-                  class="font-medium text-gray-900 hover:text-gray-600"
-                  >Templates</a
+          <div
+            class="relative px-4 pt-5 pb-5 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
+          >
+            <dt>
+              <div class="absolute p-3 bg-indigo-500 rounded-md">
+                <!-- Heroicon name: outline/cursor-click -->
+                <svg
+                  class="w-6 h-6 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
                 >
-                <p class="text-gray-500">16 Members</p>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                  />
+                </svg>
               </div>
-              <div class="flex-shrink-0 pr-2">
-                <button
-                  class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              <p class="ml-16 text-sm font-medium text-gray-500 truncate">
+                Avg. Click Rate
+              </p>
+            </dt>
+            <dd class="flex items-baseline pb-6 ml-16 sm:pb-7">
+              <p class="text-2xl font-semibold text-gray-900">24.57%</p>
+              <p
+                class="flex items-baseline ml-2 text-sm font-semibold text-red-600"
+              >
+                <svg
+                  class="self-center flex-shrink-0 w-5 h-5 text-red-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
                 >
-                  <span class="sr-only">Open options</span>
-                  <!-- Heroicon name: solid/dots-vertical -->
-                  <svg
-                    class="w-5 h-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </li>
-
-          <li class="flex col-span-1 rounded-md shadow-sm">
-            <div
-              class="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white bg-green-500 rounded-l-md"
-            >
-              RC
-            </div>
-            <div
-              class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md"
-            >
-              <div class="flex-1 px-4 py-2 text-sm truncate">
-                <a
-                  href="#"
-                  class="font-medium text-gray-900 hover:text-gray-600"
-                  >React Components</a
-                >
-                <p class="text-gray-500">8 Members</p>
-              </div>
-              <div class="flex-shrink-0 pr-2">
-                <button
-                  class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  <span class="sr-only">Open options</span>
-                  <!-- Heroicon name: solid/dots-vertical -->
-                  <svg
-                    class="w-5 h-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only"> Decreased by </span>
+                3.2%
+              </p>
+            </dd>
+          </div>
+        </dl>
       </div>
     </main>
   </div>
