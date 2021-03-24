@@ -11,7 +11,7 @@
     <div class="bg-gray-50">
       <div class="relative pt-20 mx-auto pl-44">
         <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
-          <div class="lg:col-span-1">
+          <div class="lg:col-span-2">
             <h2
               class="text-3xl font-light tracking-tight text-gray-700 sm:text-4xl"
             >

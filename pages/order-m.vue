@@ -2,243 +2,9 @@
   <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
     <modalSignOut />
 
-    <nav class="sticky top-0 z-20 mx-auto bg-white pl-28">
-      <div class="h-20 p-2 pl-4 pr-4 shadow-md">
-        <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button
-              type="button"
-              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <!--
-            Icon when menu is closed.
-
-            Heroicon name: outline/menu
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-              <svg
-                class="block w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <!--
-            Icon when menu is open.
-
-            Heroicon name: outline/x
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-              <svg
-                class="hidden w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="flex items-center justify-center flex-1 ml-3 sm:items-stretch sm:justify-start"
-          >
-            <div
-              class="flex justify-center flex-1 px-2 lg:ml-6 lg:justify-start"
-            >
-              <div class="w-full max-w-lg lg:max-w-xs">
-                <label for="search" class="sr-only">Search</label>
-                <div class="relative">
-                  <div
-                    class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                  >
-                    <!-- Heroicon name: solid/search -->
-                    <svg
-                      class="w-5 h-5 text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <input
-                    id="search"
-                    name="search"
-                    class="block w-full py-2 pl-10 pr-3 leading-5 text-gray-300 placeholder-gray-400 bg-gray-100 border border-transparent rounded-md focus:outline-none focus:bg-white focus:border-gray-200 focus:ring-white focus:text-gray-900 sm:text-sm"
-                    placeholder="Search"
-                    type="search"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="hidden sm:block sm:ml-6">
-              <!--
-              <div class="flex space-x-4">
-                Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-white bg-gray-900 rounded-md"
-                  aria-current="page"
-                  >General Order</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Approval</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Driver</a
-                >
-
-                <a
-                  href="#"
-                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-                  >Vehicle</a
-                >
-              </div>
-              -->
-            </div>
-          </div>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-          >
-            <button
-              class="p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-            >
-              <span class="sr-only">View notifications</span>
-              <!-- Heroicon name: outline/bell -->
-              <svg
-                class="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-            </button>
-
-            <!-- Profile dropdown -->
-            <div class="relative ml-2">
-              <div>
-                <div class="mr-10">
-                  <button
-                    type="button"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-800 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    @click="showProfile = !showProfile"
-                  >
-                    Sign Out
-                  </button>
-                </div>
-              </div>
-
-              <!--
-            Dropdown menu, show/hide based on menu state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          -->
-              <div
-                class="absolute right-0 hidden w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="user-menu"
-              >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  role="menuitem"
-                  >Your Profile</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  role="menuitem"
-                  >Settings</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  role="menuitem"
-                  >Sign out</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a
-            href="#"
-            class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
-            aria-current="page"
-            >Dashboard</a
-          >
-
-          <a
-            href="#"
-            class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-            >Team</a
-          >
-
-          <a
-            href="#"
-            class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-            >Projects</a
-          >
-
-          <a
-            href="#"
-            class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
-            >Calendar</a
-          >
-        </div>
-      </div>
-    </nav>
+    <div class="sticky top-0">
+      <stickyNav />
+    </div>
 
     <pageNav />
 
@@ -265,22 +31,21 @@
                     >
                       General Order
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
 
                   <div
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-7 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Log Number</p>
+                      <p class="font-medium tracking-wide text-gray-700">
+                        Log Number
+                      </p>
                       <p class="text-gray-500">50119171</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Client</p>
+                      <p class="font-medium text-gray-700">Client</p>
                       <p class="text-gray-500">9990</p>
                     </div>
 
@@ -300,26 +65,26 @@
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800 truncate">
+                      <p class="font-medium text-gray-700 truncate">
                         Purchase Order Date
                       </p>
                       <p class="text-gray-500">03/11/2021</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800 truncate">
+                      <p class="font-medium text-gray-700 truncate">
                         Purchase Number
                       </p>
                       <p class="text-gray-500">50119171-001</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800 truncate">Order ID</p>
+                      <p class="font-medium text-gray-700 truncate">Order ID</p>
                       <p class="text-gray-500">3003428</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800 truncate">
+                      <p class="font-medium text-gray-700 truncate">
                         Ordered By & Date
                       </p>
                       <p class="text-gray-500">Mr. Smith - 03/11/2021</p>
@@ -369,10 +134,10 @@
                       />
                     </div>
                   </div>
-                  <div class="bg-blue-100">
+                  <div class="border-b">
                     <h2
                       id="payment_details_heading"
-                      class="p-2 mt-10 font-medium leading-6 text-gray-900 truncate"
+                      class="mt-10 text-base font-bold leading-6 text-gray-700 truncate"
                     >
                       Client Information
                     </h2>
@@ -382,7 +147,7 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-7 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800 truncate">
+                      <p class="font-medium text-gray-700 truncate">
                         Order Type
                       </p>
                       <p class="text-gray-500">Stock</p>
@@ -407,8 +172,8 @@
                     <div class="lg:col-span-1 md:col-span-2">
                       <label
                         for="expiration_date"
-                        class="block font-medium truncate text-gray-70"
-                        >Expration date</label
+                        class="block font-medium text-gray-700 truncate"
+                        >Expiration date</label
                       >
                       <input
                         type="text"
@@ -484,10 +249,10 @@
                     </div>
                   </div>
 
-                  <div class="bg-blue-100">
+                  <div class="border-b">
                     <h2
                       id="payment_details_heading"
-                      class="p-2 mt-10 font-medium leading-6 text-gray-900 truncate"
+                      class="mt-10 text-base font-bold leading-6 text-gray-700 truncate"
                     >
                       Dealer Contact Information
                     </h2>
@@ -591,7 +356,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -606,7 +371,7 @@
     <!--Approval-->
     <main
       id="approvalPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -622,10 +387,7 @@
                     >
                       Approval
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
 
                   <div
@@ -969,7 +731,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-dark-blue hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -984,7 +746,7 @@
     <!--Driver-->
     <main
       id="driverPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -1000,27 +762,24 @@
                     >
                       Driver
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
 
                   <div
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">First Name</p>
+                      <p class="font-medium text-gray-700">First Name</p>
                       <p class="text-gray-500">Tom</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Middle Name</p>
+                      <p class="font-medium text-gray-700">Middle Name</p>
                       <p class="text-gray-500">Rick</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Last Name</p>
+                      <p class="font-medium text-gray-700">Last Name</p>
                       <p class="text-gray-500">Rick</p>
                     </div>
 
@@ -1040,7 +799,7 @@
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Driver Breakdown</p>
+                      <p class="font-medium text-gray-700">Driver Breakdown</p>
                       <p class="text-gray-500">9999-DCTEST</p>
                     </div>
                   </div>
@@ -1049,52 +808,52 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="font-medium text-gray-700">Address Line 1</p>
                       <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="font-medium text-gray-700">Address Line 2</p>
                       <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">City</p>
+                      <p class="font-medium text-gray-700">City</p>
                       <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">State</p>
+                      <p class="font-medium text-gray-700">State</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="font-medium text-gray-700">Zip Code</p>
                       <p class="text-gray-500">60607-2635</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Email</p>
+                      <p class="font-medium text-gray-700">Email</p>
                       <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Phone</p>
+                      <p class="font-medium text-gray-700">Phone</p>
                       <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">
+                      <p class="font-medium text-gray-700">
                         Vehicle Eligibility
                       </p>
                       <p class="text-gray-500">
@@ -1103,7 +862,7 @@
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Role</p>
+                      <p class="font-medium text-gray-700">Role</p>
                       <p class="text-gray-500">Driver</p>
                     </div>
                   </div>
@@ -1111,7 +870,7 @@
                   <div class="bg-blue-100">
                     <h2
                       id="payment_details_heading"
-                      class="p-2 mt-10 font-medium leading-6 text-gray-900"
+                      class="p-2 mt-10 font-medium leading-6 text-gray-700"
                     >
                       Garaging Address
                     </h2>
@@ -1121,37 +880,37 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="font-medium text-gray-700">Address Line 1</p>
                       <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="font-medium text-gray-700">Address Line 2</p>
                       <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">City</p>
+                      <p class="font-medium text-gray-700">City</p>
                       <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">State</p>
+                      <p class="font-medium text-gray-700">State</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="font-medium text-gray-700">Zip Code</p>
                       <p class="text-gray-500">60607-2635</p>
                     </div>
                   </div>
@@ -1159,7 +918,7 @@
                   <div class="bg-blue-100">
                     <h2
                       id="payment_details_heading"
-                      class="p-2 mt-10 font-medium leading-6 text-gray-900"
+                      class="p-2 mt-10 font-medium leading-6 text-gray-700"
                     >
                       Delivery Address
                     </h2>
@@ -1169,37 +928,37 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 1</p>
+                      <p class="font-medium text-gray-700">Address Line 1</p>
                       <p class="text-gray-500">847 W Monroe St APT 24</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Address Line 2</p>
+                      <p class="font-medium text-gray-700">Address Line 2</p>
                       <p class="text-gray-500"></p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">City</p>
+                      <p class="font-medium text-gray-700">City</p>
                       <p class="text-gray-500">Chicago</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">State</p>
+                      <p class="font-medium text-gray-700">State</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">IL</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">County</p>
+                      <p class="font-medium text-gray-700">County</p>
                       <p class="text-gray-500">Cook</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Zip Code</p>
+                      <p class="font-medium text-gray-700">Zip Code</p>
                       <p class="text-gray-500">60607-2635</p>
                     </div>
                   </div>
@@ -1208,7 +967,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1223,7 +982,7 @@
     <!--Vehicle-->
     <main
       id="vehiclePOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -1239,47 +998,44 @@
                     >
                       Vehicle
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
 
                   <div
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Product Class</p>
+                      <p class="font-medium text-gray-700">Product Class</p>
                       <p class="text-gray-500">Car</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Log Numeber</p>
+                      <p class="font-medium text-gray-700">Log Numeber</p>
                       <p class="text-gray-500">5011911</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Client</p>
+                      <p class="font-medium text-gray-700">Client</p>
                       <p class="text-gray-500">9990</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
-                      <p class="font-medium text-gray-800">Unit</p>
+                      <p class="font-medium text-gray-700">Unit</p>
                       <p class="text-gray-500">General Motors</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Make</p>
+                      <p class="font-medium text-gray-700">Make</p>
                       <p class="text-gray-500">Chevrolet</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Model</p>
+                      <p class="font-medium text-gray-700">Model</p>
                       <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">ACode</p>
+                      <p class="font-medium text-gray-700">ACode</p>
                       <p class="text-gray-500">Camaro</p>
                     </div>
 
@@ -1321,32 +1077,32 @@
                     class="grid grid-cols-1 gap-2 mt-6 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-8 lg:gap-6"
                   >
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">MFR DAN</p>
+                      <p class="font-medium text-gray-700">MFR DAN</p>
                       <p class="text-gray-500">Car</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Year</p>
+                      <p class="font-medium text-gray-700">Year</p>
                       <p class="text-gray-500">2020</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
-                      <p class="font-medium text-gray-800">Manufacturer</p>
+                      <p class="font-medium text-gray-700">Manufacturer</p>
                       <p class="text-gray-500">General Motors</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Make</p>
+                      <p class="font-medium text-gray-700">Make</p>
                       <p class="text-gray-500">Chevrolet</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">Model</p>
+                      <p class="font-medium text-gray-700">Model</p>
                       <p class="text-gray-500">Camaro</p>
                     </div>
 
                     <div class="lg:col-span-1 md:col-span-2">
-                      <p class="font-medium text-gray-800">ACode</p>
+                      <p class="font-medium text-gray-700">ACode</p>
                       <p class="text-gray-500">Camaro</p>
                     </div>
 
@@ -1485,13 +1241,13 @@
                               class="bg-white hover:bg-green-100 focus:bg-blue-100"
                             >
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 <overflow />
                               </td>
 
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 0002
                               </td>
@@ -1559,13 +1315,13 @@
                             <!-- Even row -->
                             <tr class="bg-gray-50 hover:bg-green-100">
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 <overflow />
                               </td>
 
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 0002
                               </td>
@@ -1628,13 +1384,13 @@
 
                             <tr class="bg-white hover:bg-green-100">
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 <overflow />
                               </td>
 
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 0002
                               </td>
@@ -1698,13 +1454,13 @@
                             <!-- Even row -->
                             <tr class="bg-gray-50 hover:bg-green-100">
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 <overflow />
                               </td>
 
                               <td
-                                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                class="px-4 py-4 font-medium text-gray-700 whitespace-nowrap"
                               >
                                 0002
                               </td>
@@ -1774,7 +1530,7 @@
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1787,7 +1543,7 @@
     </main>
 
     <!--DIO -->
-    <main id="dioPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main id="dioPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1802,17 +1558,14 @@
                     >
                       Dealer Installed Options
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
                 </div>
 
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1825,10 +1578,7 @@
     </main>
 
     <!--Upfit-->
-    <main
-      id="upfitPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
-    >
+    <main id="upfitPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1843,17 +1593,14 @@
                     >
                       Upfit
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
                 </div>
 
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1866,7 +1613,7 @@
     </main>
 
     <!--Fees & Charges-->
-    <main id="feesPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main id="feesPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1881,17 +1628,14 @@
                     >
                       Fees & Charges
                     </h2>
-                    <p class="mt-1 text-gray-500">
-                      Update your billing information. Please note that updating
-                      your location could affect your tax rates.
-                    </p>
+                    <p class="mt-1 text-gray-500"></p>
                   </div>
                 </div>
 
                 <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                   <button
                     type="submit"
-                    class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    class="inline-flex justify-center px-4 py-2 font-medium text-white border border-transparent rounded-md shadow-sm bg-element-green hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   >
                     Save
                   </button>
@@ -1906,7 +1650,9 @@
 </template>
 
 <script>
+import stickyNav from '~/components/stickyNav.vue'
 export default {
+  components: { stickyNav },
   head() {
     return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
