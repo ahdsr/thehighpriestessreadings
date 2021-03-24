@@ -1,107 +1,5 @@
 <template>
   <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div
-      class="fixed inset-0 z-50 overflow-y-auto"
-      aria-labelledby="dialog-1-title"
-      role="dialog"
-      aria-modal="true"
-      v-show="openThing"
-    >
-      <div
-        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
-      >
-        <!--
-      Background overlay, show/hide based on modal state.
-
-      Entering: "ease-out duration-300"
-        From: "opacity-0"
-        To: "opacity-100"
-      Leaving: "ease-in duration-200"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
-
-        <div
-          class="fixed inset-0 bg-gray-400 bg-opacity-75 blur bounce-enter-active"
-          aria-hidden="true"
-          v-if="openThing"
-        ></div>
-
-        <!-- This element is to trick the browser into centering the modal contents. -->
-        <span
-          class="hidden sm:inline-block sm:align-middle sm:h-screen"
-          aria-hidden="true"
-          >&#8203;</span
-        >
-
-        <!--
-      Modal panel, show/hide based on modal state.
-
-      Entering: "ease-out duration-300"
-        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-        To: "opacity-100 translate-y-0 sm:scale-100"
-      Leaving: "ease-in duration-200"
-        From: "opacity-100 translate-y-0 sm:scale-100"
-        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-    -->
-        <transition name="bounce">asasdsadsads</transition>
-        <div
-          class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
-          v-if="openThing"
-        >
-          <div>
-            <div
-              class="flex items-center justify-center w-12 h-12 mx-auto bg-green-100 rounded-full"
-            >
-              <!-- Heroicon name: outline/check -->
-              <svg
-                class="w-6 h-6 text-green-600"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-
-            <transition name="bounce">
-              <div class="mt-3 text-center sm:mt-5">
-                <h3
-                  class="text-lg font-medium leading-6 text-gray-900"
-                  id="dialog-1-title"
-                >
-                  Payment successful
-                </h3>
-                <div class="mt-2">
-                  <p class="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur amet labore.
-                  </p>
-                </div>
-              </div>
-            </transition>
-          </div>
-          <div class="mt-5 sm:mt-6">
-            <button
-              type="button"
-              class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-              @click="openThing = !openThing"
-            >
-              Go back to dashboard
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <nav class="sticky top-0 z-20 mx-auto bg-white pl-28">
       <div class="h-20 p-2 pl-4 pr-4 shadow-md">
         <div class="relative flex items-center justify-between h-16">
@@ -197,7 +95,37 @@
                 </div>
               </div>
             </div>
-            <div class="hidden sm:block sm:ml-6"></div>
+            <div class="hidden sm:block sm:ml-6">
+              <!--
+              <div class="flex space-x-4">
+                Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
+                <a
+                  href="#"
+                  class="px-3 py-2 font-medium text-white bg-gray-900 rounded-md"
+                  aria-current="page"
+                  >General Order</a
+                >
+
+                <a
+                  href="#"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  >Approval</a
+                >
+
+                <a
+                  href="#"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  >Driver</a
+                >
+
+                <a
+                  href="#"
+                  class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                  >Vehicle</a
+                >
+              </div>
+              -->
+            </div>
           </div>
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
@@ -231,7 +159,6 @@
                   <button
                     type="button"
                     class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-800 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    @click="openThing = !openThing"
                   >
                     Sign Out
                   </button>
@@ -311,8 +238,7 @@
     </nav>
 
     <div
-      v-if="openThing"
-      class="fixed min-w-full p-4 bg-white shadow-md bg-opacity-60 pl-14 top-22 left-28 blur"
+      class="fixed min-w-full p-4 shadow-md bg-blue-50 pl-14 top-22 left-28 blur bg-opacity-70"
     >
       <div class="sm:hidden">
         <label for="tabs" class="sr-only">Select a tab</label>
@@ -333,52 +259,84 @@
       <div class="hidden sm:block">
         <nav class="flex space-x-4 justify-self-center" aria-label="Tabs">
           <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700"-->
-          <a
-            href="#"
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'generalPOS' }"
           >
-            General Order
-          </a>
-
-          <a
-            href="#"
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              General Order
+            </a>
+          </nuxt-link>
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'driverPOS' }"
           >
-            Driver
-          </a>
-
-          <a
-            href="#"
-            class="px-3 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 rounded-md"
-            aria-current="page"
-          >
-            Vehicle
-          </a>
-
-          <a
-            href="#"
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              Driver
+            </a>
+          </nuxt-link>
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'vehiclePOS' }"
           >
-            DIO
-          </a>
-          <a
-            href="#"
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 rounded-md"
+              aria-current="page"
+            >
+              Vehicle
+            </a>
+          </nuxt-link>
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'dioPOS' }"
           >
-            Upfit
-          </a>
-          <a
-            href="#"
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              DIO
+            </a>
+          </nuxt-link>
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'upfitPOS' }"
           >
-            Fees &amp; Charges
-          </a>
-          <a
-            href="#"
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              Upfit
+            </a>
+          </nuxt-link>
+          <nuxt-link
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'feesPOS' }"
           >
-            Billing
-          </a>
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              Fees &amp; Charges
+            </a>
+          </nuxt-link>
+          <nuxt-link
+            class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            :to="{ path: '/order-m', hash: 'billingrPOS' }"
+          >
+            <a
+              href="#"
+              class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
+            >
+              Billing
+            </a>
+          </nuxt-link>
           <a
             href="#"
             class="px-3 py-2 text-sm font-medium text-gray-500 rounded-md hover:text-gray-700"
@@ -408,7 +366,7 @@
     </div>
 
     <aside
-      class="fixed top-0 left-0 z-30 invisible min-h-full shadow-inner z-2 w-28 lg:visible bg-element-bright-blue"
+      class="fixed top-0 left-0 z-50 invisible min-h-full shadow-2xl z-2 w-28 lg:visible bg-element-bright-blue"
     >
       <div class="flex-col text-center text-white">
         <div class="h-20 p-6 bg-element-green hover:bg-blue-500">
@@ -470,37 +428,42 @@
           </svg>
         </div>
         <div class="p-6 hover:bg-blue-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="inline-block w-6 text-white"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            />
-          </svg>
+          <nuxt-link to="/order-home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="inline-block w-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </nuxt-link>
           <!-- <p class="text-xs text-gray-800">Home</p> -->
         </div>
+
         <div class="p-6 hover:bg-blue-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="inline-block w-6 text-white"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-            />
-          </svg>
+          <nuxt-link to="/order-m">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="inline-block w-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+              />
+            </svg>
+          </nuxt-link>
           <!-- <p class="text-xs text-gray-800">Queues</p> -->
         </div>
         <div class="p-6 hover:bg-blue-500">
@@ -657,7 +620,10 @@
     <!--Floating Info Div-->
 
     <!--General Order-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main
+      id="generalPOS"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+    >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1005,7 +971,10 @@
     </main>
 
     <!--Approval-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main
+      id="approvalPOS"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+    >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1380,7 +1349,10 @@
     </main>
 
     <!--Driver-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main
+      id="driverPOS"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+    >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1616,7 +1588,10 @@
     </main>
 
     <!--Vehicle-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main
+      id="vehiclePOS"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+    >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -2172,8 +2147,8 @@
       </div>
     </main>
 
-    <!--General Order-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <!--DIO -->
+    <main id="dioPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -2211,8 +2186,10 @@
     </main>
 
     <!--Upfit-->
-
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main
+      id="upfitPOS"
+      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+    >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -2238,8 +2215,6 @@
                   <button
                     type="submit"
                     class="inline-flex justify-center px-4 py-2 font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    @click="openThing = !openThing"
-                    href="javascript:void();"
                   >
                     Save
                   </button>
@@ -2252,7 +2227,7 @@
     </main>
 
     <!--Fees & Charges-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
+    <main id="feesPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -2295,12 +2270,9 @@
 export default {
   data() {
     return {
-      scrollToTop: false,
-      showMenu: false,
-      openThing: false,
+      showProfile: false,
     }
   },
-
   head() {
     return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
