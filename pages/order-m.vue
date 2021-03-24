@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
+  <div class="mx-auto text-xs bg-white sm:text-xs lg:text-sm">
     <nav class="sticky top-0 z-20 mx-auto bg-white pl-28">
       <div class="h-20 p-2 pl-4 pr-4 shadow-md">
         <div class="relative flex items-center justify-between h-16">
@@ -1761,12 +1761,14 @@
                       <div
                         class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg"
                       >
-                        <table class="min-w-full divide-y divide-gray-200">
+                        <table
+                          class="min-w-full divide-y divide-gray-200 table-fixed"
+                        >
                           <thead class="align-top bg-element-bright-blue">
                             <tr>
                               <th
                                 scope="col"
-                                class="px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase"
+                                class="w-1/6 px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase"
                               >
                                 Actions
                               </th>
@@ -1784,7 +1786,7 @@
                               </th>
                               <th
                                 scope="col"
-                                class="px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase"
+                                class="w-1/6 px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase"
                               >
                                 Option Code External
                               </th>
