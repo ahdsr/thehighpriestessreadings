@@ -1762,15 +1762,15 @@
                         class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg"
                       >
                         <table
-                          class="min-w-full divide-y divide-gray-200 table-fixed"
+                          class="w-auto divide-y divide-gray-200 table-fixed"
                         >
                           <thead class="align-top bg-element-bright-blue">
                             <tr>
                               <th
                                 scope="col"
-                                class="w-1/6 px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase"
+                                class="px-4 py-3 text-xs font-medium tracking-wider text-left text-white uppercase alu"
                               >
-                                Actions
+                                <TheFooter />
                               </th>
                               <th
                                 scope="col"
@@ -1846,7 +1846,7 @@
                               </th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody class="align-top">
                             <!-- Odd row -->
                             <tr
                               class="bg-white hover:bg-green-100 focus:bg-blue-100"
@@ -1854,7 +1854,7 @@
                               <td
                                 class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                               >
-                                ---
+                                <overflow />
                               </td>
 
                               <td
@@ -1873,9 +1873,13 @@
                                 2SS
                               </td>
                               <td
-                                class="px-4 py-4 text-gray-500 whitespace-nowrap"
+                                class="px-4 py-4 text-gray-500 whitespace-normal"
                               >
-                                Preferred Equipment Group 2SS
+                                Preferred Equipment Group 2SS Preferred
+                                Equipment Group 2SS Preferred Equipment Group
+                                2SS Preferred Equipment Group 2SS Preferred
+                                Equipment Group 2SS Preferred Equipment Group
+                                2SS
                               </td>
                               <td
                                 class="px-4 py-4 text-gray-500 whitespace-nowrap"
