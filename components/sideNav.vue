@@ -4,7 +4,7 @@
       class="fixed top-0 left-0 z-40 invisible min-h-full shadow-2xl z-2 w-28 lg:visible bg-element-bright-blue"
     >
       <div class="flex-col text-center text-white">
-        <div class="h-20 p-6 bg-element-green hover:bg-blue-500">
+        <div class="p-5 bg-element-green hover:bg-blue-500">
           <svg
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"

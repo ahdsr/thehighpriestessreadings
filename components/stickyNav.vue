@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="z-20 mx-auto bg-white pl-28">
+    <nav class="z-20 mx-auto pl-28">
       <div class="h-20 p-2 pl-4 pr-4 shadow-md">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -159,6 +159,7 @@
                   <button
                     type="button"
                     class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-800 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    @click="showProfile = !showProfile"
                   >
                     Sign Out
                   </button>
@@ -240,7 +241,12 @@
 </template>
 
 <script>
-export default {}
-</script>
+export default {
+  data() {
+    return {
+      showProfile: false,
+    }
+  },
+}
 
 <style lang="scss" scoped></style>

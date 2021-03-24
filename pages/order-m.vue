@@ -2,11 +2,14 @@
   <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
     <modalSignOut />
 
-    <div class="sticky top-0">
-      <stickyNav />
-    </div>
+    <stickyNav />
 
-    <pageNav />
+    <nav
+      :class="{ scrolled: !view.atTopOfPage }"
+      class="sticky top-0 z-30 bg-white"
+    >
+      <pageNav />
+    </nav>
 
     <sideNav />
 
@@ -1650,9 +1653,30 @@
 </template>
 
 <script>
-import stickyNav from '~/components/stickyNav.vue'
 export default {
-  components: { stickyNav },
+  data() {
+    return {
+      view: {
+        atTopOfPage: true,
+      },
+    }
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    // the function to call when the user scrolls, added as a method
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true
+      }
+    },
+  },
   head() {
     return {
       //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
