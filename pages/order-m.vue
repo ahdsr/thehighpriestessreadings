@@ -299,7 +299,7 @@
     <!--Content Start-->
 
     <!--General Order-->
-    <main class="mx-auto pb-14 lg:py-8 lg:pl-28 lg:pr-4 lg:mt-14">
+    <main class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-48">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
