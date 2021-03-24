@@ -22,7 +22,7 @@
                     alt=""
                   />
                 </a>
-                <div class="flex items-center -mr-2 md:hidden">
+                <div class="flex items-center -mr-2 md:hidden z-50">
                   <button
                     @click="showProfile = !showProfile"
                     type="button"
