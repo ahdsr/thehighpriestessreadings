@@ -13,7 +13,7 @@
           <span class="sr-only">Open options</span>
           <!-- Heroicon name: solid/dots-vertical -->
           <svg
-            class="w-5 h-5 text-black"
+            class="w-4 h-4 text-black"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"

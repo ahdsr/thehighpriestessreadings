@@ -1,24 +1,25 @@
 <template>
   <div class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
-    <modalSignOut />
+    <!-- <modalSignOut /> -->
 
-    <stickyNav />
+    <div class="sticky top-0 z-10">
+      <stickyNav />
+    </div>
 
-    <nav
-      :class="{ scrolled: !view.atTopOfPage }"
-      class="sticky top-0 z-30 bg-white"
-    >
-      <pageNav />
-    </nav>
+    <nav class="sticky top-0 bg-white"></nav>
 
-    <sideNav />
+    <div class="z-20"><sideNav /></div>
 
-    <!--Floating Info Div-->
+    <h1 class="relative pl-40 text-xl font-medium tracking-tight top-8">
+      Order Maintanance
+    </h1>
 
-    <!--General Order-->
+    <div class="relative pl-40 top-10">
+      <crumb />
+    </div>
     <main
       id="generalPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-28"
+      class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-20"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -27,10 +28,15 @@
             <form action="#" method="POST">
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
                 <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
+                  <div
+                    class="relative w-3 bg-element-bright-blue top-6 -left-10 text-element-bright-blue"
+                  >
+                    *
+                  </div>
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-element-bright-blue"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       General Order
                     </h2>
@@ -374,7 +380,7 @@
     <!--Approval-->
     <main
       id="approvalPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
+      class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -383,10 +389,15 @@
             <form action="#" method="POST">
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
                 <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
+                  <div
+                    class="relative w-3 bg-element-bright-blue top-6 -left-10 text-element-bright-blue"
+                  >
+                    *
+                  </div>
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Approval
                     </h2>
@@ -749,7 +760,7 @@
     <!--Driver-->
     <main
       id="driverPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
+      class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -759,9 +770,14 @@
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
                 <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div class="pb-4 border-b">
+                    <div
+                      class="relative w-3 bg-element-bright-blue top-6 -left-10 text-element-bright-blue"
+                    >
+                      *
+                    </div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Driver
                     </h2>
@@ -985,7 +1001,7 @@
     <!--Vehicle-->
     <main
       id="vehiclePOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0"
+      class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0"
     >
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
@@ -995,9 +1011,14 @@
               <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
                 <div class="px-4 py-12 bg-white sm:p-6 lg:p-10">
                   <div class="pb-4 border-b">
+                    <div
+                      class="relative w-3 bg-element-bright-blue top-6 -left-10 text-element-bright-blue"
+                    >
+                      *
+                    </div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Vehicle
                     </h2>
@@ -1546,7 +1567,7 @@
     </main>
 
     <!--DIO -->
-    <main id="dioPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
+    <main id="dioPOS" class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1557,7 +1578,7 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Dealer Installed Options
                     </h2>
@@ -1581,7 +1602,7 @@
     </main>
 
     <!--Upfit-->
-    <main id="upfitPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
+    <main id="upfitPOS" class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1592,7 +1613,7 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Upfit
                     </h2>
@@ -1616,7 +1637,7 @@
     </main>
 
     <!--Fees & Charges-->
-    <main id="feesPOS" class="mx-auto pb-14 lg:py-8 lg:pl-44 lg:pr-12 lg:pt-0">
+    <main id="feesPOS" class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-0">
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">
@@ -1627,7 +1648,7 @@
                   <div>
                     <h2
                       id="payment_details_heading"
-                      class="text-2xl font-bold leading-6 text-gray-700"
+                      class="text-xl font-bold tracking-tight text-element-dark-blue"
                     >
                       Fees & Charges
                     </h2>
@@ -1677,28 +1698,7 @@ export default {
       }
     },
   },
-  head() {
-    return {
-      //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
-      //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
-      link: [
-        {
-          rel: 'stylesheet',
-          href:
-            'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
-        },
-      ],
-      script: [
-        {
-          src:
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js',
-        },
-      ],
-    }
-  },
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
+<style></style>

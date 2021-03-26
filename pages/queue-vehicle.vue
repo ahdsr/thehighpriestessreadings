@@ -8,15 +8,11 @@
 
     <div class="z-20"><sideNav /></div>
 
-    <div class="z-30">
-      <sidePanel />
-    </div>
-
-    <h1 class="relative text-xl font-medium tracking-tight top-8 left-40">
-      On Order-Queue
+    <h1 class="relative pl-40 text-xl font-medium tracking-tight top-8">
+      Vehicle Configuration
     </h1>
 
-    <div class="relative top-10 left-40">
+    <div class="relative pl-40 top-10">
       <crumb />
     </div>
 
@@ -24,10 +20,16 @@
       id="generalPOS"
       class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-20"
     >
-      <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-        <div class="bg-white">
-          <queOnOrder :property="property" />
+      <div class="bg-transparent shadow-lg">
+        <div class="flex flex-row bg-transparent">
+          <div
+            class="flex p-4 bg-white border-2 border-b-0 border-element-bright-blue hover:bg-gray-100"
+          >
+            Fleet Specifications
+          </div>
+          <div class="flex p-4 bg-white hover:bg-gray-100">Price & Configs</div>
         </div>
+        <queFleetSpecs :property="property" />
       </div>
     </main>
   </div>
@@ -57,12 +59,12 @@ export default {
   data() {
     return {
       property: {
-        log: 'Log',
-        corpcode: 'Corp Code',
+        log: 'Fleet Spec Status',
+        corpcode: 'Image',
         clientNumber: 'Client Number',
-        unitNumber: 'Unit Number',
-        orderType: 'Order Type',
-        currentStatus: 'Current Status',
+        unitNumber: 'Client Name',
+        orderType: 'Breakdown',
+        currentStatus: 'Fleet Spec ID',
         year: 'Year',
         manufacturer: 'Manufacturer',
         make: 'Make',
