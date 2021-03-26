@@ -62,7 +62,7 @@
             />
           </svg>
         </div>
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <nuxt-link to="/order-home">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,14 +81,14 @@
           </nuxt-link>
           <!-- <p class="text-xs text-gray-800">Home</p> -->
         </div>
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <nuxt-link to="/order-m">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="inline-block w-6 text-white"
+              class="inline-block w-6 text-white animated bounceIn"
             >
               <path
                 stroke-linecap="round"
@@ -99,7 +99,7 @@
             </svg>
           </nuxt-link>
         </div>
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@
           </a>
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -138,7 +138,7 @@
           <!-- <p class="text-xs text-gray-800">Order Preferences</p> -->
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -156,7 +156,7 @@
           <!-- <p class="text-xs text-gray-800">Vehicle Config</p> -->
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -175,7 +175,7 @@
           <!-- <p class="text-xs text-gray-800">Codes Tables</p> -->
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -192,7 +192,7 @@
           </svg>
           <!-- <p class="text-xs text-gray-800">Batch Processing</p> -->
         </div>
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -210,7 +210,7 @@
           <!-- <p class="text-xs text-gray-800">BMTs</p> -->
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-500 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -229,7 +229,7 @@
           <!-- <p class="text-xs text-gray-800">Change History</p> -->
         </div>
 
-        <div class="p-6 hover:bg-blue-500">
+        <div class="p-6 hover:bg-blue-50 animated bounceIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -256,4 +256,4 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>

@@ -35,104 +35,113 @@
         <h3 class="text-lg font-medium leading-6 text-gray-900">Your Queues</h3>
 
         <dl class="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="relative px-4 pt-5 pb-4 bg-white rounded-lg shadow">
-            <dt>
-              <div class="absolute p-3 bg-indigo-500 rounded-md">
-                <!-- Heroicon name: outline/users -->
-                <svg
-                  class="w-6 h-6 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              </div>
-              <p class="ml-16 text-sm font-medium text-gray-500 truncate">
-                On-Order Queue
-              </p>
-            </dt>
-            <dd class="flex items-baseline pb-0 ml-16 sm:pb-0">
-              <p class="text-2xl font-semibold text-gray-900">234</p>
-              <p
-                class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
-              >
-                <svg
-                  class="self-center flex-shrink-0 w-5 h-5 text-green-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="sr-only"> Increased by </span>
-                122
-              </p>
-            </dd>
-          </div>
 
+            <div
+              v-if="showCard1"
+              class="relative px-4 pt-5 pb-12 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
+
+            >
+            <nuxt-link to="/queue-onorder">
+              <dt>
+                <div class="absolute p-3 bg-indigo-500 rounded-md">
+                  <!-- Heroicon name: outline/users -->
+                  <svg
+                    class="w-6 h-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                </div>
+                <p class="ml-16 text-sm font-medium text-gray-500 truncate">
+                  On-Order Queue
+                </p>
+              </dt>
+            </nuxt-link>
+              <dd class="flex items-baseline pb-0 ml-16 sm:pb-0">
+                <p class="text-2xl font-semibold text-gray-900">234</p>
+                <p
+                  class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
+                >
+                  <svg
+                    class="self-center flex-shrink-0 w-5 h-5 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="sr-only"> Increased by </span>
+                  122
+                </p>
+              </dd>
+            </div>
+
+
+            <div
+              v-if="showCard2"
+              class="relative px-4 pt-5 pb-12 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
+            >
+              <dt>
+                <div class="absolute p-3 bg-indigo-500 rounded-md">
+                  <!-- Heroicon name: outline/mail-open -->
+                  <svg
+                    class="w-6 h-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+                    />
+                  </svg>
+                </div>
+                <p class="ml-16 text-sm font-medium text-gray-500 truncate">
+                  Upfit / Project Queue
+                </p>
+              </dt>
+              <dd class="flex items-baseline ml-16 sm:pb-7 animated bounce">
+                <p class="text-2xl font-semibold text-gray-900">21</p>
+                <p
+                  class="flex items-baseline ml-2 text-sm font-semibold text-green-600 animated bounceInDown"
+                >
+                  <svg
+                    class="self-center flex-shrink-0 w-5 h-5 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  5.4%
+                </p>
+              </dd>
+            </div>
+          </transition>
           <div
-            class="relative px-4 pt-5 pb-12 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
-          >
-            <dt>
-              <div class="absolute p-3 bg-indigo-500 rounded-md">
-                <!-- Heroicon name: outline/mail-open -->
-                <svg
-                  class="w-6 h-6 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
-                  />
-                </svg>
-              </div>
-              <p class="ml-16 text-sm font-medium text-gray-500 truncate">
-                Upfit / Project Queue
-              </p>
-            </dt>
-            <dd class="flex items-baseline ml-16 sm:pb-7">
-              <p class="text-2xl font-semibold text-gray-900">21</p>
-              <p
-                class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
-              >
-                <svg
-                  class="self-center flex-shrink-0 w-5 h-5 text-green-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-
-                5.4%
-              </p>
-            </dd>
-          </div>
-
-          <div
-            class="relative px-4 pt-5 pb-5 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6"
+            class="relative px-4 pt-5 pb-5 overflow-hidden bg-white rounded-lg shadow sm:pt-6 sm:px-6 animate-scale"
           >
             <dt>
               <div class="absolute p-3 bg-indigo-500 rounded-md">
@@ -180,6 +189,8 @@
             </dd>
           </div>
         </dl>
+        <p @click="showCard1 = !showCard1">Test</p>
+        <p @click="showCard2 = !showCard2">Test</p>
       </div>
     </main>
   </div>
@@ -189,7 +200,8 @@
 export default {
   data() {
     return {
-      showProfile: false,
+      showCard1: true,
+      showCard2: true,
     }
   },
   head() {
@@ -216,4 +228,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 </style>

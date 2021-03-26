@@ -22,7 +22,7 @@
                     alt=""
                   />
                 </a>
-                <div class="flex items-center -mr-2 md:hidden z-50">
+                <div class="z-50 flex items-center -mr-2 md:hidden">
                   <button
                     @click="showProfile = !showProfile"
                     type="button"
@@ -918,7 +918,7 @@
 export default {
   data() {
     return {
-      showMenu: false,
+      showProfile: false,
     }
   },
   head() {

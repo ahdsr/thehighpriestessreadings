@@ -3,8 +3,9 @@
     <div class="relative inline-block text-left">
       <div>
         <button
+          @click="showOverFlow = !showOverFlow"
           type="button"
-          class="flex items-center text-gray-400 bg-gray-100 rounded-full hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+          class="flex items-center text-gray-400 rounded-full hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
           id="options-menu"
           aria-expanded="true"
           aria-haspopup="true"
@@ -12,7 +13,7 @@
           <span class="sr-only">Open options</span>
           <!-- Heroicon name: solid/dots-vertical -->
           <svg
-            class="w-5 h-5"
+            class="w-5 h-5 text-black"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -36,40 +37,31 @@
       To: "transform opacity-0 scale-95"
   -->
       <div
-        class="absolute left-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+        class="absolute left-0 z-50 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="options-menu"
-        v-show="showProfile"
+        v-show="showOverFlow"
       >
         <div class="py-1" role="none">
           <a
             href="#"
             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
-            >Account settings</a
+            >Attachments (4)</a
           >
           <a
             href="#"
             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
-            >Support</a
+            >Comments (11)</a
           >
           <a
             href="#"
             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
-            >License</a
+            >Status</a
           >
-          <form method="POST" action="#" role="none">
-            <button
-              type="submit"
-              class="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              role="menuitem"
-            >
-              Sign out
-            </button>
-          </form>
         </div>
       </div>
     </div>
@@ -80,7 +72,7 @@
 export default {
   data() {
     return {
-      showProfile: false,
+      showOverFlow: false,
     }
   },
 }

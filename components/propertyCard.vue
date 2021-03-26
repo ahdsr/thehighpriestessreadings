@@ -4,7 +4,10 @@
   >
     <div class="md:flex">
       <img
-        class="object-cover object-center w-full h-56 md:w-40 md:h-40" :src="property.imageURL" :alt="property.imageAlt"/>
+        class="object-cover object-center w-full h-56 md:w-40 md:h-40"
+        :src="property.imageURL"
+        :alt="property.imageAlt"
+      />
       <div class="p-4 -mt-4">
         <span class="inline-block px-2 mt-4 text-xs bg-yellow-600 rounded-full"
           >NEW</span
@@ -39,7 +42,6 @@
 </template>
 
 <script>
-
 // This is an example of a data property declaring a Vue prop //
 export default {
   props: {
