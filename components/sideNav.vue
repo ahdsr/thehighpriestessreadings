@@ -1,7 +1,7 @@
 <template>
   <div>
     <aside
-      class="fixed top-0 left-0 min-h-full shadow-2xl w-28 lg:visible bg-element-bright-blue"
+      class="fixed top-0 left-0 min-h-full bg-green-800 shadow-2xl w-28 lg:visible"
     >
       <div class="flex-col text-center text-white">
         <div class="p-5 bg-element-green hover:bg-blue-500">

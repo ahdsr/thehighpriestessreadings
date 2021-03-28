@@ -41,19 +41,7 @@ export default {
   components: {
     queOnOrder,
   },
-  head() {
-    return {
-      //     script: [{ src: 'https://code.jquery.com/jquery-1.12.4.js'}],
-      //     script: [{ src: 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'}],
-      //
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Tangerine">',
-        },
-      ],
-    }
-  },
+
   data() {
     return {
       property: {

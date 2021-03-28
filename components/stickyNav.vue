@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="mx-auto pl-28">
-      <div class="h-20 p-2 pl-4 pr-4 bg-white shadow-md">
+      <div class="h-20 p-2 pl-4 pr-4 bg-gray-50 bg-opacity-90 blur">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->

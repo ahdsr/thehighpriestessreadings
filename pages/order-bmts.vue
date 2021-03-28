@@ -18,11 +18,11 @@
           Your BMTs
         </h3>
 
-        <dl class="grid grid-cols-4 gap-5 mt-5">
+        <dl class="grid grid-cols-4 gap-4 mt-5">
           <div
             class="pt-3 pb-10 pl-3 overflow-hidden bg-white rounded-lg shadow"
           >
-            <nuxt-link to="/queue-onorder">
+            <nuxt-link to="/bmt-addOptions">
               <div class="absolute p-3 rounded-md bg-element-dark-blue">
                 <!-- Heroicon name: outline/users -->
                 <svg
@@ -42,7 +42,7 @@
                 </svg>
               </div>
               <p class="ml-16 text-sm font-medium text-gray-500">
-                On-Order Queue
+                Additional Options
               </p>
             </nuxt-link>
           </div>
