@@ -2,7 +2,7 @@
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="sticky top-0 bg-white">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="px-4 mx-auto max-w-7xl sm:px-2 lg:px-8">
         <div class="flex justify-between h-24">
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
@@ -95,6 +95,7 @@
               class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               aria-controls="mobile-menu"
               aria-expanded="false"
+              @click="showMenu = !showMenu"
             >
               <span class="sr-only">Open main menu</span>
               <!--
@@ -147,16 +148,17 @@
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden" id="mobile-menu">
+      <div v-show="showMenu" class="sm:hidden" id="mobile-menu">
         <div class="pt-2 pb-3 space-y-1">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-
-          <a
-            href="#"
-            class="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50"
-          >
-            >About Monica</a
-          >
+          <nuxt-link to="/about">
+            <a
+              href="#"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50"
+            >
+              About Monica</a
+            >
+          </nuxt-link>
           <a
             href="#"
             class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
@@ -229,7 +231,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      showMenu: false,
+    }
+  },
+}
 </script>
 
 <style></style>

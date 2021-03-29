@@ -8,7 +8,7 @@
         y: 20,
         duration: 1,
       }"
-      class="relative z-0 overflow-hidden bg-transparent lg:mb-32 lg:mt-11"
+      class="relative z-0 overflow-hidden bg-transparent lg:mb-32 lg:mt-11 scrollbar-hide"
     >
       <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
         <div class="text-center">
@@ -96,7 +96,7 @@
     <!-- <div>
       <sectionContentMain />
     </div> -->
-    <div>
+    <div id="test">
       <sectionTestimonial />
     </div>
 
@@ -172,6 +172,9 @@ export default {
       },
     }
   },
+  mounted() {
+    this.animateOnScroll()
+  },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
@@ -186,6 +189,22 @@ export default {
         // user is at top of page
         if (!this.view.atTopOfPage) this.view.atTopOfPage = true
       }
+    },
+    animateOnScroll() {
+      // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
+
+      this.$gsap.from('#test', {
+        x: 100,
+        opactiy: 0,
+        ease: 'Power1.easeInOut',
+        scrollTrigger: {
+          trigger: '#test',
+          pin: false,
+          end: 'top top',
+          scrub: 1,
+          once: true,
+        },
+      })
     },
   },
 }
@@ -202,6 +221,9 @@ export default {
 .page-leave-to {
   opacity: 0;
 } */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
 
 .flip-card {
   background-color: transparent;

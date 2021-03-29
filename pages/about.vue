@@ -31,7 +31,7 @@
 export default {
   data() {
     return {
-      showProfile: false,
+      showMenu: true,
     }
   },
 }
