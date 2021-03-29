@@ -7,7 +7,7 @@
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
               <nuxt-link to="/">
-                <div>
+                <a href="#">
                   <svg
                     width="50"
                     height="50"
@@ -21,38 +21,50 @@
                       cy="25"
                       cx="25"
                     />
+
                     <path
                       stroke-width="0"
                       fill="black"
                       d="m25,9a16,16 0 0 0 0,32l0,-1.5a18,18 0 0 0 0,-29l0,-1.5z"
                     />
                   </svg>
-                </div>
+                </a>
               </nuxt-link>
             </div>
             <div class="hidden text-center sm:ml-6 sm:flex sm:space-x-8">
-              <!-- Current: "border-indigo-500 text-gray-900", Default: "bor er-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <div
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
-              >
-                <nuxt-link to="/"> Home </nuxt-link>
-              </div>
-
-              <div
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-              >
-                <nuxt-link to="/about"> About </nuxt-link>
-              </div>
-              <div
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-              >
-                <nuxt-link to="/testimonials"> Testimonials </nuxt-link>
-              </div>
-              <div
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-              >
-                <nuxt-link to="/contact"> Contact </nuxt-link>
-              </div>
+              <nuxt-link to="/">
+                <!-- Current: "border-indigo-500 text-gray-900", Default: "bor er-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  Home
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/about">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  About
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/testimonials">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  Testimonials
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/contact">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  Contact
+                </a>
+              </nuxt-link>
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">
