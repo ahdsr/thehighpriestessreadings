@@ -3,7 +3,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="sticky top-0 bg-white">
       <div class="px-4 mx-auto max-w-7xl sm:px-2 lg:px-8">
-        <div class="flex justify-between h-24">
+        <div class="flex justify-between h-16">
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
               <nuxt-link to="/">
@@ -24,39 +24,31 @@
                 </svg>
               </nuxt-link>
             </div>
-            <div class="hidden mt-8 text-center sm:ml-6 sm:flex sm:space-x-8">
+            <div class="hidden text-center sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <nuxt-link to="/">
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500 lg:text-lg"
-                >
-                  Home
-                </a>
+              <nuxt-link
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                to="/"
+              >
+                Home
               </nuxt-link>
-              <nuxt-link to="/about">
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-                >
-                  About Monica
-                </a>
+              <nuxt-link
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
+                to="/about"
+              >
+                About
               </nuxt-link>
-              <nuxt-link to="/testimonials">
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-                >
-                  Testimonials
-                </a>
+              <nuxt-link
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
+                to="/testimonials"
+              >
+                Testimonials
               </nuxt-link>
-              <nuxt-link to="/contact">
-                <a
-                  href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-                >
-                  Contact
-                </a>
+              <nuxt-link
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 uppercase border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
+                to="/contact"
+              >
+                Contact
               </nuxt-link>
             </div>
           </div>

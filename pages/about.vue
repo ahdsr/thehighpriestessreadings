@@ -1,12 +1,9 @@
 <template>
-  <div
-    v-gsap.fromTo="[
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 1 },
-    ]"
-  >
-    <div class="relative overflow-hidden bg-monica-purpple">
-      <main class="relative h-screen px-4 mx-auto max-w-7xl sm:mt-24">
+  <div>
+    <div
+      class="relative h-screen overflow-hidden bg-white bg-no-repeat bg-cover bg-hero-monica-03"
+    >
+      <main class="relative mx-auto -4 max-w-7xl sm:mt-24">
         <p
           class="mx-auto mt-3 text-base text-gray-500 max-w-mlg sm:text-lg md:mt-5 md:text-xl md:max-w-3xl lg:text-2xl lg:max-w-5xl"
         >

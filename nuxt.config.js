@@ -108,7 +108,7 @@ export default {
       this.$gsap.to(el, {
         opacity: 1,
         top: 0,
-        duration: 1,
+        duration: 0.5,
         ease: 'sine',
         onComplete: done,
       })
@@ -118,7 +118,7 @@ export default {
       this.$gsap.to(el, {
         opacity: 0,
         top: '100%',
-        duration: 1,
+        duration: 0.5,
         ease: 'sine',
         onComplete: done,
       })
