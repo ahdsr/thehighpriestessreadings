@@ -4,7 +4,7 @@
 
     <div
       v-gsap.from="{
-        opacity: 100,
+        opacity: 1,
         y: 20,
         duration: 1,
       }"
@@ -53,7 +53,7 @@
     <div class="flex flex-row">
       <div
         v-gsap.from="{
-          opacity: 100,
+          opacity: 1,
           y: 20,
           duration: 1,
         }"
@@ -62,7 +62,7 @@
       </div>
       <div
         v-gsap.from="{
-          opacity: 100,
+          opacity: 1,
           y: 30,
           duration: 1,
         }"
@@ -71,7 +71,7 @@
       </div>
       <div
         v-gsap.from="{
-          opacity: 100,
+          opacity: 1,
           y: 40,
           duration: 1,
         }"
@@ -80,7 +80,7 @@
       </div>
       <div
         v-gsap.from="{
-          opacity: 100,
+          opacity: 1,
           y: 50,
           duration: 1,
         }"
@@ -194,7 +194,7 @@ export default {
       // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
       this.$gsap.from('#readings', {
         y: 50,
-        opactiy: 0,
+        opacity: 0,
         ease: 'Power1.easeInOut',
         scrollTrigger: {
           trigger: '#readings',
@@ -207,7 +207,7 @@ export default {
 
       this.$gsap.from('#test', {
         y: 50,
-        opactiy: 0,
+        opacity: 0,
         ease: 'Power1.easeInOut',
         scrollTrigger: {
           trigger: '#test',
