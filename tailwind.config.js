@@ -11,7 +11,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Inter'],
+      sans: ['"Josefin Slab"'],
     },
     extend: {
       backgroundImage: (theme) => ({
