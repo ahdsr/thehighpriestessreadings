@@ -3,7 +3,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="sticky top-0 bg-white">
       <div class="px-4 mx-auto max-w-7xl sm:px-2 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-16 text-base">
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
               <nuxt-link to="/">
@@ -31,12 +31,12 @@
                 </a>
               </nuxt-link>
             </div>
-            <div class="hidden text-center sm:ml-6 sm:flex sm:space-x-8">
+            <div class="hidden pt-4 text-center sm:ml-6 sm:flex sm:space-x-8">
               <nuxt-link to="/">
                 <!-- Current: "border-indigo-500 text-gray-900", Default: "bor er-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                 <a
                   href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase"
                 >
                   Home
                 </a>
@@ -44,7 +44,7 @@
               <nuxt-link to="/about">
                 <a
                   href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase"
                 >
                   About
                 </a>
@@ -52,7 +52,7 @@
               <nuxt-link to="/testimonials">
                 <a
                   href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase"
                 >
                   Testimonials
                 </a>
@@ -60,7 +60,7 @@
               <nuxt-link to="/contact">
                 <a
                   href="#"
-                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500 lg:text-lg"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 uppercase border-b-2 border-indigo-500"
                 >
                   Contact
                 </a>
@@ -156,7 +156,7 @@
 
       <!-- Mobile menu, show/hide based on menu state. -->
       <div v-show="showMenu" class="sm:hidden" id="mobile-menu">
-        <div class="pt-2 pb-3 space-y-1">
+        <div class="pt-4 pb-3 space-y-1">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
           <nuxt-link to="/about">
             <a
