@@ -24,7 +24,7 @@
             </div>
             <div class="hidden mt-8 sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <nuxt-link to="/aboutMonica">
+              <nuxt-link to="/about">
                 <a
                   href="#"
                   class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500 lg:text-lg"
@@ -40,7 +40,7 @@
                   Testimonials
                 </a>
               </nuxt-link>
-              <nuxt-link to="/contactInfo">
+              <nuxt-link to="/contact">
                 <a
                   href="#"
                   class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"

@@ -1,9 +1,7 @@
 <template>
   <div>
     <!-- START - HERO -->
-    <div class="sticky top-0 z-50 border-b">
-      <topNavigation />
-    </div>
+
     <div class="z-40">
       <sectionHero />
     </div>
