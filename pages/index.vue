@@ -8,17 +8,17 @@
         y: 20,
         duration: 1,
       }"
-      class="relative z-0 overflow-hidden bg-transparent lg:mb-32 lg:mt-11 scrollbar-hide"
+      class="relative z-0 overflow-hidden bg-transparent bg-opacity-50 bg-cover lg:mb-32 scrollbar-hide bg-hero-monica-03"
     >
-      <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
+      <main class="h-screen px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
         <div class="text-center">
           <h1
-            class="pb-10 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl"
+            class="pb-10 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-9xl"
           >
             <span class="block font-light text-monica-purpple xl:inline"
               >The High Priestess</span
             >
-            <span class="block text-monica-mauvelous xl:inline">Readings</span>
+            <span class="block text-white xl:inline">Readings</span>
           </h1>
           <div
             class="mx-auto mt-3 text-base text-gray-500 max-w-mlg sm:text-lg md:mt-5 md:text-xl md:max-w-3xl lg:text-2xl lg:max-w-5xl"
@@ -50,7 +50,7 @@
       </main>
     </div>
 
-    <div class="flex flex-row">
+    <!-- <div class="flex flex-row">
       <div
         v-gsap.from="{
           opacity: 1,
@@ -87,10 +87,22 @@
       >
         <img src="~assets/images/monica-profile.jpg" />
       </div>
-    </div>
+    </div> -->
 
     <main id="readings">
       <sectionReadings />
+      <nuxt-link :to="{ path: '/', hash: 'readings' }">
+        <div class="max-w-xl p-10 mx-auto">
+          <lottie-player
+            src="https://assets3.lottiefiles.com/packages/lf20_4nLQ1E.json"
+            background="transparent"
+            speed="1"
+            class=""
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </nuxt-link>
     </main>
 
     <!-- <div>
@@ -101,13 +113,17 @@
     </div>
 
     <div class="max-w-4xl pt-20 mx-auto">
-      <div class="grid grid-cols-3 gap-0">
+      <div class="grid grid-cols-3 gap-10">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="~assets/images/card1.png" alt="Card 1 - The future" />
+              <img
+                class="block rounded-2xl"
+                src="~assets/images/card1.png"
+                alt="Card 1 - The future"
+              />
             </div>
-            <div class="flip-card-back">
+            <div class="flip-card-back rounded-2xl">
               <h1>45 Minute Reading</h1>
               <p>$80</p>
               <p>
@@ -121,9 +137,13 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="~assets/images/card1.png" alt="Card 1 - The future" />
+              <img
+                class="block rounded-2xl"
+                src="~assets/images/card1.png"
+                alt="Card 1 - The future"
+              />
             </div>
-            <div class="flip-card-back">
+            <div class="flip-card-back rounded-2xl">
               <h1>John Doe</h1>
               <p>Architect & Engineer</p>
               <p>We love that guy</p>
@@ -133,10 +153,14 @@
 
         <div class="flip-card">
           <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="~assets/images/card1.png" alt="Card 1 - The future" />
+            <div class="relative inset-0 flip-card-front">
+              <img
+                class="block rounded-2xl"
+                src="~assets/images/card1.png"
+                alt="Card 1 - The future"
+              />
             </div>
-            <div class="flip-card-back">
+            <div class="flip-card-back rounded-2xl">
               <h1>John Doe</h1>
               <p>Architect & Engineer</p>
               <p>We love that guy</p>
@@ -184,6 +208,7 @@ export default {
   methods: {
     onWindowLoad() {},
   },
+
   methods: {
     // the function to call when the user scrolls, added as a methodasd
     handleScroll() {
@@ -198,6 +223,19 @@ export default {
     },
     animateOnScroll() {
       // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
+      this.$gsap.from('#menu', {
+        y: 50,
+        opacity: 0,
+        ease: 'Power1.easeInOut',
+        scrollTrigger: {
+          trigger: '#readings',
+          pin: false,
+          end: 'top top',
+          scrub: 1,
+          once: true,
+        },
+      })
+
       this.$gsap.from('#readings', {
         y: 50,
         opacity: 0,
@@ -273,7 +311,7 @@ export default {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 

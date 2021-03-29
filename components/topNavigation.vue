@@ -1,11 +1,11 @@
 <template>
   <div>
-    <nav class="bg-white shadow">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+    <nav class="font-serif bg-white">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 ">
           <div class="flex">
-            <div class="flex items-center flex-shrink-0">
-               <nuxt-link to=/>
+            <div class="flex items-center flex-shrink-0 ">
+
               <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                 <circle
                   stroke-width="3"
@@ -21,11 +21,11 @@
                   d="m25,9a16,16 0 0 0 0,32l0,-1.5a18,18 0 0 0 0,-29l0,-1.5z"
                 />
               </svg>
-              </nuxt-link>
+
             </div>
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <nuxt-link class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500" to=/>Home</nuxt-link>
+              <nuxt-link class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 bg-transparent" to=/>Home</nuxt-link>
               <nuxt-link class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700" to=/about>About</nuxt-link>
               <nuxt-link class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700" to=/testimonials>Testimonials</nuxt-link>
               <nuxt-link class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700" to=/contact>Contact</nuxt-link>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">
-            <!-- Profile dropdown -->
+      <a href="@monica.czuchraj@gmail.com">Email</a>
           </div>
           <div class="flex items-center -mr-2 sm:hidden">
             <!-- Mobile menu button -->

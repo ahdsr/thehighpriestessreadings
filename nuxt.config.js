@@ -63,6 +63,8 @@ export default {
 
       return { x: 0, y: 0 }
     },
+    linkActiveClass: 'your-custom-active-link',
+    linkExactActiveClass: 'your-custom-exact-active-link',
   },
 
   gsap: {
@@ -91,38 +93,38 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ['@nuxtjs/tailwindcss', 'nuxt-gsap-module'],
 
-  pageTransition: {
-    name: 'page',
-    mode: 'out-in',
-    css: false,
+  // pageTransition: {
+  //   name: 'page',
+  //   mode: 'out-in',
+  //   css: false,
 
-    beforeEnter(el) {
-      this.$gsap.set(el, {
-        opacity: 0,
-        top: '-100%',
-      })
-    },
+  //   beforeEnter(el) {
+  //     this.$gsap.set(el, {
+  //       opacity: 0,
+  //       top: '-100%',
+  //     })
+  //   },
 
-    enter(el, done) {
-      this.$gsap.to(el, {
-        opacity: 1,
-        top: 0,
-        duration: 0.5,
-        ease: 'sine',
-        onComplete: done,
-      })
-    },
+  //   enter(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 1,
+  //       top: 0,
+  //       duration: 0.5,
+  //       ease: 'sine',
+  //       onComplete: done,
+  //     })
+  //   },
 
-    leave(el, done) {
-      this.$gsap.to(el, {
-        opacity: 0,
-        top: '100%',
-        duration: 0.5,
-        ease: 'sine',
-        onComplete: done,
-      })
-    },
-  },
+  //   leave(el, done) {
+  //     this.$gsap.to(el, {
+  //       opacity: 0,
+  //       top: '100%',
+  //       duration: 0.5,
+  //       ease: 'sine',
+  //       onComplete: done,
+  //     })
+  //   },
+  // },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],

@@ -11,21 +11,28 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Josefin Slab"'],
+      sans: ['"Poppins"'],
     },
     extend: {
       backgroundImage: (theme) => ({
-        'hero-monica-01': "url('~assets/images/monica-hero.jpg')",
-
-        'hero-monica-02': "url('~assets/images/monica-headon.jpg')",
-
-        'hero-monica-03': "url('~assets/images/monica-crystals.jpg')",
+        'hero-monica-01': "url('~assets/images/1.jpg')",
+        'hero-monica-02': "url('~assets/images/2.jpg')",
+        'hero-monica-03': "url('~assets/images/3.jpg')",
+        'hero-monica-04': "url('~assets/images/4.jpg')",
+        'hero-monica-05': "url('~assets/images/5.jpg')",
+        'hero-monica-06': "url('~assets/images/6.jpg')",
+        'hero-monica-07': "url('~assets/images/7.jpg')",
+        'hero-monica-08': "url('~assets/images/8.jpg')",
+        'hero-monica-09': "url('~assets/images/9.jpg')",
+        'hero-monica-10': "url('~assets/images/10.jpg')",
+        'hero-monica-11': "url('~assets/images/11.jpg')",
+        'hero-monica-12': "url('~assets/images/12.jpg')",
       }),
       colors: {
         'monica-mauvelous': '#E4959E',
         'monica-xoletic': '#1F0812',
         'monica-roseybrown': '#B98B82',
-        'monica-melon': '#F3B3A6',
+        'monica-melon': '#B538F9',
         'monica-purpple': '#793C80',
       },
       keyframes: {
