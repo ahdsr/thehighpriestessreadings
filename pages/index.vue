@@ -179,7 +179,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
-    // the function to call when the user scrolls, added as a method
+    // the function to call when the user scrolls, added as a methodasd
     handleScroll() {
       // when the user scrolls, check the pageYOffset
       if (window.pageYOffset > 0) {
