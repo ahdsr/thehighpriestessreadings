@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="relative overflow-hidden bg-white lg:mb-32 lg:mt-11">
+    <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
       <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
         <div class="text-center">
           <h2

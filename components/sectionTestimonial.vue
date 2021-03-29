@@ -43,16 +43,22 @@
                 reading from her!
               </p>
             </div>
-            <footer class="mt-8">
+
+            <footer class="mt-2">
               <div class="flex items-start">
                 <div class="inline-flex flex-shrink-0 rounded-full">
-                  <img
-                    class="w-12 h-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  <div class="block mx-auto -ml-12 w-36">
+                    <lottie-player
+                      src="https://assets8.lottiefiles.com/packages/lf20_mr1kkmr2.json"
+                      background="transparent"
+                      speed="1"
+                      class=""
+                      loop
+                      autoplay
+                    ></lottie-player>
+                  </div>
                 </div>
-                <div class="ml-4">
+                <div class="mt-4 -ml-6">
                   <div class="text-xl font-extrabold text-monica-xoletic">
                     Joshua Arbery
                   </div>
@@ -72,7 +78,7 @@
           </div>
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
             <div
-              class="relative text-2xl font-medium text-monica-purpple md:flex-grow"
+              class="relative text-xl font-light text-monica-purpple md:flex-grow"
             >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
@@ -95,13 +101,18 @@
             <footer class="mt-8">
               <div class="flex items-start">
                 <div class="inline-flex flex-shrink-0 rounded-full">
-                  <img
-                    class="w-12 h-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  <div class="block mx-auto -ml-12 w-36">
+                    <lottie-player
+                      src="https://assets8.lottiefiles.com/packages/lf20_0amixizv.json"
+                      background="transparent"
+                      speed="1"
+                      class=""
+                      loop
+                      autoplay
+                    ></lottie-player>
+                  </div>
                 </div>
-                <div class="ml-4">
+                <div class="mt-4 -ml-6">
                   <div class="text-xl font-extrabold text-monica-xoletic">
                     Iris. H.
                   </div>

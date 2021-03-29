@@ -9,7 +9,7 @@
 
     <div
       id="box"
-      class="h-screen text-center bg-center shadow-xl pl-36 bg-hero-monica-05 rounded-xl"
+      class="h-screen text-center bg-center shadow-xl bg-hero-monica-05 rounded-xl"
     >
       <div
         id="heroline1"
@@ -59,6 +59,10 @@
 
     <div id="box3" class="font-serif">
       <sectionTestimonial />
+    </div>
+
+    <div id="box4" class="font-serif">
+      <sectionAbout />
     </div>
   </div>
 </template>

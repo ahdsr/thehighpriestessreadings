@@ -9,17 +9,6 @@
           >
             Your Reading
           </h2>
-          <p class="pt-10 mt-4 text-lg font-light text-gray-900">
-            <span class="font-serif font-bold text-monica-purpple"
-              >My name is Monica.</span
-            >
-            I am a Tarot Reader and Psychic. I offer Psychic Tarot Readings to
-            help you achieve the clarity and guidance you seek. My purpose is to
-            relay the messages that spirit has for you. Readings mainly include
-            messages derived from Tarot, and also include information in the
-            form of images, words, feelings and emotions derived from Psychic
-            connection methods.
-          </p>
         </div>
         <dl
           class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8"
