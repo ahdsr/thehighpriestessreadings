@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="sticky top-0 z-50 border-b shadow-md">
+    <div class="sticky top-0 z-50 border-b border-monica-mauvelous">
       <topNavigation />
     </div>
     <Nuxt />

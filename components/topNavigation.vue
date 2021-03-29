@@ -24,7 +24,7 @@
                 </svg>
               </nuxt-link>
             </div>
-            <div class="hidden mt-8 sm:ml-6 sm:flex sm:space-x-8">
+            <div class="hidden mt-8 text-center sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
               <nuxt-link to="/">
                 <a

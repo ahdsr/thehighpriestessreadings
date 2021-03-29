@@ -8,8 +8,12 @@
             About Your Reading
           </h2>
           <p class="mt-4 text-lg text-gray-500">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            My name is Monica. I am a Tarot Reader and Psychic. I offer Psychic
+            Tarot Readings to help you achieve the clarity and guidance you
+            seek. My purpose is to relay the messages that spirit has for you.
+            Readings mainly include messages derived from Tarot, and also
+            include information in the form of images, words, feelings and
+            emotions derived from Psychic connection methods.
           </p>
         </div>
         <dl

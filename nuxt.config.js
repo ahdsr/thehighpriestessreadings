@@ -53,7 +53,7 @@ export default {
         let el = await findEl(to.hash)
         if ('scrollBehavior' in document.documentElement.style) {
           return window.scrollTo({
-            top: el.offsetTop - 0,
+            top: el.offsetTop - 40,
             behavior: 'smooth',
           })
         } else {
@@ -63,6 +63,10 @@ export default {
 
       return { x: 0, y: 0 }
     },
+  },
+
+  gsap: {
+    /* module options */
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -75,7 +79,41 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', 'nuxt-gsap-module'],
+
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+    css: false,
+
+    beforeEnter(el) {
+      this.$gsap.set(el, {
+        scale: 1,
+        opacity: 0,
+        top: '-100%',
+      })
+    },
+
+    enter(el, done) {
+      this.$gsap.to(el, {
+        opacity: 1,
+        top: 0,
+        duration: 1,
+        ease: 'sine',
+        onComplete: done,
+      })
+    },
+
+    leave(el, done) {
+      this.$gsap.to(el, {
+        opacity: 0,
+        top: '100%',
+        duration: 1,
+        ease: 'sine',
+        onComplete: done,
+      })
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],

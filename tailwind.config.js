@@ -21,13 +21,11 @@ module.exports = {
           "url('https://images.unsplash.com/photo-1583530015497-6cf9ef9c6f0f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80')",
       }),
       colors: {
-        'element-dark-blue': '#333D47',
-        'element-green': '#82C341',
-        'element-bright-blue': '#3262C3',
         'monica-mauvelous': '#E4959E',
         'monica-xoletic': '#1F0812',
         'monica-roseybrown': '#B98B82',
         'monica-melon': '#F3B3A6',
+        'monica-purpple': '#793C80',
       },
       keyframes: {
         roll: {

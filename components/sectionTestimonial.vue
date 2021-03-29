@@ -1,10 +1,14 @@
 <template>
   <div>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <section class="bg-purple-700">
+    <section class="bg-monica-mauvelous bg-opacity-10">
+      <div class="text-center">
+        <h2 class="pt-20 text-3xl font-extrabold text-gray-900">
+          Testimonials
+        </h2>
+      </div>
       <div class="mx-auto max-w-7xl md:grid md:grid-cols-2 md:px-6 lg:px-8">
         <div
-          class="px-4 py-12 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r lg:pr-16"
+          class="px-4 py-12 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 lg:pr-16"
         >
           <div class="md:flex-shrink-0">
             <!-- <img
@@ -13,8 +17,11 @@
               alt="Tuple"
             /> -->
           </div>
+
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
-            <div class="relative text-lg font-medium text-white md:flex-grow">
+            <div
+              class="relative text-2xl font-medium text-monica-purpple md:flex-grow"
+            >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
                 fill="currentColor"
@@ -36,9 +43,7 @@
             </div>
             <footer class="mt-8">
               <div class="flex items-start">
-                <div
-                  class="inline-flex flex-shrink-0 border-2 border-white rounded-full"
-                >
+                <div class="inline-flex flex-shrink-0 rounded-full">
                   <img
                     class="w-12 h-12 rounded-full"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -46,18 +51,16 @@
                   />
                 </div>
                 <div class="ml-4">
-                  <div class="text-base font-medium text-white">
+                  <div class="text-xl font-extrabold text-monica-xoletic">
                     Joshua Arbery
                   </div>
-                  <div class="text-base font-medium text-indigo-200">U.K</div>
+                  <div class="text-xl font-medium text-monica-xoletic">U.K</div>
                 </div>
               </div>
             </footer>
           </blockquote>
         </div>
-        <div
-          class="px-4 py-12 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16"
-        >
+        <div class="px-4 py-12 sm:px-6 md:py-16 md:pr-0 md:pl-10 lg:pl-16">
           <div class="md:flex-shrink-0">
             <!-- <img
               class="h-12"
@@ -66,7 +69,9 @@
             /> -->
           </div>
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
-            <div class="relative text-lg font-medium text-white md:flex-grow">
+            <div
+              class="relative text-2xl font-medium text-monica-purpple md:flex-grow"
+            >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
                 fill="currentColor"
@@ -87,9 +92,7 @@
             </div>
             <footer class="mt-8">
               <div class="flex items-start">
-                <div
-                  class="inline-flex flex-shrink-0 border-2 border-white rounded-full"
-                >
+                <div class="inline-flex flex-shrink-0 rounded-full">
                   <img
                     class="w-12 h-12 rounded-full"
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixqx=MnLvkwmKZ1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -97,10 +100,12 @@
                   />
                 </div>
                 <div class="ml-4">
-                  <div class="text-base font-medium text-white">
-                    Iris. H. Vancouver
+                  <div class="text-xl font-extrabold text-monica-xoletic">
+                    Iris. H.
                   </div>
-                  <div class="text-base font-medium text-indigo-200">B.C.</div>
+                  <div class="text-xl font-medium text-monica-xoletic">
+                    Vancouver
+                  </div>
                 </div>
               </div>
             </footer>
