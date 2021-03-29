@@ -98,7 +98,6 @@ export default {
 
     beforeEnter(el) {
       this.$gsap.set(el, {
-        scale: 1,
         opacity: 0,
         top: '-100%',
       })
