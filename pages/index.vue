@@ -192,9 +192,21 @@ export default {
     },
     animateOnScroll() {
       // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
+      this.$gsap.from('#readings', {
+        y: 50,
+        opactiy: 0,
+        ease: 'Power1.easeInOut',
+        scrollTrigger: {
+          trigger: '#readings',
+          pin: false,
+          end: 'top top',
+          scrub: 1,
+          once: true,
+        },
+      })
 
       this.$gsap.from('#test', {
-        x: 100,
+        y: 50,
         opactiy: 0,
         ease: 'Power1.easeInOut',
         scrollTrigger: {
