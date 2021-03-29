@@ -6,28 +6,38 @@
         <div class="flex justify-between h-24">
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
-              <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                <circle
-                  stroke-width="3"
-                  stroke="#000000"
-                  fill="none"
-                  r="16"
-                  cy="25"
-                  cx="25"
-                />
-                <path
-                  stroke-width="0"
-                  fill="black"
-                  d="m25,9a16,16 0 0 0 0,32l0,-1.5a18,18 0 0 0 0,-29l0,-1.5z"
-                />
-              </svg>
+              <nuxt-link to="/">
+                <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                  <circle
+                    stroke-width="3"
+                    stroke="#000000"
+                    fill="none"
+                    r="16"
+                    cy="25"
+                    cx="25"
+                  />
+                  <path
+                    stroke-width="0"
+                    fill="black"
+                    d="m25,9a16,16 0 0 0 0,32l0,-1.5a18,18 0 0 0 0,-29l0,-1.5z"
+                  />
+                </svg>
+              </nuxt-link>
             </div>
             <div class="hidden mt-8 sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <nuxt-link to="/about">
+              <nuxt-link to="/">
                 <a
                   href="#"
                   class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  Home
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/about">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
                 >
                   About Monica
                 </a>
@@ -140,9 +150,11 @@
       <div class="sm:hidden" id="mobile-menu">
         <div class="pt-2 pb-3 space-y-1">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+
           <a
             href="#"
             class="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50"
+          >
             >About Monica</a
           >
           <a
@@ -220,4 +232,4 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>

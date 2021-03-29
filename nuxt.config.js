@@ -16,7 +16,10 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js' },
+      {
+        src:
+          'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
+      },
     ],
     link: [
       {
@@ -50,7 +53,7 @@ export default {
         let el = await findEl(to.hash)
         if ('scrollBehavior' in document.documentElement.style) {
           return window.scrollTo({
-            top: el.offsetTop - 180,
+            top: el.offsetTop - 0,
             behavior: 'smooth',
           })
         } else {

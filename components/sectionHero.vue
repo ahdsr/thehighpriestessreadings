@@ -33,6 +33,7 @@
               <a
                 href="#"
                 class="flex items-center justify-center w-full px-8 py-3 text-2xl font-extrabold text-white border border-transparent rounded-md bg-monica-mauvelous hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 lg:text-2xl"
+                :to="{ path: '/', hash: 'readings' }"
               >
                 Learn more
               </a>
@@ -49,4 +50,4 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>
