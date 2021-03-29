@@ -178,6 +178,12 @@ export default {
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
+  create() {
+    window.addEventListener('load', this.onWindowLoad)
+  },
+  methods: {
+    onWindowLoad() {},
+  },
   methods: {
     // the function to call when the user scrolls, added as a methodasd
     handleScroll() {
