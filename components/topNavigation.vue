@@ -3,7 +3,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="sticky top-0 bg-white">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-24">
           <div class="flex">
             <div class="flex items-center flex-shrink-0">
               <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
@@ -22,26 +22,32 @@
                 />
               </svg>
             </div>
-            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <div class="hidden mt-8 sm:ml-6 sm:flex sm:space-x-8">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-              <a
-                href="#"
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500 lg:text-lg"
-              >
-                About Monica
-              </a>
-              <a
-                href="#"
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-              >
-                Testimonials
-              </a>
-              <a
-                href="#"
-                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
-              >
-                Contact
-              </a>
+              <nuxt-link to="/aboutMonica">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500 lg:text-lg"
+                >
+                  About Monica
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/testimonials">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
+                >
+                  Testimonials
+                </a>
+              </nuxt-link>
+              <nuxt-link to="/contactInfo">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700 lg:text-lg"
+                >
+                  Contact
+                </a>
+              </nuxt-link>
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">

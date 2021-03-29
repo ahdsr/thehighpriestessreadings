@@ -1,13 +1,18 @@
 <template>
   <div>
     <!-- START - HERO -->
-    <div class="sticky top-0 z-50 shadow-lg">
+    <div class="sticky top-0 z-50 border-b">
       <topNavigation />
     </div>
     <div class="z-40">
       <sectionHero />
     </div>
 
+    <div class="">
+      <p><nuxt-link to="/about">About</nuxt-link></p>
+      <p><nuxt-link to="/testimonials">Testimonials</nuxt-link></p>
+      <p><nuxt-link to="/contact">Contact</nuxt-link></p>
+    </div>
     <div class="flex flex-row">
       <div class=""><img src="~assets/images/monica-stuff.jpg" /></div>
       <div class=""><img src="~assets/images/monica-crystals.jpg" /></div>
@@ -50,8 +55,8 @@ export default {
 .page-enter-active,
 .page-leave-active {
   transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  transition-duration: 200ms;
 }
 .page-enter,
 .page-leave-to {
