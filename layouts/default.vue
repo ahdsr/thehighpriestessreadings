@@ -1,6 +1,12 @@
 <template>
   <div>
-    <div class="sticky top-0 z-50 border-b border-monica-mauvelous">
+    <div
+      v-gsap.fromTo="[
+        { opacity: 0, y: -100 },
+        { opacity: 1, y: 0, duration: 1 },
+      ]"
+      class="sticky top-0 z-50 border-b border-monica-mauvelous"
+    >
       <topNavigation />
     </div>
     <Nuxt />
