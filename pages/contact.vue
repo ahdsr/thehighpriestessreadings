@@ -1,40 +1,50 @@
 <template>
-  <div class="relative overflow-hidden bg-white lg:mb-32 lg:mt-11">
-    <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
-      <div class="text-center">
-        <h1
-          class="pb-10 text-4xl tracking-tight text-gray-900 font-extralight sm:text-5xl md:text-6xl lg:text-7xl"
-        >
-          <span class="block xl:inline">Contact</span>
-        </h1>
-        <p
-          class="mx-auto mt-3 text-base text-gray-500 max-w-mlg sm:text-lg md:mt-5 md:text-xl md:max-w-3xl lg:text-2xl lg:max-w-5xl"
-        >
-          <span class="lg:text-3xl"
-            >Journey through the subconscious. Tarot and Psychic Readings</span
-          >
-          <span class="lg:text-xl"
-            >My name is Monica. I am a Tarot Reader and Psychic. I offer
-            readings Psychic Tarot Readings to help you achieve the clarity and
-            guidance you seek. My purpose is to relay the messages that spirit
-            has for you. Readings mainly include messages derived from Tarot,
-            and also include information in the form of images, words, feelings
-            and emotions derived from Psychic connection methods.
-          </span>
-        </p>
+  <div>
+    <template>
+      <div class="p-20 m-6 mx-auto ml-6 mr-6 text-white bg-monica-xoletic">
+        <form class="contact-form" @submit.prevent="sendEmail">
+          <h1 class="text-2xl">Test Email Form</h1>
+          <label>Name</label>
+          <input class="text-blue-700" type="text" name="user_name" />
+          <label>Email</label>
+          <input class="text-blue-700" type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message"></textarea>
+          <input class="text-blue-700" type="submit" value="Send" />
+        </form>
       </div>
-    </main>
+    </template>
+
+    <script>
+      import emailjs from 'emailjs-com'
+
+      export default {
+        methods: {
+          sendEmail: (e) => {
+            emailjs
+              .sendForm(
+                'service_ogjthl8',
+                'template_zdibq8v',
+                e.target,
+                'user_fhrYsUk17udrPh9Amw89u'
+              )
+              .then(
+                (result) => {
+                  console.log('SUCCESS!', result.status, result.text)
+                },
+                (error) => {
+                  console.log('FAILED...', error)
+                }
+              )
+          },
+        },
+      }
+    </script>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      showProfile: false,
-    }
-  },
-}
+export default {}
 </script>
 
 <style></style>
