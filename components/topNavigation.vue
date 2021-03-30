@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="font-serif bg-white">
+    <nav class="font-sans font-normal bg-white text-monica-xoletic">
       <div class="px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 ">
           <div class="flex">
@@ -9,15 +9,15 @@
               <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                 <circle
                   stroke-width="3"
-                  stroke="#000000"
-                  fill="none"
+                  stroke="#B538F9"
+                  fill="#FFFFFF"
                   r="16"
                   cy="25"
                   cx="25"
                 />
                 <path
                   stroke-width="0"
-                  fill="black"
+                  fill="#B538F9"
                   d="m25,9a16,16 0 0 0 0,32l0,-1.5a18,18 0 0 0 0,-29l0,-1.5z"
                 />
               </svg>

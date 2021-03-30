@@ -22,7 +22,7 @@
 
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
             <div
-              class="relative font-sans text-xl font-light text-monica-purpple md:flex-grow"
+              class="relative font-sans text-lg font-light leading-relaxed text-monica-purpple md:flex-grow"
             >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
@@ -44,8 +44,8 @@
               </p>
             </div>
 
-            <footer class="mt-2">
-              <div class="flex items-start">
+            <footer class="mt-2 font-sans">
+              <div class="flex font-sans items-star">
                 <div class="inline-flex flex-shrink-0 rounded-full">
                   <div class="block mx-auto -ml-12 w-36">
                     <lottie-player
@@ -59,10 +59,10 @@
                   </div>
                 </div>
                 <div class="mt-4 -ml-6">
-                  <div class="text-xl font-extrabold text-monica-xoletic">
+                  <div class="text-lg font-medium text-monica-xoletic">
                     Joshua Arbery
                   </div>
-                  <div class="text-xl font-medium text-monica-xoletic">U.K</div>
+                  <div class="-mt-1 text-lg text-monica-xoletic">U.K</div>
                 </div>
               </div>
             </footer>
@@ -78,7 +78,7 @@
           </div>
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
             <div
-              class="relative text-xl font-light text-monica-purpple md:flex-grow"
+              class="font-sans text-lg font-light leading-relaxed text-monica-purpple md:flex-grow"
             >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
@@ -99,7 +99,7 @@
               </p>
             </div>
             <footer class="mt-8">
-              <div class="flex items-start">
+              <div class="flex items-start font-sans">
                 <div class="inline-flex flex-shrink-0 rounded-full">
                   <div class="block mx-auto -ml-12 w-36">
                     <lottie-player
@@ -112,13 +112,11 @@
                     ></lottie-player>
                   </div>
                 </div>
-                <div class="mt-4 -ml-6">
-                  <div class="text-xl font-extrabold text-monica-xoletic">
+                <div class="mt-4 -ml-8">
+                  <div class="text-lg font-medium text-monica-xoletic">
                     Iris. H.
                   </div>
-                  <div class="text-xl font-medium text-monica-xoletic">
-                    Vancouver
-                  </div>
+                  <div class="-mt-1 text-lg text-monica-xoletic">Vancouver</div>
                 </div>
               </div>
             </footer>

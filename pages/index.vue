@@ -9,11 +9,11 @@
 
     <div
       id="box"
-      class="h-screen text-center bg-center shadow-xl rounded-4xl bg-hero-monica-05 sm:bg-cover lg:bg-center xl:bg-hero-monica-05 xl:rounded-4xl"
+      class="h-screen text-center bg-center rounded-4xl bg-hero-monica-08 sm:bg-cover lg:bg-center xl:bg-hero-monica-01 xl:rounded-4xl"
     >
       <div
         id="heroline1"
-        class="mx-auto font-thin tracking-tight sm:text-xl md:text-3xl lg:text-8xl md:pt-32 lg:pt-48 xl:pt-64"
+        class="mx-auto font-thin tracking-tight sm:text-xl md:text-3xl lg:text-8xl md:pt-32 lg:pt-48 xl:pt-96"
       >
         The
         <span class="font-medium text-monica-purpple">High Priestess</span>
