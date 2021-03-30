@@ -2,14 +2,14 @@
   <div>
     <div
       id="navbar"
-      class="fixed top-0 z-50 w-screen bg-white border-b border-blue-100"
+      class="fixed top-0 z-50 w-screen border-b border-blue-100 bg-monica-mauvelous"
     >
       <topNavigation />
     </div>
 
     <div
       id="box"
-      class="h-screen text-center bg-center rounded-4xl bg-hero-monica-08 sm:bg-cover lg:bg-center xl:bg-hero-monica-01 xl:rounded-4xl"
+      class="h-screen text-center bg-center rounded-4xl bg-hero-monica-08 sm:bg-cover lg:bg-center xl:bg-hero-monica-01 xl:rounded-4xl bgeffect"
     >
       <div
         id="heroline1"

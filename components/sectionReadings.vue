@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-white border-t">
+    <div class="border-t">
       <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
           <h2
