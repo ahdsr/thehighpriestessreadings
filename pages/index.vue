@@ -9,7 +9,7 @@
 
     <div
       id="box"
-      class="h-screen text-center bg-center shadow-xl bg-hero-monica-05 rounded-xl sm:bg-cover lg:bg-center xl:bg-hero-monica-05"
+      class="h-screen text-center bg-center shadow-xl rounded-4xl bg-hero-monica-05 sm:bg-cover lg:bg-center xl:bg-hero-monica-05 xl:rounded-4xl"
     >
       <div
         id="heroline1"
@@ -82,7 +82,7 @@ export default {
     navigationIn() {
       const gsap = this.$gsap
       gsap.from('#navbar', {
-        y: -100,
+        y: -200,
         opacity: 0,
         rotation: 0,
         duration: 1,

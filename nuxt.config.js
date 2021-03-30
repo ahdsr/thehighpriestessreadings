@@ -11,7 +11,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'my website description',
+        content:
+          'Psychic Tarot Readings to help you achieve the clarity and guidance you seek. My purpose is to relay the messages that spirit has for you. Readings mainly include messages derived from Tarot, and also include information in the form of images, words, feelings and emotions derived from Psychic connection methods.',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

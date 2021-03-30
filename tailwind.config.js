@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['"Poppins"'],
+      serif: ['"Calligraffitti"'],
     },
     extend: {
       backgroundImage: (theme) => ({
