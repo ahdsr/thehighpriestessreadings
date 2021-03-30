@@ -24,7 +24,7 @@
                     <h1>45 Minute Reading</h1>
                     <p>$80</p>
                     <p>
-                      Written Reading sent to your email answering up to 2
+                      Written Read ing sent to your email answering up to 2
                       questions in detail. Option to include a photo of your
                       cards.
                     </p>

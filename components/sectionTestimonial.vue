@@ -14,7 +14,7 @@
         >
           <div class="md:flex-shrink-0">
             <!-- <img
-              class="h-12"
+              class="h-1 2"
               src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
               alt="Tuple"
             /> -->

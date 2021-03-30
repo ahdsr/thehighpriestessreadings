@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">
-      <a href="@monica.czuchraj@gmail.com">Email</a>
+      <a href="@monica.czuchraj@gmail.com">Email </a>
           </div>
           <div class="flex items-center -mr-2 sm:hidden">
             <!-- Mobile menu button -->

@@ -1,264 +1,165 @@
 <template>
   <div>
-    <!-- START - HERO -->
-
     <div
-      v-gsap.from="{
-        opacity: 1,
-        y: 20,
-        duration: 1,
-      }"
-      class="relative z-0 overflow-hidden bg-transparent bg-opacity-50 bg-cover lg:mb-32 scrollbar-hide bg-hero-monica-03"
+      id="navbar"
+      class="fixed top-0 z-50 w-screen bg-white border-b border-blue-100"
     >
-      <main class="h-screen px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
-        <div class="text-center">
-          <h1
-            class="pb-10 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-9xl"
-          >
-            <span class="block font-light text-monica-purpple xl:inline"
-              >The High Priestess</span
-            >
-            <span class="block text-white xl:inline">Readings</span>
-          </h1>
-          <div
-            class="mx-auto mt-3 text-base text-gray-500 max-w-mlg sm:text-lg md:mt-5 md:text-xl md:max-w-3xl lg:text-2xl lg:max-w-5xl"
-          >
-            <div class="mx-auto mt-3 lg:text-3xl">
-              Journey through the subconscious.
-            </div>
-            <div class="mx-auto mt-3 lg:text-3xl">
-              Tarot and Psychic Readings
-            </div>
-          </div>
-          <div class="max-w-md pt-5 mx-auto sm:flex sm:justify-center md:mt-8">
-            <div class="mt-3 sm:mt-0 sm:ml-3">
-              <nuxt-link :to="{ path: '/', hash: 'readings' }">
-                <div class="container">
-                  <lottie-player
-                    src="https://assets9.lottiefiles.com/temp/lf20_J1XkLr.json"
-                    background="transparent"
-                    speed="1"
-                    class="w-24"
-                    loop
-                    autoplay
-                  ></lottie-player>
-                </div>
-              </nuxt-link>
-            </div>
-          </div>
-        </div>
-      </main>
+      <topNavigation />
     </div>
 
-    <!-- <div class="flex flex-row">
+    <div
+      id="box"
+      class="h-screen text-center bg-center shadow-xl bg-hero-monica-05 rounded-xl sm:bg-cover lg:bg-center xl:bg-hero-monica-05"
+    >
       <div
-        v-gsap.from="{
-          opacity: 1,
-          y: 20,
-          duration: 1,
-        }"
+        id="heroline1"
+        class="mx-auto font-thin tracking-tight sm:text-xl md:text-3xl lg:text-8xl md:pt-32 lg:pt-48 xl:pt-64"
       >
-        <img src="~assets/images/monica-stuff.jpg" />
+        The
+        <span class="font-medium text-monica-purpple">High Priestess</span>
+        Readings
       </div>
       <div
-        v-gsap.from="{
-          opacity: 1,
-          y: 30,
-          duration: 1,
-        }"
+        id="heroline2"
+        class="mx-auto text-xl font-medium tracking-tight pt-14 text-monica-melon text-opacity-70 md:text-2xl lg:text-5xl md:pt-8"
       >
-        <img src="~assets/images/monica-crystals.jpg" />
+        Journey through the subconscious
       </div>
       <div
-        v-gsap.from="{
-          opacity: 1,
-          y: 40,
-          duration: 1,
-        }"
+        id="heroline2"
+        class="pt-0 mx-auto text-2xl font-normal tracking-tight text-monica-xoletic text-opacity-70"
       >
-        <img src="~assets/images/monica-smudge.jpg" />
+        Tarot and Psychic Readings
       </div>
-      <div
-        v-gsap.from="{
-          opacity: 1,
-          y: 50,
-          duration: 1,
-        }"
-      >
-        <img src="~assets/images/monica-profile.jpg" />
-      </div>
-    </div> -->
 
-    <main id="readings">
-      <sectionReadings />
       <nuxt-link :to="{ path: '/', hash: 'readings' }">
-        <div class="max-w-xl p-10 mx-auto">
+        <div class="block w-20 mx-auto md:w-26 sm:pt-28">
           <lottie-player
-            src="https://assets3.lottiefiles.com/packages/lf20_4nLQ1E.json"
+            src="https://assets3.lottiefiles.com/temp/lf20_J1XkLr.json"
             background="transparent"
             speed="1"
             class=""
             loop
             autoplay
           ></lottie-player>
+          <p class="font-serif text-gray-600">Scroll down</p>
         </div>
       </nuxt-link>
-    </main>
+    </div>
 
-    <!-- <div>
-      <sectionContentMain />
-    </div> -->
-    <div id="test">
+    <div id="box2" class="font-serif">
+      <div class="max-w-4xl pt-20 mx-auto"></div>
+      <sectionReadings />
+    </div>
+
+    <div id="box2" class="font-serif">
+      <div class="max-w-4xl pt-20 mx-auto"></div>
+      <sectionPricing />
+    </div>
+
+    <div id="box3" class="font-serif">
       <sectionTestimonial />
     </div>
 
-    <div class="max-w-4xl pt-20 mx-auto">
-      <div class="grid grid-cols-3 gap-10">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                class="block rounded-2xl"
-                src="~assets/images/card1.png"
-                alt="Card 1 - The future"
-              />
-            </div>
-            <div class="flip-card-back rounded-2xl">
-              <h1>45 Minute Reading</h1>
-              <p>$80</p>
-              <p>
-                Written Reading sent to your email answering up to 2 questions
-                in detail. Option to include a photo of your cards.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                class="block rounded-2xl"
-                src="~assets/images/card1.png"
-                alt="Card 1 - The future"
-              />
-            </div>
-            <div class="flip-card-back rounded-2xl">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="relative inset-0 flip-card-front">
-              <img
-                class="block rounded-2xl"
-                src="~assets/images/card1.png"
-                alt="Card 1 - The future"
-              />
-            </div>
-            <div class="flip-card-back rounded-2xl">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="box4" class="font-serif">
+      <sectionAbout />
     </div>
-
-    <nuxt-link :to="{ path: '/', hash: 'readings' }">
-      <div class="max-w-xl p-10 mx-auto">
-        <lottie-player
-          src="https://assets3.lottiefiles.com/packages/lf20_4nLQ1E.json"
-          background="transparent"
-          speed="1"
-          class=""
-          loop
-          autoplay
-        ></lottie-player>
-      </div>
-    </nuxt-link>
-
-    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      view: {
-        atTopOfPage: true,
-      },
-    }
-  },
   mounted() {
+    this.navigationIn()
+    this.heroline1()
+    this.heroline2()
+
     this.animateOnScroll()
-  },
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  create() {
-    window.addEventListener('load', this.onWindowLoad)
-  },
-  methods: {
-    onWindowLoad() {},
+    // this.navbar()
   },
 
   methods: {
-    // the function to call when the user scrolls, added as a methodasd
-    handleScroll() {
-      // when the user scrolls, check the pageYOffset
-      if (window.pageYOffset > 0) {
-        // user is scrolled
-        if (this.view.atTopOfPage) this.view.atTopOfPage = false
-      } else {
-        // user is at top of page
-        if (!this.view.atTopOfPage) this.view.atTopOfPage = true
-      }
+    navigationIn() {
+      const gsap = this.$gsap
+      gsap.from('#navbar', {
+        y: -100,
+        opacity: 0,
+        rotation: 0,
+        duration: 1,
+        ease: 'Circ.easeOut',
+      })
     },
+    heroline1() {
+      const gsap = this.$gsap
+      gsap.from('#heroline1', {
+        opacity: 0,
+        scaleX: 0.95,
+        scaleY: 0.95,
+        duration: 0.5,
+        x: 0,
+        y: 2,
+
+        ease: 'ease',
+      })
+    },
+    heroline2() {
+      const gsap = this.$gsap
+      gsap.from('#heroline2', {
+        rotation: 0,
+        scaleX: 1.1,
+        scaleY: 1.1,
+        duration: 0.6,
+        x: 0,
+        y: 5,
+        ease: 'Circ.easeOut',
+      })
+    },
+
     animateOnScroll() {
-      // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
-      this.$gsap.from('#menu', {
-        y: 50,
-        opacity: 0,
-        ease: 'Power1.easeInOut',
+      //   // this.$gsap.to(window, { duration: 2, scrollTo: 1000 })
+      this.$gsap.to('#box', {
+        scaleX: 0.6,
+        scaleY: 0.6,
+
+        y: 200,
+        ease: 'Circ.easeOut',
         scrollTrigger: {
-          trigger: '#readings',
+          trigger: '#box',
           pin: false,
-          end: 'top top',
-          scrub: 1,
-          once: true,
+          start: '+=50px',
+          end: 'bottom',
+          scrub: 0.4,
+          invalidateOnRefresh: true,
+          pinSpacing: true,
         },
       })
 
-      this.$gsap.from('#readings', {
-        y: 50,
-        opacity: 0,
-        ease: 'Power1.easeInOut',
+      this.$gsap.from('#box2', {
+        scaleX: 1.2,
+        scaleY: 1.2,
+        y: 200,
+        ease: 'Circ.easeInOut',
         scrollTrigger: {
-          trigger: '#readings',
+          trigger: '#box2',
           pin: false,
-          end: 'top top',
-          scrub: 1,
-          once: true,
+          start: 'top 1600',
+          end: 'bottom 400',
+          scrub: 0.2,
+          // markers: true,
         },
       })
 
-      this.$gsap.from('#test', {
-        y: 50,
-        opacity: 0,
-        ease: 'Power1.easeInOut',
+      this.$gsap.from('#box3', {
+        scaleX: 1.2,
+        scaleY: 1.2,
+        y: 200,
+
+        ease: 'Circ.easeInOut',
         scrollTrigger: {
-          trigger: '#test',
+          trigger: '#box2',
           pin: false,
-          end: 'top top',
-          scrub: 1,
-          once: true,
+          start: ' top',
+          scrub: true,
         },
       })
     },
@@ -266,58 +167,4 @@ export default {
 }
 </script>
 
-<style>
-/* .page-enter-active,
-.page-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in;
-  transition-duration: 200ms;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-} */
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 420px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: transparent;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #191919;
-  color: white;
-  transform: rotateY(180deg);
-}
-</style>
+<style></style>

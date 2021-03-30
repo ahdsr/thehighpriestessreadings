@@ -15,7 +15,7 @@
         >
           <div class="relative">
             <dt>
-              <!-- Heroicon name: outline/check -->
+              <!-- Heroi con name: outline/check -->
               <svg
                 class="absolute w-6 h-6 text-green-500"
                 xmlns="http://www.w3.org/2000/svg"
