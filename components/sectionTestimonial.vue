@@ -3,7 +3,7 @@
     <section class="bg-monica-mauvelous bg-opacity-10">
       <div class="text-center">
         <h2
-          class="font-sans font-light tracking-tight text-7xl text-monica-purpple"
+          class="font-serif font-light tracking-tight text-7xl text-monica-purpple lg:pt-16"
         >
           Testimonials
         </h2>
@@ -22,7 +22,7 @@
 
           <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
             <div
-              class="relative text-xl font-light text-monica-purpple md:flex-grow"
+              class="relative font-sans text-xl font-light text-monica-purpple md:flex-grow"
             >
               <!-- <svg
                 class="absolute top-0 left-0 w-8 h-8 text-indigo-600 transform -translate-x-3 -translate-y-2"
