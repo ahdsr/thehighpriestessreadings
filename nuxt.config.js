@@ -18,6 +18,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
+        type: 'text/javascript',
         src:
           'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
       },
@@ -27,6 +28,18 @@ export default {
         rel: 'stylesheet',
         href:
           'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css',
+      },
+      {
+        rel: 'text/javascript',
+        href: 'https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js',
+        script: [
+          {
+            type: 'text/javascript',
+            innerHTML: '(function(){
+              emailjs.init("Yuser_fhrYsUk17udrPh9Amw89u");
+           })();',
+          },
+        ],
       },
     ],
   },
