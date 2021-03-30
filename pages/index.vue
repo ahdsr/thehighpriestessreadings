@@ -87,6 +87,7 @@ export default {
         rotation: 0,
         duration: 1,
         ease: 'Circ.easeOut',
+        force3D: false,
       })
     },
     heroline1() {
@@ -100,6 +101,7 @@ export default {
         y: 2,
 
         ease: 'ease',
+        force3D: false,
       })
     },
     heroline2() {
@@ -112,6 +114,7 @@ export default {
         x: 0,
         y: 5,
         ease: 'Circ.easeOut',
+        force3D: false,
       })
     },
 
@@ -131,6 +134,7 @@ export default {
           scrub: 0.4,
           invalidateOnRefresh: true,
           pinSpacing: true,
+          force3D: false,
         },
       })
 
@@ -145,6 +149,7 @@ export default {
           start: 'top 1600',
           end: 'bottom 400',
           scrub: 0.2,
+          force3D: false,
           // markers: true,
         },
       })
@@ -160,6 +165,7 @@ export default {
           pin: false,
           start: ' top',
           scrub: true,
+          force3D: false,
         },
       })
     },

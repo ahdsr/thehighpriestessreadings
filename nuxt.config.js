@@ -29,18 +29,6 @@ export default {
         href:
           'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css',
       },
-      {
-        rel: 'text/javascript',
-        href: 'https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js',
-        script: [
-          {
-            type: 'text/javascript',
-            innerHTML: '(function(){
-              emailjs.init("Yuser_fhrYsUk17udrPh9Amw89u");
-           })();',
-          },
-        ],
-      },
     ],
   },
   router: {
