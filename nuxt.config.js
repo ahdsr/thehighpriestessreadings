@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'The High Preistess Readings',
+    title: 'AHDSR',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -92,6 +92,14 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:3000',
+      },
+    },
+  },
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ['@nuxtjs/tailwindcss', 'nuxt-gsap-module'],
 
@@ -129,7 +137,7 @@ export default {
   // },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/apollo'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

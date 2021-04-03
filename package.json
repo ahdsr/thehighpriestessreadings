@@ -9,11 +9,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/firebase": "^7.5.0",
     "@tailwindcss/forms": "^0.2.1",
     "core-js": "^3.8.3",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.3.1",
+    "graphql-tag": "^2.11.0",
+    "gsap": "^3.6.1",
     "nuxt": "^2.15.3",
     "tailwind-scrollbar-hide": "^1.0.3",
     "yarn": "^1.22.10"
@@ -29,5 +32,9 @@
     "postcss": "^7",
     "prettier": "^2.2.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/ahdsr/thehighpriestessreadings.git",
+  "author": "ahdsr <lucas.czuchraj@gmail.com>",
+  "license": "MIT"
 }
