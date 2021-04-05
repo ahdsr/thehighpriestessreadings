@@ -1,15 +1,14 @@
 <template>
-  <div>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="px-4 pb-16 mx-auto bg-white border-t max-w-7xl sm:px-6 lg:px-8">
-      <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
+  <div class="pt-20 bg-white">
+    <div class="mx-auto bg-white max-w-7xl s">
+      <main class="mx-auto max-w-7xl">
         <div class="text-center">
           <h2
-            class="font-serif font-light tracking-tight text-7xl text-monica-purpple"
+            class="pb-20 font-serif text-4xl font-light tracking-tight text-monica-purpple lg:text-7xl"
           >
             Pricing
           </h2>
-          <div class="max-w-4xl pt-20 mx-auto font-sans">
+          <div class="max-w-4xl mx-auto font-sans">
             <div class="grid grid-cols-3 gap-10">
               <div class="flip-card">
                 <div class="flip-card-inner">

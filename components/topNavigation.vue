@@ -96,7 +96,7 @@
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden" id="mobile-menu">
+      <div v-show="showMenu" class="sm:hidden" id="mobile-menu">
         <div class="pt-2 pb-3 space-y-1">
 
           <nuxt-link class="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50" to=/about>About</nuxt-link>

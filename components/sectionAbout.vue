@@ -1,17 +1,14 @@
 <template>
   <div>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="bg-white border-t">
-      <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
+    <div class="pt-20 bg-white">
+      <div class="px-4 mx-auto max-w-7xl">
         <div class="max-w-3xl mx-auto text-center">
           <h2
-            class="font-serif font-light tracking-tight text-7xl text-monica-purpple"
+            class="pb-20 font-serif text-4xl font-light tracking-tight text-monica-purpple lg:text-7xl"
           >
             About Me
           </h2>
-          <p
-            class="pt-10 mt-4 font-sans text-lg font-light leading-relaxed text-gray-900"
-          >
+          <p class="font-sans text-lg font-light leading-relaxed text-gray-900">
             <span class="font-bold text-monica-purpple"
               >My name is Monica.</span
             >
@@ -27,9 +24,7 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {}
 </script>
-
 <style lang="scss" scoped></style>
