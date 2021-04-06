@@ -11,8 +11,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Poppins"'],
-      serif: ['"Calligraffitti"'],
+      sans: ['Ramabhadra'],
     },
     extend: {
       backgroundImage: (theme) => ({

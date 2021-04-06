@@ -77,6 +77,7 @@ export default {
        */
       scrollTo: true,
       scrollTrigger: true,
+      SplitText: true,
     },
     extraEases: {
       expoScaleEase: true,
