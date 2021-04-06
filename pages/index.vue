@@ -7,7 +7,10 @@
       <topNavigation />
     </div>
     <!-- Hero -->
-    <div id="box" class="h-screen text-center lg:bg-hero-monica-01 lg:bg-cover">
+    <div
+      id="box"
+      class="invisible h-screen text-center lg:bg-hero-monica-01 lg:bg-cover"
+    >
       <div
         id="heroline1"
         class="mx-auto font-thin tracking-tight sm:text-xl md:text-3xl lg:text-8xl md:pt-32 lg:pt-48 xl:pt-96"
@@ -125,6 +128,7 @@ export default {
         x: 0,
         y: 5,
         ease: 'Circ.easeOut',
+        autoAlpha: 0,
       })
     },
 
@@ -133,6 +137,7 @@ export default {
       this.$gsap.to('#box', {
         scaleX: 1.2,
         scaleY: 1.2,
+        autoAlpha: 0,
 
         y: 200,
         ease: 'Circ.easeOut',
@@ -151,6 +156,7 @@ export default {
       this.$gsap.from('#readings', {
         scaleX: 1.2,
         scaleY: 1.2,
+
         y: 200,
         ease: 'Circ.easeInOut',
         scrollTrigger: {
