@@ -48,24 +48,31 @@
         </div>
       </nuxt-link>
     </div>
-    <!-- About Readings -->
-    <div id="readings" class="font-serif">
-      <div class="max-w-4xl mx-auto"></div>
-      <sectionReadings />
+    <div id="aboutmonica" class="font-serif">
+      <sectionAbout />
     </div>
     <!-- Pricing -->
     <div id="pricing" class="font-serif">
       <div class="max-w-4xl mx-auto"></div>
       <sectionPricing />
     </div>
+    <!-- About Readings -->
+    <div id="readings" class="font-serif">
+      <div class="max-w-4xl mx-auto"></div>
+      <sectionReadings />
+    </div>
+
     <!-- Testimonials -->
     <div id="tesimonials" class="font-serif">
       <sectionTestimonial />
     </div>
     <!-- About Monica -->
-    <div id="aboutmonica" class="font-serif">
-      <sectionAbout />
-    </div>
+    <p class="px-10 mx-auto text-xs">
+      The High Priestess Readings Ltd. 2021. The information in your reading is
+      for entertainment purposes only, to be used in addition to a mental health
+      professional, medical help professional, financial or legal advisor, and
+      law enforcement, not as a replacement.
+    </p>
   </div>
 </template>
 

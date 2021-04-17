@@ -22,33 +22,20 @@
       >
         <p class="mb-4">
           Readings are written by me and emailed to you within 3 days of your
-          booking date.
-        </p>
-        <p class="mb-4">
-          Think of a reading as having a conversation with spirit. What are you
-          curious about?
-        </p>
-        <p class="mb-4">
-          We can read for a range of topics including romance, career, family,
-          friendship, spirituality, money, living arrangement, challenges,
-          goals, etc. Let the cards be your guide.
+          booking date. Your readings will include information derived from both
+          Tarot cards, and from Channeling.
         </p>
         <p class="mb-4">
           When booking, provide plenty of detail about your question and the
-          situation surrounding it.
+          situation surrounding it. Think of a reading as having a conversation
+          with spirit. What are you curious about?
         </p>
         <p class="mb-4">
-          Think of cards as advisors, here to illuminate your path and best
-          course of action. Ask your question in an empowering way.
-        </p>
-        <p class="mb-4">
-          You hold the power to create your future and to make your own choices,
-          the cards and spirit are simply here to help you navigate.
-        </p>
-        <p class="mb-4">
-          Think about what you want: action, success, clarity, illumination,
-          healing, connection, etc. We will ask the cards how you can get there,
-          and what you need to know in this moment.
+          You hold the power to create your future. The cards are here to
+          illuminate your path and best course of action. Ask your question in
+          an empowering way. Topics can include romance, career, family,
+          friendship, spirituality, money, living arrangement, challenges,
+          goals, aspirations, etc. Let the cards be your guide.
         </p>
         <p class="mb-4">
           You are encouraged to revisit your reading every few months. Meaning

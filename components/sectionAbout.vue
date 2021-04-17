@@ -6,18 +6,19 @@
           <h2
             class="pb-20 font-serif text-4xl font-light tracking-tight text-monica-purpple lg:text-7xl"
           >
-            About Me
+            Welcome
           </h2>
           <p class="font-sans text-lg font-light leading-relaxed text-gray-900">
-            <span class="font-bold text-monica-purpple"
-              >My name is Monica.</span
-            >
-            I am a Tarot Reader and Psychic. I offer Psychic Tarot Readings to
-            help you achieve the clarity and guidance you seek. My purpose is to
-            relay the messages that spirit has for you. Readings mainly include
-            messages derived from Tarot, and also include information in the
-            form of images, words, feelings and emotions derived from Psychic
-            connection methods.
+            Your written reading will include information derived from both
+            Tarot cards, and from Intuitive Psychic Channeling. Channeling
+            produces images, words, feelings and/or emotions having to do with
+            your query.
+          </p>
+          <p class="font-sans text-lg font-light leading-relaxed text-gray-900">
+            My name is Monica, and I am a Tarot Reader. I offer Readings to help
+            you achieve the clarity and guidance you seek. My purpose is to
+            relay the messages that spirit has for you. I have used the power of
+            Tarot to help many clients illuminate and define their path.
           </p>
         </div>
       </div>
